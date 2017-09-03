@@ -13,18 +13,39 @@ h1, h2, h3 {
 
 h1 {
     text-transform: uppercase;
-    font-size: 5em;
-    color: #006f79;
+    /*font-size: 5em;*/
 }
 
 h2 {
-    font-size: 2em;
-    letter-spacing: 2px;
+    /*font-size: 2em;*/
 }
 
-.landing-screen {
+a {
+    text-decoration: underline;
+}
+
+    a:hover {
+        color: #006f79;
+        text-decoration: none;
+    }
+
+.jumbotron {
     text-align: center;
 }
+
+    .jumbotron h1 {
+        color: #006f79;
+    }
+
+    .jumbotron a {
+        font-size: 3em;
+        color: #545454;
+        margin: 0.25em;
+    }
+
+        .jumbotron a:hover {
+            color: #006f79;
+        }
 
 .project {
     height: 300px;
@@ -33,23 +54,45 @@ h2 {
 }
 
 .project-overlay {
-    background-color: rgba(0, 0, 0, 0.5);
-
+    height: 75%;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    background-color: #006f79;
 }
+
+    .project-overlay i {
+        opacity: 0;
+        color: #FFF;
+        font-size: 4em;
+        position: absolute;
+        top: 37.5%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+
+    .project-overlay:hover i {
+        opacity: 1;
+        transition: 0.2s ease-in;
+        -webkit-transition: 0.2s ease-in;
+        cursor: pointer;
+        /* can fix opacity issue with z-index*/
+    }
+
 
 .project-cover {
     background-color: #3d3d3d;
     background-size: cover;
     background-position: center;
-    height: 75%;
+    height: 100%;
     border-top-left-radius: 6px;
     border-top-right-radius: 6px;
 }
 
     .project-cover:hover {
-        box-shadow: inset 0 0 0 8px #FFF;
-        transition: box-shadow 0.15s ease-out;
-        -webkit-transition: box-shadow 0.15s ease-out;
+        opacity: 0.1;
+        transition: 0.2s ease-in;
+        -webkit-transition: 0.2s ease-in;
+        cursor: pointer;
     }
 
     .planit {
@@ -84,4 +127,46 @@ h2 {
 
     .project-label p {
         margin: auto auto 0 auto;
+    }
+
+.project-modal {
+    background-color: #FFF;
+    padding: 30px !important;
+}
+
+.modal-header, .modal-body, .modal-footer {
+    border: none;
+}
+
+.project-modal-content {
+    max-width: 800px;
+    margin: auto;
+}
+
+    .project-modal-content .close {
+        font-size: 2em;
+    }
+
+    .project-modal-content h1, .project-modal-content p {
+        text-align: center;
+    }
+
+    .project-modal-content img {
+        width: 100%;
+        display: flex;
+        align-content: center;
+    }
+
+    .project-modal-content .carousel-inner {
+        margin: 2em auto;
+    }
+
+    .project-modal-content .carousel-control {
+        background-image: none;
+    }
+
+    .project-modal-content .carousel-caption {
+        position: relative;
+        left: auto;
+        right: auto;
     }
