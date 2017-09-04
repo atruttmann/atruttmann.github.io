@@ -37,7 +37,7 @@
             </div>
 
             <div class="row">
-                <div class="col-sm-6 col-md-4 project" data-toggle="modal" data-target="#planitModal">
+                <div class="col-sm-6 col-md-4 project" data-toggle="modal" data-target="#planitModal" data-backdrop="false">
                     <div class="project-container">
                         <i class="fa fa-plus-circle"></i>
                         <div class="project-overlay"></div>
@@ -53,7 +53,7 @@
                 <!--Microsoft?-->
 
                 <div class="col-sm-6 col-md-4 project">
-                    <div class="project-container" data-toggle="modal" data-target="#wacmModal">
+                    <div class="project-container" data-toggle="modal" data-target="#wacmModal" data-backdrop="false">
                         <i class="fa fa-plus-circle"></i>
                         <div class="project-overlay"></div>
                         <div class="project-cover wacm"></div>
@@ -65,7 +65,7 @@
                 </div>
 
                 <div class="col-sm-6 col-md-4 project">
-                    <div class="project-container" data-toggle="modal" data-target="#draw3DModal">
+                    <div class="project-container" data-toggle="modal" data-target="#draw3DModal" data-backdrop="false">
                         <i class="fa fa-plus-circle"></i>
                         <div class="project-overlay"></div>
                         <div class="project-cover draw3D"></div>
@@ -77,7 +77,7 @@
                 </div>
 
                 <div class="col-sm-6 col-md-4 project">
-                    <div class="project-container" data-toggle="modal" data-target="#photoboothModal">
+                    <div class="project-container" data-toggle="modal" data-target="#photoboothModal" data-backdrop="false">
                         <i class="fa fa-plus-circle"></i>
                         <div class="project-overlay"></div>
                         <div class="project-cover photo-booth"></div>
@@ -89,7 +89,7 @@
                 </div>
 
                 <div class="col-sm-6 col-md-4 project">
-                    <div class="project-container" data-toggle="modal" data-target="#designModal">
+                    <div class="project-container" data-toggle="modal" data-target="#designModal" data-backdrop="false">
                         <i class="fa fa-plus-circle"></i>
                         <div class="project-overlay"></div>
                         <div class="project-cover"></div>
@@ -101,7 +101,7 @@
                 </div>
 
                 <div class="col-sm-6 col-md-4 project">
-                    <div class="project-container" data-toggle="modal" data-target="#photographyModal">
+                    <div class="project-container" data-toggle="modal" data-target="#photographyModal" data-backdrop="false">
                         <i class="fa fa-plus-circle"></i>
                         <div class="project-overlay"></div>
                         <div class="project-cover"></div>
@@ -113,7 +113,7 @@
                 </div>
             </div>
 
-            <div id="planitModal" class="project-modal modal">
+            <div id="planitModal" class="project-modal modal fade">
                 <div class="project-modal-content">
                     <div class="modal-header">
                         <i class="fa fa-times-circle close" data-dismiss="modal"></i>
@@ -171,7 +171,7 @@
                 </div>
             </div>
 
-            <div id="wacmModal" class="project-modal modal">
+            <div id="wacmModal" class="project-modal modal fade">
                 <div class="project-modal-content">
                     <div class="modal-header">
                         <i class="fa fa-times-circle close" data-dismiss="modal"></i>
@@ -231,7 +231,7 @@
 
 
 
-            <div id="draw3DModal" class="project-modal modal">
+            <div id="draw3DModal" class="project-modal modal fade">
                 <div class="project-modal-content">
                     <div class="modal-header">
                         <i class="fa fa-times-circle close" data-dismiss="modal"></i>
@@ -289,7 +289,7 @@
                 </div>
             </div>
 
-            <div id="photoboothModal" class="project-modal modal">
+            <div id="photoboothModal" class="project-modal modal fade">
                 <div class="project-modal-content">
                     <div class="modal-header">
                         <i class="fa fa-times-circle close" data-dismiss="modal"></i>
@@ -347,7 +347,7 @@
                 </div>
             </div>
 
-            <div id="designModal" class="project-modal modal">
+            <div id="designModal" class="project-modal modal fade">
                 <div class="project-modal-content">
                     <div class="modal-header">
                         <i class="fa fa-times-circle close" data-dismiss="modal"></i>
@@ -402,7 +402,7 @@
                 </div>
             </div>
 
-            <div id="photographyModal" class="project-modal modal">
+            <div id="photographyModal" class="project-modal modal fade">
                 <div class="project-modal-content">
                     <div class="modal-header">
                         <i class="fa fa-times-circle close" data-dismiss="modal"></i>
@@ -466,6 +466,8 @@
         <script src="js/bootstrap.min.js"></script>
 
         <script>
+
+            // PlanIt Captions
             $(function() {
                 $('.carousel').carousel();
                 var caption = $('div.item:nth-child(1) .caption-planit');
@@ -478,6 +480,7 @@
                 });
             });
 
+            // WACM Captions
             $(function() {
                 $('.carousel').carousel();
                 var caption = $('div.item:nth-child(1) .caption-wacm');
@@ -490,6 +493,7 @@
                 });
             });
 
+            // Draw3D Captions
             $(function() {
                 $('.carousel').carousel();
                 var caption = $('div.item:nth-child(1) .caption-draw3D');
@@ -502,6 +506,7 @@
                 });
             });
 
+            // Photo Booth Captions
             $(function() {
                 $('.carousel').carousel();
                 var caption = $('div.item:nth-child(1) .caption-photobooth');
@@ -514,6 +519,7 @@
                 });
             });
 
+            // Design Captions
             $(function() {
                 $('.carousel').carousel();
                 var caption = $('div.item:nth-child(1) .caption-design');
@@ -526,6 +532,7 @@
                 });
             });
 
+            // Photography Captions
             $(function() {
                 $('.carousel').carousel();
                 var caption = $('div.item:nth-child(1) .caption-photography');

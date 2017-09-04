@@ -97,7 +97,7 @@ a {
 }
 
     .project-container:hover .project-overlay {
-        opacity: 0.8;
+        opacity: 0.85;
         transition: 0.2s ease-in;
         -webkit-transition: 0.2s ease-in;
         cursor: pointer;
@@ -149,6 +149,19 @@ a {
     .project-label p {
         margin: auto auto 0 auto;
     }
+
+.modal.fade  {
+    transform: translate(0, 100vh);
+    top: 0px;
+    -webkit-transition: transform 0.35s ease-out;
+    -moz-transition: transform 0.35s ease-out;
+    transition: transform 0.35s ease-out;
+}
+
+.modal.fade.in  {
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+}
 
 .project-modal {
     background-color: #eeeeee;
@@ -260,10 +273,6 @@ a {
     .jumbotron h2 {
         font-size: 36px;
     }
-
-    .jumbotron a {
-        font-size: 3em;
-    }
 }
 
 @media only screen and (max-width:992px) {
@@ -281,6 +290,10 @@ a {
 
     .project-modal-content h2 {
         font-size: 24px;
+    }
+
+    .jumbotron a {
+        font-size: 3em;
     }
 }
 
@@ -347,6 +360,10 @@ a {
     .project-modal-content .carousel-inner .item, .project-modal-content .carousel-inner .item-active {
         height: 300px;
     }
+
+    .project-modal-content .caption-below {
+        padding: 1.5em;
+    }
 }
 
 @media only screen and (max-width:480px) {
@@ -376,5 +393,9 @@ a {
 
     .project-modal-content .carousel-inner .item, .project-modal-content .carousel-inner .item-active {
         height: 200px;
+    }
+
+    .project-modal-content .caption-below {
+        padding: 1em;
     }
 }
