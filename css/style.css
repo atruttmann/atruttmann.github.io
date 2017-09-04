@@ -7,17 +7,13 @@ h1, h2, h3 {
     font-family: 'Josefin Sans', sans-serif;
 }
 
-/*h1, h2 {
-    letter-spacing: 2px;
-}*/
-
 h1 {
     text-transform: uppercase;
-    /*font-size: 5em;*/
+    font-weight: 700;
 }
 
-h2 {
-    /*font-size: 2em;*/
+h3 {
+    font-weight: 700;
 }
 
 a {
@@ -37,10 +33,19 @@ a {
         color: #006f79;
     }
 
+    .jumbotron h2 {
+        margin-top: 0;
+        font-size: 36px;
+    }
+
+    .jumbotron p {
+        margin: 2em auto 1.5em auto;
+    }
+
     .jumbotron a {
-        font-size: 3em;
-        color: #545454;
-        margin: 0.25em;
+        font-size: 3.5em;
+        color: #808080;
+        margin: 1em 0.35em;
     }
 
         .jumbotron a:hover {
@@ -53,47 +58,63 @@ a {
     margin: auto auto 30px auto;
 }
 
-.project-overlay {
+.project-container {
     height: 75%;
     border-top-left-radius: 6px;
     border-top-right-radius: 6px;
-    background-color: #006f79;
+    position: relative;
 }
 
-    .project-overlay i {
-        opacity: 0;
+    .project-container i {
         color: #FFF;
+        opacity: 0;
         font-size: 4em;
         position: absolute;
-        top: 37.5%;
+        top: 50%;
         left: 50%;
         transform: translate(-50%,-50%);
+        z-index: 3;
     }
 
-    .project-overlay:hover i {
-        opacity: 1;
+        .project-container:hover i {
+            opacity: 1;
+            transition: 0.2s ease-in;
+            -webkit-transition: 0.2s ease-in;
+            cursor: pointer;
+        }
+
+.project-overlay {
+    background-color: #006f79;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+
+    .project-container:hover .project-overlay {
+        opacity: 0.8;
         transition: 0.2s ease-in;
         -webkit-transition: 0.2s ease-in;
         cursor: pointer;
-        /* can fix opacity issue with z-index*/
     }
-
 
 .project-cover {
     background-color: #3d3d3d;
     background-size: cover;
     background-position: center;
+    width: 100%;
     height: 100%;
     border-top-left-radius: 6px;
     border-top-right-radius: 6px;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
-
-    .project-cover:hover {
-        opacity: 0.1;
-        transition: 0.2s ease-in;
-        -webkit-transition: 0.2s ease-in;
-        cursor: pointer;
-    }
 
     .planit {
         background-image: url("../images/PlanIt.png");
@@ -114,7 +135,7 @@ a {
 
 .project-label {
     background-color: #FFF;
-    color: #000;
+    color: #3D3D3D;
     height: 25%;
     padding: 15px;
     border-bottom-left-radius: 6px;
@@ -147,8 +168,17 @@ a {
         font-size: 2em;
     }
 
-    .project-modal-content h1, .project-modal-content p {
+    .project-modal-content h1, .project-modal-content h2, .project-modal-content p {
         text-align: center;
+    }
+
+    .project-modal-content h1 {
+        font-size: 64px;
+    }
+
+    .project-modal-content h2 {
+        font-size: 24px;
+        margin-top: 0;
     }
 
     .project-modal-content img {
@@ -157,16 +187,145 @@ a {
         align-content: center;
     }
 
-    .project-modal-content .carousel-inner {
-        margin: 2em auto;
+    .project-modal-content .carousel {
+        margin: 3em auto;
     }
 
     .project-modal-content .carousel-control {
         background-image: none;
     }
 
-    .project-modal-content .carousel-caption {
-        position: relative;
-        left: auto;
-        right: auto;
+    .project-modal-content .caption-below {
+        font-size: 16px;
     }
+
+    .project-modal-content .modal-footer {
+        text-align: center;
+        margin-top: 2em;
+    }
+
+.modal-button {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.25em;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 30px;
+    padding: 0.8em 1.25em 0.7em 1.25em;
+    margin: 0.5em;
+    background-color: #808080;
+    color: #FFF;
+}
+
+    .modal-button i {
+        margin-right: 0.75em;
+    }
+
+    .modal-button:hover {
+        background-color: #006f79;
+        color: #FFF;
+        transition: 0.15s ease-out;
+    }
+
+
+@media only screen and (max-width:1200px) {
+    .jumbotron h2 {
+        font-size: 36px;
+    }
+
+    .jumbotron a {
+        font-size: 3em;
+    }
+}
+
+@media only screen and (max-width:992px) {
+    .jumbotron h2 {
+        font-size: 30px;
+    }
+
+    .jumbotron p {
+        font-size: 17px;
+    }
+
+    .project-modal-content h1 {
+        font-size: 64px;
+    }
+
+    .project-modal-content h2 {
+        font-size: 24px;
+    }
+}
+
+@media only screen and (max-width:768px) {
+    .jumbotron {
+        max-width: 570px;
+        margin: auto;
+    }
+
+    .jumbotron h2 {
+        font-size: 24px;
+    }
+
+    .jumbotron p {
+        font-size: 15px;
+    }
+
+    .jumbotron a {
+        font-size: 2.5em;
+    }
+
+    .project-modal-content h1 {
+        font-size: 52px;
+    }
+
+    .project-modal-content h2 {
+        font-size: 20px;
+    }
+
+    .project-modal-content p {
+        font-size: 14px;
+    }
+}
+
+@media only screen and (max-width:576px) {
+    .jumbotron h2 {
+        display: none;
+    }
+
+    .jumbotron p {
+        margin-top: 1em;
+    }
+
+    .jumbotron a {
+        font-size: 3em;
+    }
+
+    .project-modal-content h1 {
+        font-size: 42px;
+    }
+
+    .project-modal-content h2 {
+        font-size: 18px;
+    }
+}
+
+@media only screen and (max-width:480px) {
+    .jumbotron h1 {
+        font-size: 3em;
+    }
+
+    .jumbotron p {
+        display: none;
+    }
+
+    .project-modal-content h1 {
+        font-size: 34px;
+    }
+
+    .project-modal-content h2 {
+        font-size: 16px;
+    }
+
+    .project-modal-content p {
+        font-size: 12px;
+    }
+}
