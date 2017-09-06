@@ -118,19 +118,19 @@ a {
 }
 
     .planit {
-        background-image: url("../images/PlanIt.png");
+        background-image: url("../images/PlanIt/PlanIt-cover.png");
     }
 
     .wacm {
-        background-image: url("../images/WACM.png");
+        background-image: url("../images/WACM/WACM-cover.png");
     }
 
     .draw3D {
-        background-image: url("../images/Draw3D.png");
+        background-image: url("../images/Draw3D/Draw3D-cover.png");
     }
 
     .photo-booth {
-        background-image: url("../images/PhotoBooth.jpg");
+        background-image: url("../images/PhotoBooth/PhotoBooth-cover.jpg");
         background-position: top;
     }
 
