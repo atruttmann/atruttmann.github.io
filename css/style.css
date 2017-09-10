@@ -134,6 +134,14 @@ a {
         background-position: top;
     }
 
+    .intuit {
+        background-image: url("../images/Intuit/Intuit-Cover.png");
+    }
+
+    .microsoft {
+        background-image: url("../images/Microsoft/Microsoft-Cover.png");
+    }
+
 .project-label {
     background-color: #FFF;
     color: #3D3D3D;
@@ -214,6 +222,10 @@ a {
 
     .project-modal-content .carousel {
         margin: 2em auto 0 auto;
+    }
+
+    .project-modal-content .carousel-control {
+        text-shadow: 0 0 2px rgba(0,0,0,1);
     }
 
     .project-modal-content .carousel-inner {
@@ -362,11 +374,15 @@ a {
 
 @media only screen and (max-width:480px) {
     .jumbotron h1 {
-        font-size: 3em;
+        font-size: 2.5em;
     }
 
     .jumbotron p {
         display: none;
+    }
+
+    .jumbotron a {
+        font-size: 2.5em;
     }
 
     .project-modal-content h1 {
