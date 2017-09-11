@@ -28,11 +28,9 @@ a {
 
 @keyframes titleEntrance {
     0% {
-        color: rgba(0, 0, 0, 0.5);
         transform: translate(0, 20px);
     }
     100% {
-        color: #006f79;
         transform: translate(0, 0);
     }
 }
@@ -57,14 +55,14 @@ a {
 
     .jumbotron h1 {
         color: #006f79;
-        animation: 0.8s titleEntrance ease-in;
+        animation: 0.7s titleEntrance ease-in;
     }
 
 
     .jumbotron h2 {
         margin-top: 0;
         font-size: 34px;
-        animation: 0.8s subtitleEntrance ease-in;
+        animation: 0.7s subtitleEntrance ease-in;
     }
 
     .jumbotron p {
@@ -237,13 +235,15 @@ a {
         font-size: 64px;
         color: #006f79;
         margin-top: 0.5em;
-        animation: 0.4s titleEntrance ease-in;
+        animation: 0.7s titleEntrance ease-in;
+
     }
 
     .project-modal-content h2 {
         font-size: 24px;
         margin: 0 auto 2em auto;
-        animation: 0.8s subtitleEntrance ease-in;
+        animation: 0.7s subtitleEntrance ease-in;
+
     }
 
     .project-modal-content img {

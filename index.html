@@ -397,7 +397,7 @@
                                 </div>
                             </div>
 
-                            <!-- Left and right controls -->
+                            <!-- Left and right controls -->z
                             <a class="left carousel-control" href="#intuitCarousel" data-slide="prev">
                                 <span class="glyphicon glyphicon-chevron-left"></span>
                                 <span class="sr-only">Previous</span>
@@ -473,85 +473,6 @@
         <!-- Include all compiled plugins (below), or include individual files as needed -->
         <script src="js/bootstrap.min.js"></script>
 
-        <script>
-
-            // PlanIt Captions
-            $(function() {
-                $('.carousel').carousel();
-                var caption = $('div.item:nth-child(1) .caption-planit');
-                $('#caption-planit span').html(caption.html());
-                caption.css('display','none');
-                $(".carousel").on('slide.bs.carousel', function(evt) {
-                    var caption = $('div.item:nth-child(' + ($(evt.relatedTarget).index()+1) + ') .caption-planit');
-                    $('#caption-planit span').html(caption.html());
-                    caption.css('display','none');
-                });
-            });
-
-            // WACM Captions
-            $(function() {
-                $('.carousel').carousel();
-                var caption = $('div.item:nth-child(1) .caption-wacm');
-                $('#caption-wacm span').html(caption.html());
-                caption.css('display','none');
-                $(".carousel").on('slide.bs.carousel', function(evt) {
-                    var caption = $('div.item:nth-child(' + ($(evt.relatedTarget).index()+1) + ') .caption-wacm');
-                    $('#caption-wacm span').html(caption.html());
-                    caption.css('display','none');
-                });
-            });
-
-            // Draw3D Captions
-            $(function() {
-                $('.carousel').carousel();
-                var caption = $('div.item:nth-child(1) .caption-draw3D');
-                $('#caption-draw3D span').html(caption.html());
-                caption.css('display','none');
-                $(".carousel").on('slide.bs.carousel', function(evt) {
-                    var caption = $('div.item:nth-child(' + ($(evt.relatedTarget).index()+1) + ') .caption-draw3D');
-                    $('#caption-draw3D span').html(caption.html());
-                    caption.css('display','none');
-                });
-            });
-
-            // Photo Booth Captions
-            $(function() {
-                $('.carousel').carousel();
-                var caption = $('div.item:nth-child(1) .caption-photobooth');
-                $('#caption-photobooth span').html(caption.html());
-                caption.css('display','none');
-                $(".carousel").on('slide.bs.carousel', function(evt) {
-                    var caption = $('div.item:nth-child(' + ($(evt.relatedTarget).index()+1) + ') .caption-photobooth');
-                    $('#caption-photobooth span').html(caption.html());
-                    caption.css('display','none');
-                });
-            });
-
-            // Intuit Captions
-            $(function() {
-                $('.carousel').carousel();
-                var caption = $('div.item:nth-child(1) .caption-intuit');
-                $('#caption-intuit span').html(caption.html());
-                caption.css('display','none');
-                $(".carousel").on('slide.bs.carousel', function(evt) {
-                    var caption = $('div.item:nth-child(' + ($(evt.relatedTarget).index()+1) + ') .caption-intuit');
-                    $('#caption-intuit span').html(caption.html());
-                    caption.css('display','none');
-                });
-            });
-
-            // microsoft Captions
-            $(function() {
-                $('.carousel').carousel();
-                var caption = $('div.item:nth-child(1) .caption-microsoft');
-                $('#caption-microsoft span').html(caption.html());
-                caption.css('display','none');
-                $(".carousel").on('slide.bs.carousel', function(evt) {
-                    var caption = $('div.item:nth-child(' + ($(evt.relatedTarget).index()+1) + ') .caption-microsoft');
-                    $('#caption-microsoft span').html(caption.html());
-                    caption.css('display','none');
-                });
-            });
-        </script>
+        <script src="js/script.js"></script>
     </body>
 </html>
