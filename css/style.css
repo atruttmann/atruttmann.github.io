@@ -176,7 +176,6 @@ a {
     padding: 15px;
     border-bottom-left-radius: 6px;
     border-bottom-right-radius: 6px;
-    text-align: center;
 }
 
     .project-label h3 {
@@ -284,6 +283,7 @@ a {
         background-color: #FFF;
         border-bottom-left-radius: 12px;
         border-bottom-right-radius: 12px;
+        text-align: left;
     }
 
         .project-modal-content .caption-below p {
