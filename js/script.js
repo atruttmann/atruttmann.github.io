@@ -1,4 +1,10 @@
-
+// Modal fix for Internet Explorer
+$(function () {
+    var isIE = window.ActiveXObject || "ActiveXObject" in window;
+    if (isIE) {
+        $('.modal').removeClass('fade');
+    }
+});
 
 // PlanIt Captions
 $(function() {

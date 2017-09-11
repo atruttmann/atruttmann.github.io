@@ -19,6 +19,7 @@ h3 {
 
 a {
     text-decoration: underline;
+    color: #333;
 }
 
     a:hover {
@@ -56,6 +57,7 @@ a {
     .jumbotron h1 {
         color: #006f79;
         animation: 0.7s titleEntrance ease-in;
+        margin-top: 1em;
     }
 
 
@@ -88,8 +90,8 @@ a {
 
 .project-container {
     height: 75%;
-    border-top-left-radius: 6px;
-    border-top-right-radius: 6px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
     position: relative;
 }
 
@@ -116,8 +118,8 @@ a {
     opacity: 0;
     width: 100%;
     height: 100%;
-    border-top-left-radius: 6px;
-    border-top-right-radius: 6px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
     position: absolute;
     top: 0;
     left: 0;
@@ -137,8 +139,8 @@ a {
     background-position: center;
     width: 100%;
     height: 100%;
-    border-top-left-radius: 6px;
-    border-top-right-radius: 6px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
     position: absolute;
     top: 0;
     left: 0;
@@ -172,10 +174,9 @@ a {
 .project-label {
     background-color: #FFF;
     color: #3D3D3D;
-    height: 25%;
     padding: 15px;
-    border-bottom-left-radius: 6px;
-    border-bottom-right-radius: 6px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
 }
 
     .project-label h3 {
@@ -290,14 +291,14 @@ a {
             margin-bottom: 0;
         }
 
-.modal-button {
+.modal-button, .modal-button:active, .modal-button:visited {
     font-family: 'Josefin Sans', sans-serif;
     font-weight: 700;
     font-size: 1em;
     text-decoration: none;
     text-transform: uppercase;
     border-radius: 30px;
-    padding: 0.6em 1em 0.5em 1em;
+    padding: 0.7em 1em 0.5em 1em;
     margin: 2em 0.25em;
     background-color: rgba(0,0,0,0.25);
     color: #eeeeee;
@@ -311,6 +312,7 @@ a {
         background-color: rgba(0,0,0,0.5);
         color: #eeeeee;
         transition: 0.15s ease-out;
+        text-decoration: none;
     }
 
 @media only screen and (max-width:992px) {
@@ -336,7 +338,7 @@ a {
 }
 
 @media only screen and (max-width:768px) {
-    .jumbotron {
+    .jumbotron-container {
         max-width: 570px;
         margin: auto;
     }
@@ -405,8 +407,13 @@ a {
 }
 
 @media only screen and (max-width:480px) {
+    .jumbotron {
+        margin-bottom: 0;
+    }
+
     .jumbotron h1 {
         font-size: 2.5em;
+        margin-top: 0.5em;
     }
 
     .jumbotron p {
@@ -430,11 +437,11 @@ a {
     }
 
     .project-modal-content .carousel-inner {
-        height: 200px;
+        height: 180px;
     }
 
-    .project-modal-content .carousel-inner .item, .project-modal-content .carousel-inner .item-active {
-        height: 200px;
+    .project-modal-content .carousel-inner .item, .project-modal-content .carousel-inner .item .active {
+        height: 180px;
     }
 
     .project-modal-content .caption-below {
