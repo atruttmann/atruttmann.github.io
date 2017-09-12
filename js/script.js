@@ -6,6 +6,14 @@ $(function () {
     }
 });
 
+// Modal fix for iOS
+$(function () {
+    var iOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
+    if (iOS) {
+        $('.modal').removeClass('fade');
+    }
+});
+
 // PlanIt Captions
 $(function() {
     $('.carousel').carousel();
