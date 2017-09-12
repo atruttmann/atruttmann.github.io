@@ -89,7 +89,9 @@ a {
 }
 
 .project-container {
+    width: 100%;
     height: 75%;
+    border: none;
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
     position: relative;
