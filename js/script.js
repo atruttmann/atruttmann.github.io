@@ -1,15 +1,8 @@
-// Modal fix for Internet Explorer
+// Modal fix for iOS and Internet Explorer
 $(function () {
     var isIE = window.ActiveXObject || "ActiveXObject" in window;
-    if (isIE) {
-        $('.modal').removeClass('fade');
-    }
-});
-
-// Modal fix for iOS
-$(function () {
     var iOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
-    if (iOS) {
+    if (isIE || iOS) {
         $('.modal').removeClass('fade');
     }
 });
