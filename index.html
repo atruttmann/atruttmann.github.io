@@ -38,7 +38,7 @@
                 <div class="jumbotron-container">
                     <h1>Alayna Truttmann</h1>
                     <h2>Developer  //  Designer  //  Student</h2>
-                    <p>Senior at the University of Wisconsin-Madison studying Computer Science, Digital Art, and Digital Studies. Currently a front-end development intern at DataChat. Former Design Engineer Intern at Intuit, Explore Intern at Microsoft, and Graphic Design Intern at Epic.</p>
+                    <p>Senior at the University of Wisconsin-Madison studying Computer Science, Digital Art, and Digital Studies. Currently a front-end design & development intern at DataChat. Former Design Engineer Intern at Intuit, Explore Intern at Microsoft, and Graphic Design Intern at Epic.</p>
 
                     <a href="http://www.linkedin.com/in/alaynatruttmann" target="_blank"><i class="fa fa-linkedin-square icon-link"></i></a>
                     <a href="downloads/Resume-AlaynaTruttmann.pdf" target="_blank"><i class="fa fa-arrow-circle-down icon-link" style="animation-delay: 0.2s"></i></a>
@@ -48,6 +48,18 @@
             </div>
 
             <div class="row">
+                <div class="col-sm-6 col-md-4 project">
+                    <button class="project-container" href="#" data-toggle="modal" data-target="#calfTrackerModal" data-backdrop="false">
+                        <i class="fa fa-plus-circle"></i>
+                        <div class="project-overlay"></div>
+                        <div class="project-cover calf-tracker"></div>
+                    </button>
+                    <div class="project-label">
+                        <h3>Calf Tracker</h3>
+                        <p>App Design & Development</p>
+                    </div>
+                </div>
+
                 <div class="col-sm-6 col-md-4 project">
                     <button class="project-container" href="#" data-toggle="modal" data-target="#planitModal" data-backdrop="false">
                         <i class="fa fa-plus-circle"></i>
@@ -117,6 +129,76 @@
                     <div class="project-label">
                         <h3>Microsoft</h3>
                         <p>Software Dev & Product Management</p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div id="calfTrackerModal" class="project-modal modal fade">
+                <div class="project-modal-content">
+                    <div class="modal-header">
+                        <a href="#" style="float: right;"><i class="fa fa-times-circle close" data-dismiss="modal"></i></a>
+                        <a href="https://github.com/bpercy11/CalfTrackerRepo" target="_blank" type="button" class="modal-button">Code</a>
+                    </div>
+                    <div class="modal-body">
+                        <h1>Calf Tracker</h1>
+                        <h2>Android App for Raising Calves</h2>
+
+                        <div id="calfTrackerCarousel" class="carousel slide" data-ride="carousel" data-interval="false">
+                            <!-- Wrapper for slides -->
+                            <div class="carousel-inner">
+                                <div class="item active" style="background-image:url('images/CalfTracker/CalfTracker-cover.png')">
+                                    <div class="caption-calftracker">
+                                        <p>For my Fall 2017 Software Engineering class, I proposed creating an Android app that would help dairy farmers record the process of raising calves. I came up with this idea from my personal experience growing up on a dairy farm. My proposal was in the top 20 of 130+ proposals, and a 7-person team was formed to create “Calf Tracker”.</p>
+                                    </div>
+                                </div>
+
+                                <div class="item" style="background-image:url('images/CalfTracker/CalfTracker-1.png')">
+                                    <div class="caption-calftracker">
+                                        <p>In the planning stages of our project, my team went on a customer visit to our client Dan Truttmann, the owner of <a href ="https://www.facebook.com/truttmanndairy/" target="_blank">Truttmann Dairy Farms</a>. Truttmann Dairy is a family-owned farm in Wisconsin that raises 300 calves per year. Dan showed us around the farm and explained how he and his employees take care of calves through feedings, scheduled vaccinations, and illness monitoring.</p>
+                                    </div>
+                                </div>
+
+                                <div class="item" style="background-image:url('images/CalfTracker/CalfTracker-2.png')">
+                                    <div class="caption-calftracker">
+                                        <p>I created the designs for our app using <a href="https://balsamiq.com/" target="_blank">Balsamiq</a>. I tested the design with Dan several times over the course of the process to ensure it fit his needs. We referenced his current methods of organizing information – paper and spreadsheets – to make sure the app did everything he needed and more.</p>
+                                    </div>
+                                </div>
+
+                                <div class="item" style="background-image:url('images/CalfTracker/CalfTracker-3.png')">
+                                    <div class="caption-calftracker">
+                                        <p>These are a few screenshots from the app. The dashboard (left) gives quick access to every part of the app. Calf profiles (center) allows users to view, edit, and add information about a calf. For example, you can view a growth history (right) and track a calf’s rate of weight/height gain.</p>
+                                    </div>
+                                </div>
+
+                                <div class="item" style="background-image:url('images/CalfTracker/CalfTracker-4.png')">
+                                    <div class="caption-calftracker">
+                                        <p>Calves are organized into a calf list (left). In the protocols section (center), you can view, edit, and add vaccinations, medicines, and illnesses. Vaccinations (right) and medicines include the dates they need to be administered.</p>
+                                    </div>
+                                </div>
+
+                                <div class="item" style="background-image:url('images/CalfTracker/CalfTracker-5.png')">
+                                    <div class="caption-calftracker">
+                                        <p>Vaccines and illnesses are then used to schedule daily tasks (left). Data visualizations about the herd are located in the insights section (center). In settings (right), farm information and employee lists can be updated and the language can be changed from English to Spanish. The data is synced to a Firebase backend.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Left and right controls -->
+                            <a class="left carousel-control" href="#calfTrackerCarousel" data-slide="prev">
+                                <span class="glyphicon glyphicon-chevron-left"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="right carousel-control" href="#calfTrackerCarousel" data-slide="next">
+                                <span class="glyphicon glyphicon-chevron-right"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </div>
+                        <div id="caption-calftracker">
+                            <div class="caption-below">
+                                <span></span>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

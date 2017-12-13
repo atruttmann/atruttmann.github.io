@@ -149,6 +149,10 @@ a {
     left: 0;
 }
 
+    .calf-tracker {
+        background-image: url("../images/CalfTracker/CalfTracker-cover.png");
+    }
+
     .planit {
         background-image: url("../images/PlanIt/PlanIt-cover.png");
     }
