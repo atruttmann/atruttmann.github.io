@@ -1,8 +1,9 @@
-@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&family=Merriweather&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500;700&family=Merriweather&display=swap");
 
 // Colors
 $color-accent: #006f79;
 $color-background: #eeeeee;
+$color-background-light: #ffffff;
 $color-text: #333;
 $color-icon: #808080;
 $color-element: rgba(0, 0, 0, 0.25);
@@ -20,22 +21,61 @@ $size-8: 40px;
 $size-9: 60px;
 $size-10: 100px;
 
+// Border radius
+$border-radius-default: 8px;
+$border-radius-large: 12px;
+
 // Fonts
 $font-title: "Josefin Sans", sans-serif;
 $font-text: "Merriweather", serif;
 
-@mixin title-style {
+// Headings
+@mixin heading {
   font-family: $font-title;
   font-weight: 700;
+}
+
+@mixin heading-1 {
+  @include heading;
   font-size: 64px;
   line-height: 72px;
   text-transform: uppercase;
   letter-spacing: 3px;
 }
 
-@mixin text-style {
+@mixin heading-2 {
+  @include heading;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 32px;
+}
+
+@mixin heading-3 {
+  @include heading;
+  font-size: 24px;
+  line-height: 32px;
+}
+
+// Body
+@mixin body {
   font-family: $font-text;
   font-weight: 400;
+}
+
+@mixin body-1 {
+  @include body;
   font-size: 20px;
   line-height: 28px;
+}
+
+@mixin body-2 {
+  @include body;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+@mixin body-3 {
+  @include body;
+  font-size: 14px;
+  line-height: 22px;
 }

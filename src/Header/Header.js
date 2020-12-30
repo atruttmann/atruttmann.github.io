@@ -10,11 +10,27 @@ function Header() {
   return (
     <div className="header">
       <h1>Hi, I'm Alayna.</h1>
-      <p>
+      <p className="body1">
         I'm passionate about the intersection of design and code! I'm currently
-        a Design Technologist at Intuit, and I formerly worked in front-end
-        development at Microsoft and DataChat. I'm also an alumna of UW-Madison
-        with a BA in Computer Science and minor in Digital Art.
+        a Design Technologist at{" "}
+        <a
+          href="https://quickbooks.intuit.com/"
+          target="_blank"
+          rel="noreferrer"
+        >
+          Intuit
+        </a>{" "}
+        creating prototypes with React. Previously, I worked at at Microsoft and{" "}
+        <a href="https://datachat.ai/" target="_blank" rel="noreferrer">
+          DataChat
+        </a>{" "}
+        as a front-end development intern .
+      </p>
+      <p className="body1">
+        I moved from Wisconsin to the Bay Area in 2018 after graduating from
+        UW-Madison with a bachelor's in Computer Science and a minor in Digital
+        Art. When I'm away from my computer, I love to hike, cook, and
+        embroider.
       </p>
       <div className="linkIcons">
         <a

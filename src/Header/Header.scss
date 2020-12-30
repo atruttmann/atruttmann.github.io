@@ -1,10 +1,14 @@
 @import "../variables";
 
 .header {
-  padding: $size-9;
   text-align: center;
-  max-width: 1000px;
+  max-width: 800px;
   margin: auto;
+  padding: $size-8 0 $size-10 0;
+
+  h1 {
+    margin-bottom: $size-7;
+  }
 
   .linkIcons {
     margin-top: $size-8;

@@ -4,23 +4,52 @@ body {
   padding: 0;
   margin: 0;
   background-color: $color-background;
+  color: $color-text;
+}
+
+h1 {
+  @include heading-1;
+  color: $color-accent;
+  padding: 0;
+  margin: 0 0 $size-2 0;
+}
+
+h2 {
+  @include heading-2;
+  padding: 0;
+  margin: 0;
+}
+
+h3 {
+  @include heading-3;
+  padding: 0;
+  margin: 0;
+}
+
+p {
+  padding: 0;
+  margin: 0;
+
+  &.body1 {
+    @include body-1;
+    margin-bottom: $size-3;
+  }
+  &.body2 {
+    @include body-2;
+  }
+  &.body3 {
+    @include body-3;
+  }
+}
+
+a {
+  color: $color-accent;
+  &:hover {
+    color: $color-text;
+  }
 }
 
 .app {
   height: 100%;
   padding: $size-9;
-
-  h1 {
-    color: $color-accent;
-    @include title-style;
-    padding: 0;
-    margin: 0 0 $size-7 0;
-  }
-
-  p {
-    color: $color-text;
-    @include text-style;
-    padding: 0;
-    margin: 0;
-  }
 }
