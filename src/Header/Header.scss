@@ -1,4 +1,4 @@
-@import "../variables";
+@import "../styles/variables";
 
 .header {
   text-align: center;
@@ -8,6 +8,7 @@
 
   h1 {
     margin-bottom: $size-7;
+    animation: $animation-title;
   }
 
   .linkIcons {

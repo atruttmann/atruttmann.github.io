@@ -1,4 +1,4 @@
-@import "../variables";
+@import "../styles/variables";
 
 // Overrides for Bootstrap modal
 .modalContainer {
@@ -21,31 +21,43 @@
     border-radius: 0;
     background-color: $color-background;
     overflow: auto;
+    padding: $size-10 $size-9;
   }
 }
 
 .projectContent {
   max-width: 900px;
   margin: 0 auto;
-  padding: $size-10 $size-9;
 
-  .closeIcon {
-    width: auto;
-    height: $size-6;
-    cursor: pointer;
+  .closeButton {
     position: absolute;
-    top: $size-6;
-    right: $size-6;
-    color: $color-element;
+    top: $size-4;
+    right: $size-4;
+    border: none;
+    outline: none;
+    padding: $size-2;
 
-    &:hover {
-      color: $color-element-hover;
+    &:hover .closeIcon {
+      color: $color-button-hover;
+    }
+
+    .closeIcon {
+      width: auto;
+      height: $size-6;
+      color: $color-button;
     }
   }
 
   .modalHeader {
     text-align: center;
     margin-bottom: $size-9;
+
+    h1 {
+      animation: $animation-title;
+    }
+    h2 {
+      animation: $animation-subTitle;
+    }
   }
 
   .carouselImage {

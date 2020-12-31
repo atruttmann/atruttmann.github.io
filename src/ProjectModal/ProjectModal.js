@@ -19,20 +19,23 @@ const ProjectModal = ({ project, open, closeModal }) => {
       contentClassName="modalContent"
     >
       <div className="projectContent">
-        <FaTimesCircle className="closeIcon" onClick={closeModal} />
+        <button className="closeButton" onClick={closeModal}>
+          <FaTimesCircle className="closeIcon" />
+        </button>
+
         <div className="modalHeader">
           <h1>{project.title}</h1>
           <h2>{project.subTitle}</h2>
         </div>
         <Carousel
           indicators={false}
-          inveral={null}
+          interval={null}
           wrap={false}
           prevIcon={<FaChevronCircleLeft className="carouselControl" />}
           nextIcon={<FaChevronCircleRight className="carouselControl" />}
         >
           {project.slides.map((slide, index) => (
-            <Carousel.Item key={slide.image}>
+            <Carousel.Item key={slide.image} interval={null}>
               <div
                 className="carouselImage"
                 style={{

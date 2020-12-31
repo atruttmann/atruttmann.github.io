@@ -1,0 +1,27 @@
+@import "sizes";
+
+$animation-title: 0.7s titleEntrance ease-in;
+$animation-subTitle: 0.7s subtitleEntrance ease-in;
+
+@keyframes titleEntrance {
+  0% {
+    transform: translate(0, $size-5);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+@keyframes subtitleEntrance {
+  0% {
+    opacity: 0;
+    transform: translate(0, $size-3);
+  }
+  33% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+}
