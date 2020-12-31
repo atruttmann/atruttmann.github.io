@@ -14,9 +14,10 @@ TODO
 - [ ] Check responsive design at various breakpoints
 - [ ] Check in various browsers
 - [ ] See if I can get the site https verified
+- [ ] Check to make sure this follows accessibility guidelines
 
 Design considerations
 
-- [ ] Consider changing slideshow to a one page format (research best practices?)
+- [x] Consider changing slideshow to a one page format (research best practices?)
 - [ ] Consider breaking sections into college/personal work and Intuit projects
 - [ ] Consider making a dark mode version
