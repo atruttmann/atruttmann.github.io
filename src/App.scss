@@ -51,4 +51,14 @@ a {
 
 .app {
   padding: $size-9;
+
+  // Overrides for Bootstrap Container
+  .appInner {
+    padding: 0;
+    max-width: 1200px;
+
+    .projectColumn {
+      padding: $size-4;
+    }
+  }
 }

@@ -1,6 +1,6 @@
 @import "../styles/variables";
 
-// Overrides for Bootstrap modal
+// Overrides for Bootstrap Modal
 .modalContainer {
   padding: 0 !important;
   overflow: hidden !important;
@@ -83,7 +83,7 @@
     background-color: $color-background-light;
   }
 
-  // Overrides to Bootstrap Modal css
+  // Overrides for Bootstrap Carousel
   .carousel-inner {
     border-radius: $border-radius-large;
   }

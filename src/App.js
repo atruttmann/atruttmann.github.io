@@ -1,4 +1,6 @@
-import "./Header/Header";
+import Container from "react-bootstrap/Container";
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
 import Header from "./Header/Header";
 import Project from "./ProjectTile/ProjectTile";
 import ProjectsList from "./ProjectsList";
@@ -8,10 +10,18 @@ import "./App.scss";
 function App() {
   return (
     <div className="app">
-      <Header />
-      {ProjectsList.map((project) => (
-        <Project project={project} key={project.title} />
-      ))}
+      <Container fluid className="appInner">
+        <Row>
+          <Header />
+        </Row>
+        <Row xs={1} sm={1} md={2} lg={2} xl={3}>
+          {ProjectsList.map((project) => (
+            <Col className="projectColumn">
+              <Project project={project} key={project.title} />
+            </Col>
+          ))}
+        </Row>
+      </Container>
     </div>
   );
 }
