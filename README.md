@@ -9,8 +9,8 @@ TODO
 - [ ] Redo intro content
 - [ ] Figure out how to password protect certain pages for Intuit work
 - [ ] Determine projects to showcase and make content/images for each
-- [ ] Create modals for each project
-- [ ] Animations (could use same as old website)
+- [x] Create modals
+- [x] Animations (could use same as old website)
 - [ ] Check responsive design at various breakpoints
 - [ ] Check in various browsers
 - [ ] See if I can get the site https verified
