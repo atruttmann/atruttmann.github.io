@@ -3,6 +3,7 @@ import {
   FaChevronCircleLeft,
   FaChevronCircleRight,
 } from "react-icons/fa";
+import Modal from "react-bootstrap/Modal";
 import Carousel from "react-bootstrap/Carousel";
 import "./ProjectModal.scss";
 
@@ -10,9 +11,15 @@ const imageSrcPrefix = `${process.env.PUBLIC_URL}images/`;
 
 const ProjectModal = ({ project, open, closeModal }) => {
   return (
-    <div className={`projectModal${open ? " open" : ""}`}>
-      <FaTimesCircle className="closeIcon" onClick={closeModal} />
-      <div className="modalContent">
+    <Modal
+      show={open}
+      backdrop={false}
+      className="modalContainer"
+      dialogClassName="modalDialog"
+      contentClassName="modalContent"
+    >
+      <div className="projectContent">
+        <FaTimesCircle className="closeIcon" onClick={closeModal} />
         <div className="modalHeader">
           <h1>{project.title}</h1>
           <h2>{project.subTitle}</h2>
@@ -40,7 +47,7 @@ const ProjectModal = ({ project, open, closeModal }) => {
           ))}
         </Carousel>
       </div>
-    </div>
+    </Modal>
   );
 };
 

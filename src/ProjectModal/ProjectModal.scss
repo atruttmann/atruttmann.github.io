@@ -1,29 +1,33 @@
 @import "../variables";
 
-$modal-animation-duration: 0.5s;
+// Overrides for Bootstrap modal
+.modalContainer {
+  padding: 0 !important;
+  overflow: hidden !important;
 
-.projectModal {
-  width: 100%;
-  background-color: $color-background;
-  position: absolute;
-  top: 0;
-  left: 0;
+  &.show .modalDialog {
+    transform: none !important;
+  }
 
-  transition: transform $modal-animation-duration ease-out,
-    visibility 0s $modal-animation-duration,
-    max-height 0s $modal-animation-duration;
-  transform: translate(0, 100vh);
-  max-height: 0;
-  visibility: hidden;
-  overflow: hidden;
+  .modalDialog {
+    max-width: none !important;
+    margin: 0 !important;
+    transform: translate(0, 100vh) !important;
+  }
 
-  &.open {
-    transition: transform $modal-animation-duration ease-in;
-    transform: translate(0, 0);
-    max-height: 100vh;
-    visibility: visible;
+  .modalContent {
+    height: 100vh;
+    border: none;
+    border-radius: 0;
+    background-color: $color-background;
     overflow: auto;
   }
+}
+
+.projectContent {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: $size-10 $size-9;
 
   .closeIcon {
     width: auto;
@@ -37,12 +41,6 @@ $modal-animation-duration: 0.5s;
     &:hover {
       color: $color-element-hover;
     }
-  }
-
-  .modalContent {
-    max-width: 900px;
-    margin: auto;
-    padding: $size-10 $size-9;
   }
 
   .modalHeader {
