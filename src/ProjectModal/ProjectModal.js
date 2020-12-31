@@ -23,7 +23,7 @@ const ProjectModal = ({ project, open, closeModal }) => {
           <FaTimesCircle className="closeIcon" />
         </button>
 
-        <div className="modalHeader">
+        <div className="projectHeader">
           <h1>{project.title}</h1>
           <h2>{project.subTitle}</h2>
         </div>
@@ -33,6 +33,7 @@ const ProjectModal = ({ project, open, closeModal }) => {
           wrap={false}
           prevIcon={<FaChevronCircleLeft className="carouselControl" />}
           nextIcon={<FaChevronCircleRight className="carouselControl" />}
+          className="projectCarousel"
         >
           {project.slides.map((slide, index) => (
             <Carousel.Item key={slide.image} interval={null}>
@@ -49,6 +50,13 @@ const ProjectModal = ({ project, open, closeModal }) => {
             </Carousel.Item>
           ))}
         </Carousel>
+        <div className="projectLinks">
+          {project.links.map((link) => (
+            <a className="projectButton" href={link.url} key={link.title}>
+              {link.title}
+            </a>
+          ))}
+        </div>
       </div>
     </Modal>
   );

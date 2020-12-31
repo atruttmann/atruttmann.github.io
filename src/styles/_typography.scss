@@ -30,6 +30,14 @@ $font-text: "Merriweather", serif;
   line-height: 32px;
 }
 
+// Button
+@mixin button-text {
+  @include heading;
+  font-size: 14px;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
 // Body
 @mixin body {
   font-family: $font-text;

@@ -1,7 +1,16 @@
 @import "sizes";
 
-$animation-title: 0.7s titleEntrance ease-in;
-$animation-subTitle: 0.7s subtitleEntrance ease-in;
+$animation-duration-1: 0.2s;
+$animation-duration-2: 0.4s;
+$animation-duration-3: 0.6s;
+
+$animation-title: $animation-duration-3 titleEntrance ease-in;
+$animation-subTitle: $animation-duration-3 subtitleEntrance ease-in;
+
+$transition-tile-hover-up: transform $animation-duration-1 ease-in;
+$transition-tile-hover-down: transform $animation-duration-1 ease-out;
+$transition-modal-in: transform $animation-duration-2 ease-in !important;
+$transition-modal-out: transform $animation-duration-2 ease-out !important;
 
 @keyframes titleEntrance {
   0% {

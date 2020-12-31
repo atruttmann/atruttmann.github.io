@@ -7,6 +7,10 @@ const ProjectsList = [
         title: "Code",
         url: "https://github.com/bpercy11/CalfTrackerRepo",
       },
+      {
+        title: "Code 2",
+        url: "https://github.com/bpercy11/CalfTrackerRepo",
+      },
     ],
     imageFolderName: "CalfTracker",
     slides: [

@@ -13,18 +13,10 @@ function Header() {
       <p className="body1">
         I'm passionate about the intersection of design and code! I'm currently
         a Design Technologist at{" "}
-        <a
-          href="https://quickbooks.intuit.com/"
-          target="_blank"
-          rel="noreferrer"
-        >
-          Intuit
-        </a>{" "}
-        creating prototypes with React. Previously, I worked at at Microsoft and{" "}
-        <a href="https://datachat.ai/" target="_blank" rel="noreferrer">
-          DataChat
-        </a>{" "}
-        as a front-end development intern .
+        <a href="https://quickbooks.intuit.com/">Intuit</a> creating prototypes
+        with React. Previously, I worked at at Microsoft and{" "}
+        <a href="https://datachat.ai/">DataChat</a> as a front-end development
+        intern .
       </p>
       <p className="body1">
         I moved from Wisconsin to the Bay Area in 2018 after graduating from
@@ -33,36 +25,16 @@ function Header() {
         embroider.
       </p>
       <div className="linkIcons">
-        <a
-          href="https://www.linkedin.com/in/alaynatruttmann/"
-          title="LinkedIn"
-          target="_blank"
-          rel="noreferrer"
-        >
+        <a href="https://www.linkedin.com/in/alaynatruttmann/" title="LinkedIn">
           <FaLinkedin />
         </a>
-        <a
-          href="downloads/Resume-AlaynaTruttmann.pdf"
-          title="Resume"
-          target="_blank"
-          rel="noreferrer"
-        >
+        <a href="downloads/Resume-AlaynaTruttmann.pdf" title="Resume">
           <FaIdCard />
         </a>
-        <a
-          href="mailto:amtruttmann@gmail.com"
-          title="Email"
-          target="_blank"
-          rel="noreferrer"
-        >
+        <a href="mailto:amtruttmann@gmail.com" title="Email">
           <FaEnvelope />
         </a>
-        <a
-          href="https://github.com/atruttmann"
-          title="GitHub"
-          target="_blank"
-          rel="noreferrer"
-        >
+        <a href="https://github.com/atruttmann" title="GitHub">
           <FaGithubSquare />
         </a>
       </div>

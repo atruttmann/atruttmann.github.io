@@ -3,8 +3,8 @@
 .header {
   text-align: center;
   max-width: 1000px;
-  margin: auto;
-  padding: $size-8 $size-10 $size-10 $size-10;
+  margin: 0 auto $size-10 auto;
+  padding: 0 $size-10;
 
   h1 {
     margin-bottom: $size-7;

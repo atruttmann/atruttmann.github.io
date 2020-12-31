@@ -7,12 +7,14 @@
 
   &.show .modalDialog {
     transform: none !important;
+    transition: $transition-modal-out;
   }
 
   .modalDialog {
     max-width: none !important;
     margin: 0 !important;
     transform: translate(0, 100vh) !important;
+    transition: $transition-modal-in;
   }
 
   .modalContent {
@@ -48,7 +50,7 @@
     }
   }
 
-  .modalHeader {
+  .projectHeader {
     text-align: center;
     margin-bottom: $size-9;
 
@@ -60,35 +62,57 @@
     }
   }
 
-  .carouselImage {
-    background-size: cover;
-    background-position: center;
-    width: 100%;
-    height: 400px;
+  .projectCarousel {
+    .carouselImage {
+      background-size: cover;
+      background-position: center;
+      width: 100%;
+      height: 400px;
+    }
+
+    .carouselControl {
+      width: $size-7;
+      height: auto;
+    }
+
+    .carouselCaption {
+      position: relative;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      color: $color-text;
+      text-align: left;
+      padding: $size-7;
+      background-color: $color-background-light;
+    }
+
+    // Overrides for Bootstrap Carousel
+    .carousel-inner {
+      border-radius: $border-radius-large;
+    }
+    .carousel-control-next,
+    .carousel-control-prev {
+      height: 400px;
+    }
   }
 
-  .carouselControl {
-    width: $size-7;
-    height: auto;
-  }
+  .projectLinks {
+    margin-top: $size-6;
 
-  .carouselCaption {
-    position: relative;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    color: $color-text;
-    text-align: left;
-    padding: $size-7;
-    background-color: $color-background-light;
-  }
+    .projectButton {
+      display: inline-block;
+      margin-right: $size-4;
+      padding: $size-2 $size-4;
+      border-radius: 30px;
+      background-color: $color-button;
+      color: $color-text-light;
+      @include button-text;
+      text-decoration: none;
+      height: $size-7; // Fixes text vertical alignment issue
 
-  // Overrides for Bootstrap Carousel
-  .carousel-inner {
-    border-radius: $border-radius-large;
-  }
-  .carousel-control-next,
-  .carousel-control-prev {
-    height: 400px;
+      &:hover {
+        background-color: $color-button-hover;
+      }
+    }
   }
 }
