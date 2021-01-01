@@ -20,12 +20,17 @@
     margin-top: $size-8;
 
     a {
+      display: inline-block;
       padding: 0 $size-4;
       height: fit-content;
       color: $color-icon;
+      transform: translateY(0);
+      transition: $transition-hover-up, color $transition-color;
 
       &:hover {
         color: $color-accent;
+        transform: translateY(-$size-1);
+        transition: $transition-hover-down, color $transition-color;
       }
 
       svg {

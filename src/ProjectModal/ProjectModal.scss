@@ -7,14 +7,14 @@
 
   &.show .modalDialog {
     transform: none !important;
-    transition: $transition-modal-out;
+    transition: $transition-modal-out !important;
   }
 
   .modalDialog {
     max-width: none !important;
     margin: 0 !important;
     transform: translate(0, 100vh) !important;
-    transition: $transition-modal-in;
+    transition: $transition-modal-in !important;
   }
 
   .modalContent {
@@ -47,6 +47,7 @@
       width: auto;
       height: $size-7;
       color: $color-button;
+      transition: color $transition-color;
     }
   }
 
@@ -93,6 +94,7 @@
     .carousel-control-next,
     .carousel-control-prev {
       height: 25rem;
+      transition: opacity $transition-color;
     }
   }
 
@@ -109,6 +111,7 @@
       @include button-text;
       text-decoration: none;
       height: $size-7; // Fixes text vertical alignment issue
+      transition: background-color $transition-color;
 
       &:hover {
         background-color: $color-button-hover;

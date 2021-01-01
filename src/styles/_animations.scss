@@ -7,10 +7,11 @@ $animation-duration-3: 0.6s;
 $animation-title: $animation-duration-3 titleEntrance ease-in;
 $animation-subTitle: $animation-duration-3 subtitleEntrance ease-in;
 
-$transition-tile-hover-up: transform $animation-duration-1 ease-in;
-$transition-tile-hover-down: transform $animation-duration-1 ease-out;
-$transition-modal-in: transform $animation-duration-2 ease-in !important;
-$transition-modal-out: transform $animation-duration-2 ease-out !important;
+$transition-hover-up: transform $animation-duration-1 ease-in;
+$transition-hover-down: transform $animation-duration-1 ease-out;
+$transition-modal-in: transform $animation-duration-2 ease-in;
+$transition-modal-out: transform $animation-duration-2 ease-out;
+$transition-color: $animation-duration-1 ease;
 
 @keyframes titleEntrance {
   0% {

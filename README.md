@@ -9,11 +9,10 @@ Code
 - [x] Create modals
 - [x] Animations (could use same as old website)
 - [x] Check responsive design at various breakpoints
+- [x] See if I can get the site https verified
 - [ ] Update logo 512 size
 - [ ] Figure out how to password protect certain pages for Intuit work
-- [ ] Check in various browsers
-- [ ] See if I can get the site https verified
-- [ ] Check to make sure this follows accessibility guidelines
+- [ ] Check to make sure this follows accessibility guidelines (https://www.a11yproject.com/checklist/)
 
 Design/Content
 
@@ -28,3 +27,4 @@ After inital publication
 
 - [ ] Confirm that favicon works on variety of websites (use https://realfavicongenerator.net/ to check)
 - [ ] Check on my phone
+- [ ] Check in various browsers (use work computer)

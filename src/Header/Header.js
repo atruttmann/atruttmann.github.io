@@ -8,7 +8,7 @@ import "./Header.scss";
 
 function Header() {
   return (
-    <div className="header">
+    <header className="header">
       <h1>Hi, I'm Alayna.</h1>
       <p className="body1">
         I'm passionate about the intersection of design and code! I'm currently
@@ -25,20 +25,20 @@ function Header() {
         embroider.
       </p>
       <div className="linkIcons">
-        <a href="https://www.linkedin.com/in/alaynatruttmann/" title="LinkedIn">
+        <a href="https://www.linkedin.com/in/alaynatruttmann/">
           <FaLinkedin />
         </a>
-        <a href="download/Resume-AlaynaTruttmann.pdf" title="Resume">
+        <a href="download/Resume-AlaynaTruttmann.pdf">
           <FaIdCard />
         </a>
-        <a href="mailto:amtruttmann@gmail.com" title="Email">
+        <a href="mailto:amtruttmann@gmail.com">
           <FaEnvelope />
         </a>
-        <a href="https://github.com/atruttmann" title="GitHub">
+        <a href="https://github.com/atruttmann">
           <FaGithubSquare />
         </a>
       </div>
-    </div>
+    </header>
   );
 }
 
