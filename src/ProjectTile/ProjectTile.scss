@@ -1,7 +1,7 @@
 @import "../styles/variables";
 
 .projectTile {
-  height: 300px;
+  height: 20rem;
   cursor: pointer;
   display: flex;
   flex-direction: column;
@@ -11,7 +11,7 @@
   transition: $transition-tile-hover-up;
 
   &:hover {
-    box-shadow: 0px $size-1 $size-2 2px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 $size-1 $size-2 2px rgba(0, 0, 0, 0.2);
     transform: translateY(-$size-2);
     transition: $transition-tile-hover-down;
   }

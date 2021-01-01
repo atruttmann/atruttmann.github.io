@@ -24,8 +24,8 @@ const ProjectTile = ({ project }) => {
           alt={`Cover for ${project.title}`}
         />
         <div className="projectLabel">
-          <h3>{project.title}</h3>
-          <p className="body3">{project.subTitle}</p>
+          <h2>{project.title}</h2>
+          <p className="body2">{project.subTitle}</p>
         </div>
       </div>
       <ProjectModal

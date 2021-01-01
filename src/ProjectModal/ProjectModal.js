@@ -25,7 +25,7 @@ const ProjectModal = ({ project, open, closeModal }) => {
 
         <div className="projectHeader">
           <h1>{project.title}</h1>
-          <h2>{project.subTitle}</h2>
+          <h3>{project.subTitle}</h3>
         </div>
         <Carousel
           indicators={false}

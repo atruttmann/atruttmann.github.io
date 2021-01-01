@@ -28,7 +28,7 @@
 }
 
 .projectContent {
-  max-width: 900px;
+  max-width: 60rem;
   margin: 0 auto;
 
   .closeButton {
@@ -45,7 +45,7 @@
 
     .closeIcon {
       width: auto;
-      height: $size-6;
+      height: $size-7;
       color: $color-button;
     }
   }
@@ -67,7 +67,7 @@
       background-size: cover;
       background-position: center;
       width: 100%;
-      height: 400px;
+      height: 25rem;
     }
 
     .carouselControl {
@@ -92,7 +92,7 @@
     }
     .carousel-control-next,
     .carousel-control-prev {
-      height: 400px;
+      height: 25rem;
     }
   }
 
@@ -103,7 +103,7 @@
       display: inline-block;
       margin-right: $size-4;
       padding: $size-2 $size-4;
-      border-radius: 30px;
+      border-radius: $size-7;
       background-color: $color-button;
       color: $color-text-light;
       @include button-text;

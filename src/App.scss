@@ -1,10 +1,21 @@
 @import "./styles/variables";
 
+html {
+  font-size: 12px;
+
+  @media screen and (min-width: $breakpoint-sm) {
+    font-size: 14px;
+  }
+  @media screen and (min-width: $breakpoint-lg) {
+    font-size: 16px;
+  }
+}
+
 body {
-  padding: 0;
   margin: 0;
   background-color: $color-background;
   color: $color-text;
+  line-height: normal;
 }
 
 h1 {
@@ -37,9 +48,6 @@ p {
   &.body2 {
     @include body-2;
   }
-  &.body3 {
-    @include body-3;
-  }
 }
 
 a {
@@ -50,12 +58,16 @@ a {
 }
 
 .app {
-  padding: $size-10 $size-9;
+  padding: $size-9 $size-8;
+
+  @media screen and (min-width: $breakpoint-md) {
+    padding: $size-10 $size-9;
+  }
 
   // Overrides for Bootstrap Container
   .appInner {
     padding: 0;
-    max-width: 1200px;
+    max-width: 75em;
 
     .projectColumn {
       padding: $size-4;

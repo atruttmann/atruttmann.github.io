@@ -16,7 +16,7 @@ function Header() {
         <a href="https://quickbooks.intuit.com/">Intuit</a> creating prototypes
         with React. Previously, I worked at at Microsoft and{" "}
         <a href="https://datachat.ai/">DataChat</a> as a front-end development
-        intern .
+        intern.
       </p>
       <p className="body1">
         I moved from Wisconsin to the Bay Area in 2018 after graduating from
@@ -28,7 +28,7 @@ function Header() {
         <a href="https://www.linkedin.com/in/alaynatruttmann/" title="LinkedIn">
           <FaLinkedin />
         </a>
-        <a href="downloads/Resume-AlaynaTruttmann.pdf" title="Resume">
+        <a href="download/Resume-AlaynaTruttmann.pdf" title="Resume">
           <FaIdCard />
         </a>
         <a href="mailto:amtruttmann@gmail.com" title="Email">
