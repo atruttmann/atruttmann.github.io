@@ -36,16 +36,18 @@ const ProjectModal = ({ project, open, closeModal }) => {
           className="projectCarousel"
         >
           {project.slides.map((slide, index) => (
-            <Carousel.Item key={slide.image} interval={null}>
+            <Carousel.Item key={index} interval={null}>
               <div
                 className="carouselImage"
                 style={{
-                  backgroundImage: `url(${imageSrcPrefix}${project.imageFolderName}/${slide.image})`,
+                  backgroundImage: `url(${imageSrcPrefix}${
+                    project.imageFolderName
+                  }/${index + 1}.png)`,
                 }}
                 alt={`${project.title} Slide ${index + 1}`}
               />
               <Carousel.Caption className="carouselCaption">
-                <p className="body2">{slide.content}</p>
+                <p className="body2">{slide}</p>
               </Carousel.Caption>
             </Carousel.Item>
           ))}

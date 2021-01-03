@@ -3,7 +3,7 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Header from "./Header/Header";
 import Project from "./ProjectTile/ProjectTile";
-import ProjectsList from "./ProjectsList";
+import ProjectsList from "./Projects/ProjectsList";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.scss";
 

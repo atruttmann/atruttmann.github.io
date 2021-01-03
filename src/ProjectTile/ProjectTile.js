@@ -19,7 +19,7 @@ const ProjectTile = ({ project }) => {
         <div
           className="projectImage"
           style={{
-            backgroundImage: `url(${imageSrcPrefix}${project.imageFolderName}/${project.slides[0].image})`,
+            backgroundImage: `url(${imageSrcPrefix}${project.imageFolderName}/1.png)`,
           }}
           alt={`Cover for ${project.title}`}
         />
