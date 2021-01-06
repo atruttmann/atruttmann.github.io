@@ -1,6 +1,7 @@
 const CalfTracker = {
   title: "Calf Tracker",
   subTitle: "Android App for Raising Calves",
+  passwordRequired: false,
   links: [
     {
       title: "Code",

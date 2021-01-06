@@ -9,9 +9,9 @@
   overflow: hidden;
   transform: translateY(0);
   transition: $transition-hover-up, box-shadow $animation-duration-1;
+  box-shadow: $tile-box-shadow;
 
   &:hover {
-    box-shadow: 0 $size-1 $size-2 2px rgba(0, 0, 0, 0.2);
     transform: translateY(-$size-2);
     transition: $transition-hover-down, box-shadow $animation-duration-1;
   }

@@ -1,6 +1,7 @@
 const Dixma = {
   title: "Dixma",
   subTitle: "Figma plugin for Dixit card game",
+  passwordRequired: false,
   links: [
     {
       title: "Figma Plugin",

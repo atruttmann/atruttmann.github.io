@@ -54,3 +54,8 @@ $font-text: "Merriweather", serif;
   @include body;
   font-size: 1rem;
 }
+
+@mixin body-3 {
+  @include body;
+  font-size: 0.75rem;
+}

@@ -11,8 +11,9 @@ Code
 - [x] Check responsive design at various breakpoints
 - [x] See if I can get the site https verified
 - [x] Update logo 512 size
-- [ ] Figure out how to password protect certain pages for Intuit work
+- [x] Figure out how to password protect certain pages for Intuit work
 - [ ] Check to make sure this follows accessibility guidelines (https://www.a11yproject.com/checklist/)
+- [ ] Keyboard shortcuts? At least to navigate slides (arrows) and close modal (esc)
 
 Design/Content
 

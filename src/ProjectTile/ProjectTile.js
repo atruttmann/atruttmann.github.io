@@ -4,7 +4,7 @@ import "./ProjectTile.scss";
 
 const imageSrcPrefix = `${process.env.PUBLIC_URL}images/`;
 
-const ProjectTile = ({ project }) => {
+const ProjectTile = ({ project, authenticated, authenticate = () => {} }) => {
   const [projectModalOpen, setProjectModalOpen] = useState(false);
 
   return (
@@ -32,6 +32,8 @@ const ProjectTile = ({ project }) => {
         project={project}
         open={projectModalOpen}
         closeModal={() => setProjectModalOpen(false)}
+        authenticated={authenticated}
+        authenticate={authenticate}
       />
     </>
   );

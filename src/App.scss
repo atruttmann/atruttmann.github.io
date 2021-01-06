@@ -22,35 +22,38 @@ body {
   }
 }
 
+h1,
+h2,
+h3,
+p {
+  padding: 0;
+  margin: 0;
+}
+
 h1 {
   @include heading-1;
   color: $color-accent;
-  padding: 0;
   margin: 0 0 $size-2 0;
 }
 
 h2 {
   @include heading-2;
-  padding: 0;
-  margin: 0;
 }
 
 h3 {
   @include heading-3;
-  padding: 0;
-  margin: 0;
 }
 
 p {
-  padding: 0;
-  margin: 0;
-
   &.body1 {
     @include body-1;
     margin-bottom: $size-3;
   }
   &.body2 {
     @include body-2;
+  }
+  &.body3 {
+    @include body-3;
   }
 }
 
