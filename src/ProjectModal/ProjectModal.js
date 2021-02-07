@@ -1,14 +1,7 @@
-import {
-  FaTimesCircle,
-  FaChevronCircleLeft,
-  FaChevronCircleRight,
-} from "react-icons/fa";
+import { FaTimesCircle } from "react-icons/fa";
 import Modal from "react-bootstrap/Modal";
-import Carousel from "react-bootstrap/Carousel";
 import PasswordProtector from "./PasswordProtector/PasswordProtector";
 import "./ProjectModal.scss";
-
-const imageSrcPrefix = `${process.env.PUBLIC_URL}images/`;
 
 const ProjectModal = ({
   project,
@@ -34,43 +27,37 @@ const ProjectModal = ({
           <h1>{project.title}</h1>
           <h3>{project.subTitle}</h3>
         </div>
-        <div className="projectLinks">
-          {project.links.map((link) => (
-            <a className="projectButton" href={link.url} key={link.title}>
-              {link.title}
-            </a>
-          ))}
-        </div>
         {project.passwordRequired && !authenticated ? (
           <PasswordProtector authenticate={authenticate} />
         ) : (
-          <Carousel
-            indicators={false}
-            interval={null}
-            wrap={false}
-            prevIcon={<FaChevronCircleLeft className="carouselControl" />}
-            nextIcon={<FaChevronCircleRight className="carouselControl" />}
-            className="projectCarousel"
-            keyboard={true}
-            id="customCarousel"
-          >
-            {project.slides.map((slide, index) => (
-              <Carousel.Item key={index} interval={null}>
-                <div
-                  className="carouselImage"
-                  style={{
-                    backgroundImage: `url(${imageSrcPrefix}${
-                      project.imageFolderName
-                    }/${index + 1}.png)`,
-                  }}
-                  alt={`${project.title} Slide ${index + 1}`}
-                />
-                <Carousel.Caption className="carouselCaption">
-                  <p className="body2">{slide}</p>
-                </Carousel.Caption>
-              </Carousel.Item>
-            ))}
-          </Carousel>
+          <>
+            <div className="tldr">
+              <h2 className="tldrTitle">TL;DR</h2>
+              {project.tldr.map((infoItem) => (
+                <p key={infoItem.title}>
+                  <b>{`${infoItem.title}: `}</b>
+                  {infoItem.content}
+                </p>
+              ))}
+              {project.links.length >= 1 && (
+                <p>
+                  <b>Links: </b>
+                  {project.links.map((link, index) => (
+                    <>
+                      <a href={link.url} key={link.title}>
+                        {link.title}
+                      </a>
+                      {index < project.links.length - 1 && " | "}
+                    </>
+                  ))}
+                </p>
+              )}
+            </div>
+
+            <hr className="contentDivider" />
+
+            {project.content}
+          </>
         )}
       </div>
     </Modal>

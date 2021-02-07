@@ -45,10 +45,9 @@ h3 {
 }
 
 p {
-  &.body1 {
-    @include body-1;
-    margin-bottom: $size-3;
-  }
+  @include body-1;
+  margin-bottom: $size-3;
+
   &.body2 {
     @include body-2;
   }
