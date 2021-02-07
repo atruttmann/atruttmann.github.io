@@ -17,14 +17,15 @@ Code
 
 Design/Content
 
-- [ ] Change slideshow to a one page format
-- [ ] Make a TLDR
+- [x] Change slideshow to a one page format
+- [x] Make a TLDR
+- [x] Redo intro content
+- [x] Need to move link buttons so they don't jump as slide content changes
+- [x] Consider adding a way to view images larger (similar to Confluence?)
 - [ ] Consider making a dark mode version
 - [ ] Determine projects to showcase and make content/images for each
-- [ ] Redo intro content
 - [ ] Upload updated resume
-- [x] Need to move link buttons so they don't jump as slide content changes
-- [ ] Consider adding a way to view images larger (similar to Confluence?)
+- [ ] Consider adding more videos
 
 After inital publication
 

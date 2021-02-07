@@ -6,6 +6,7 @@ $image-height: 26rem;
 .modalContainer {
   padding: 0 !important;
   overflow: hidden !important;
+  will-change: transform; // helps with performance for modals with videos
 
   &.show .modalDialog {
     transform: none !important;

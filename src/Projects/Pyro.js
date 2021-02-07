@@ -1,10 +1,11 @@
-const imgPrefix = `${process.env.PUBLIC_URL}images/Pyro/`;
+const imgFolder = "Pyro";
+const imgPrefix = `${process.env.PUBLIC_URL}images/${imgFolder}/`;
 
 const Pyro = {
   title: "Pyro",
   subTitle: "Prototyping tool for Intuit designers",
-  imageFolderName: "Pyro",
-  passwordRequired: false,
+  imageFolderName: imgFolder,
+  passwordRequired: true,
   links: [],
   tldr: [
     {
