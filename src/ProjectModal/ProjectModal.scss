@@ -55,13 +55,24 @@ $image-height: 26rem;
 
   .projectHeader {
     text-align: center;
-    margin-bottom: $size-9;
+    margin-bottom: $size-8;
 
     h1 {
       animation: $animation-title;
     }
     h2 {
       animation: $animation-subTitle;
+    }
+  }
+
+  .projectLinks {
+    margin-bottom: $size-7;
+    text-align: center;
+
+    .projectButton {
+      @include button-style;
+      display: inline-block;
+      margin-right: $size-4;
     }
   }
 
@@ -87,12 +98,12 @@ $image-height: 26rem;
       color: $color-text;
       text-align: left;
       padding: $size-7;
-      background-color: $color-background-light;
     }
 
     // Overrides for Bootstrap Carousel
     .carousel-inner {
       border-radius: $border-radius-large;
+      background-color: $color-background-light;
       box-shadow: $tile-box-shadow;
     }
     .carousel-control-next,
@@ -101,16 +112,6 @@ $image-height: 26rem;
       width: 8%;
       height: $image-height;
       transition: opacity $transition-color;
-    }
-  }
-
-  .projectLinks {
-    margin-top: $size-7;
-
-    .projectButton {
-      @include button-style;
-      display: inline-block;
-      margin-right: $size-4;
     }
   }
 }

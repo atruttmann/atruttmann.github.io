@@ -11,10 +11,9 @@ function Header() {
     <header className="header">
       <h1>Hi, I'm Alayna.</h1>
       <p className="body1">
-        I'm passionate about the intersection of design and code! I'm currently
-        a Design Technologist at{" "}
-        <a href="https://quickbooks.intuit.com/">Intuit</a> creating prototypes
-        with React. Previously, I worked at at Microsoft and{" "}
+        I'm currently a Design Technologist at Intuit creating prototypes for{" "}
+        <a href="https://quickbooks.intuit.com/">QuickBooks</a> with React.
+        Previously, I worked at at Microsoft and{" "}
         <a href="https://datachat.ai/">DataChat</a> as a front-end development
         intern.
       </p>

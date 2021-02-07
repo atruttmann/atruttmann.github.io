@@ -12,18 +12,18 @@ Code
 - [x] See if I can get the site https verified
 - [x] Update logo 512 size
 - [x] Figure out how to password protect certain pages for Intuit work
+- [x] Keyboard shortcuts? At least to navigate slides (arrows) and close modal (esc)
 - [ ] Check to make sure this follows accessibility guidelines (https://www.a11yproject.com/checklist/)
-- [ ] Keyboard shortcuts? At least to navigate slides (arrows) and close modal (esc)
 
 Design/Content
 
-- [x] Consider changing slideshow to a one page format (research best practices?)
-- [ ] Consider breaking sections into college/personal work and Intuit projects
+- [ ] Change slideshow to a one page format
+- [ ] Make a TLDR
 - [ ] Consider making a dark mode version
 - [ ] Determine projects to showcase and make content/images for each
 - [ ] Redo intro content
 - [ ] Upload updated resume
-- [ ] Need to move link buttons so they don't jump as slide content changes
+- [x] Need to move link buttons so they don't jump as slide content changes
 - [ ] Consider adding a way to view images larger (similar to Confluence?)
 
 After inital publication

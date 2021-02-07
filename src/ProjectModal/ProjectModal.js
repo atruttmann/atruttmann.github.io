@@ -1,4 +1,3 @@
-import React from "react";
 import {
   FaTimesCircle,
   FaChevronCircleLeft,
@@ -25,6 +24,7 @@ const ProjectModal = ({
       className="modalContainer"
       dialogClassName="modalDialog"
       contentClassName="modalContent"
+      keyboard={true}
     >
       <div className="projectContent">
         <button className="closeButton" onClick={closeModal}>
@@ -34,43 +34,43 @@ const ProjectModal = ({
           <h1>{project.title}</h1>
           <h3>{project.subTitle}</h3>
         </div>
+        <div className="projectLinks">
+          {project.links.map((link) => (
+            <a className="projectButton" href={link.url} key={link.title}>
+              {link.title}
+            </a>
+          ))}
+        </div>
         {project.passwordRequired && !authenticated ? (
           <PasswordProtector authenticate={authenticate} />
         ) : (
-          <>
-            <Carousel
-              indicators={false}
-              interval={null}
-              wrap={false}
-              prevIcon={<FaChevronCircleLeft className="carouselControl" />}
-              nextIcon={<FaChevronCircleRight className="carouselControl" />}
-              className="projectCarousel"
-            >
-              {project.slides.map((slide, index) => (
-                <Carousel.Item key={index} interval={null}>
-                  <div
-                    className="carouselImage"
-                    style={{
-                      backgroundImage: `url(${imageSrcPrefix}${
-                        project.imageFolderName
-                      }/${index + 1}.png)`,
-                    }}
-                    alt={`${project.title} Slide ${index + 1}`}
-                  />
-                  <Carousel.Caption className="carouselCaption">
-                    <p className="body2">{slide}</p>
-                  </Carousel.Caption>
-                </Carousel.Item>
-              ))}
-            </Carousel>
-            <div className="projectLinks">
-              {project.links.map((link) => (
-                <a className="projectButton" href={link.url} key={link.title}>
-                  {link.title}
-                </a>
-              ))}
-            </div>
-          </>
+          <Carousel
+            indicators={false}
+            interval={null}
+            wrap={false}
+            prevIcon={<FaChevronCircleLeft className="carouselControl" />}
+            nextIcon={<FaChevronCircleRight className="carouselControl" />}
+            className="projectCarousel"
+            keyboard={true}
+            id="customCarousel"
+          >
+            {project.slides.map((slide, index) => (
+              <Carousel.Item key={index} interval={null}>
+                <div
+                  className="carouselImage"
+                  style={{
+                    backgroundImage: `url(${imageSrcPrefix}${
+                      project.imageFolderName
+                    }/${index + 1}.png)`,
+                  }}
+                  alt={`${project.title} Slide ${index + 1}`}
+                />
+                <Carousel.Caption className="carouselCaption">
+                  <p className="body2">{slide}</p>
+                </Carousel.Caption>
+              </Carousel.Item>
+            ))}
+          </Carousel>
         )}
       </div>
     </Modal>
