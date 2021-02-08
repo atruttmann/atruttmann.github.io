@@ -31,9 +31,9 @@ const ProjectModal = ({
           <PasswordProtector authenticate={authenticate} />
         ) : (
           <>
-            <div className="tldr">
-              <h2 className="tldrTitle">TL;DR</h2>
-              {project.tldr.map((infoItem) => (
+            <div className="overview">
+              <h2 className="overviewTitle">Overview</h2>
+              {project.overview.map((infoItem) => (
                 <p key={infoItem.title}>
                   <b>{`${infoItem.title}: `}</b>
                   {infoItem.content}

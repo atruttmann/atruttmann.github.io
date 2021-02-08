@@ -20,7 +20,7 @@ const Dixma = {
       url: "https://github.com/brettlyne/dixma",
     },
   ],
-  tldr: [
+  overview: [
     {
       title: "Problem",
       content:

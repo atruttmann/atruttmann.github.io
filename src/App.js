@@ -8,7 +8,7 @@ import ProjectsList from "./Projects/ProjectsList";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.scss";
 
-const password = "Intuit_Work";
+const password = "IntuitWork";
 
 function App() {
   const [authenticated, setAuthenticated] = useState(false);
@@ -35,6 +35,17 @@ function App() {
           ))}
         </Row>
       </Container>
+      <div className="footer">
+        <p className="body2">
+          <i>
+            This website was designed and built by me! Check out the code on{" "}
+            <a href="https://github.com/atruttmann/atruttmann.github.io">
+              GitHub
+            </a>
+            .
+          </i>
+        </p>
+      </div>
     </div>
   );
 }

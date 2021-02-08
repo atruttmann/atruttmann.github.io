@@ -23,7 +23,7 @@ $font-text: "Merriweather", serif;
 
 @mixin heading-2 {
   @include heading;
-  font-size: 1.75rem;
+  font-size: 1.5rem;
 }
 
 @mixin heading-3 {
