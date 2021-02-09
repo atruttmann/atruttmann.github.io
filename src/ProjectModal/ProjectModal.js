@@ -1,3 +1,4 @@
+import React, { useEffect } from "react";
 import { FaTimesCircle } from "react-icons/fa";
 import Modal from "react-bootstrap/Modal";
 import PasswordProtector from "./PasswordProtector/PasswordProtector";
@@ -10,6 +11,22 @@ const ProjectModal = ({
   authenticated,
   authenticate = () => {},
 }) => {
+  /* 
+  Videos are set to not preload so the loading doesn't affect the CSS transitions
+  as the modal animates in. After the modal is done animating, load the videos so
+  they are ready to play. Use a CSS transition with opacity so it the unloaded video 
+  doesn't show, only the loaded video.
+  */
+  useEffect(() => {
+    setTimeout(() => {
+      const videos = document.getElementsByTagName("video");
+      Array.from(videos).forEach((video) => {
+        video.preload = "auto";
+        video.style.opacity = "1";
+      });
+    }, [600]); // Delay until modal transition has completed
+  }, [open, authenticated]);
+
   return (
     <Modal
       show={open}
@@ -43,12 +60,12 @@ const ProjectModal = ({
                 <p>
                   <b>Links: </b>
                   {project.links.map((link, index) => (
-                    <>
+                    <span key={link.title}>
                       <a href={link.url} key={link.title}>
                         {link.title}
                       </a>
                       {index < project.links.length - 1 && " | "}
-                    </>
+                    </span>
                   ))}
                 </p>
               )}

@@ -69,7 +69,7 @@ a {
   // Overrides for Bootstrap Container
   .appInner {
     padding: $size-9 $size-8;
-    min-height: calc(100vh - 3rem); // account for footer height
+    min-height: calc(100vh - 4rem); // account for footer height
 
     @media screen and (min-width: $breakpoint-md) {
       padding: $size-10 $size-9;
@@ -83,7 +83,7 @@ a {
 
   .footer {
     width: 100%;
-    height: 3rem;
+    height: 4rem;
     text-align: center;
     padding: 0 $size-8;
   }

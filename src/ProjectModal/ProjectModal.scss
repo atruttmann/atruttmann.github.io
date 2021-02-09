@@ -90,6 +90,8 @@ $image-height: 26rem;
 
   video {
     outline: none;
+    opacity: 0;
+    transition: $transition-video-load;
 
     &.withCaption {
       margin-bottom: $size-4;

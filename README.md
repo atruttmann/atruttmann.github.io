@@ -26,6 +26,7 @@ Design/Content
 - [ ] Determine projects to showcase and make content/images for each
 - [ ] Upload updated resume
 - [ ] Consider adding more videos
+- [ ] Write more about being a Design Technologist
 
 After inital publication
 

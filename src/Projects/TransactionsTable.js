@@ -35,12 +35,7 @@ const TransactionsTable = {
         prototype was built with React within my team's existing prototype
         framework.
       </p>
-      <video
-        className="withCaption"
-        controls
-        preload="none"
-        poster={`${imgPrefix}1.png`}
-      >
+      <video className="withCaption" controls preload="none">
         <source src={`${imgPrefix}Demo.mp4`} type="video/mp4" />
       </video>
       <p className="body2 caption">
