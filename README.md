@@ -13,6 +13,7 @@ Code
 - [x] Update logo 512 size
 - [x] Figure out how to password protect certain pages for Intuit work
 - [x] Keyboard shortcuts? At least to navigate slides (arrows) and close modal (esc)
+- [x] Better modal video loading
 - [ ] Check to make sure this follows accessibility guidelines (https://www.a11yproject.com/checklist/)
 
 Design/Content

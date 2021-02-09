@@ -86,16 +86,16 @@ $image-height: 26rem;
     border-radius: $border-radius-large;
     margin: $size-2 0 $size-9 0;
     box-shadow: $tile-box-shadow;
+
+    &.withCaption {
+      margin-bottom: $size-4;
+    }
   }
 
   video {
     outline: none;
     opacity: 0;
     transition: $transition-video-load;
-
-    &.withCaption {
-      margin-bottom: $size-4;
-    }
   }
 
   .caption {

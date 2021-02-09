@@ -97,7 +97,7 @@ const Pyro = {
         The majority of the issues from user testing were addressed and Pyro
         released to Intuit designers in November 2020. Our goal going forward is
         to continue to drive the adoption of Pyro across the Intuit design
-        communtiy. We will do this by hosting virtual demo events and supporting
+        community. We will do this by hosting virtual demo events and supporting
         our users by adding requested features.
       </p>
     </>

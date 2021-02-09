@@ -21,7 +21,7 @@ const TransactionsTable = {
     {
       title: "Role",
       content:
-        "I was the sole developer for this project and partnered with a product designer to create this protoype.",
+        "I was the sole developer for this project and partnered with a product designer to create this prototype.",
     },
     { title: "Dates", content: "April - June 2020" },
   ],
@@ -35,7 +35,7 @@ const TransactionsTable = {
         prototype was built with React within my team's existing prototype
         framework.
       </p>
-      <video className="withCaption" controls preload="none">
+      <video className="withCaption" controls muted preload="none">
         <source src={`${imgPrefix}Demo.mp4`} type="video/mp4" />
       </video>
       <p className="body2 caption">
