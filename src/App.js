@@ -28,7 +28,11 @@ function App() {
 
   return (
     <div className="app">
-      <button className="themeToggle" onClick={() => setDarkTheme(!darkTheme)}>
+      <button
+        className="themeToggle"
+        onClick={() => setDarkTheme(!darkTheme)}
+        aria-label="Change theme"
+      >
         {darkTheme ? <FaSun /> : <FaMoon />}
       </button>
       <Container fluid className="appInner">

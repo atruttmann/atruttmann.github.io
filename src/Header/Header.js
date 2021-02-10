@@ -24,16 +24,19 @@ function Header() {
         embroider.
       </p>
       <div className="linkIcons">
-        <a href="https://www.linkedin.com/in/alaynatruttmann/">
+        <a
+          href="https://www.linkedin.com/in/alaynatruttmann/"
+          aria-label="LinkedIn"
+        >
           <FaLinkedin />
         </a>
-        <a href="download/Resume-AlaynaTruttmann.pdf">
+        <a href="download/Resume-AlaynaTruttmann.pdf" aria-label="Resume">
           <FaIdCard />
         </a>
-        <a href="mailto:amtruttmann@gmail.com">
+        <a href="mailto:amtruttmann@gmail.com" aria-label="Email">
           <FaEnvelope />
         </a>
-        <a href="https://github.com/atruttmann">
+        <a href="https://github.com/atruttmann" aria-label="GitHub">
           <FaGithubSquare />
         </a>
       </div>

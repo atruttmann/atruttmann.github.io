@@ -37,7 +37,11 @@ const ProjectModal = ({
       keyboard={true}
     >
       <div className="projectContent">
-        <button className="closeButton" onClick={closeModal}>
+        <button
+          className="closeButton"
+          onClick={closeModal}
+          aria-label="Close modal"
+        >
           <FaTimesCircle className="closeIcon" />
         </button>
         <div className="projectHeader">
