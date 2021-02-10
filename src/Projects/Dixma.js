@@ -5,6 +5,7 @@ const Dixma = {
   title: "Dixma",
   subTitle: "Figma plugin for Dixit card game",
   imageFolderName: imgFolder,
+  coverImageName: "1",
   passwordRequired: false,
   links: [
     {

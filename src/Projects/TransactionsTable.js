@@ -5,6 +5,7 @@ const TransactionsTable = {
   title: "Transaction Categorization",
   subTitle: "Prototype testing with customer data",
   imageFolderName: imgFolder,
+  coverImageName: "1",
   passwordRequired: true,
   links: [],
   overview: [
@@ -39,7 +40,7 @@ const TransactionsTable = {
         <source src={`${imgPrefix}Demo.mp4`} type="video/mp4" />
       </video>
       <p className="body2 caption">
-        <i>This video shows the entire flow of the testing.</i>
+        This video shows the entire flow of the testing.
       </p>
 
       <p>

@@ -57,13 +57,11 @@ function App() {
       </Container>
       <div className="footer">
         <p className="body2">
-          <i>
-            This website was designed and built by me! Check out the code on{" "}
-            <a href="https://github.com/atruttmann/atruttmann.github.io">
-              GitHub
-            </a>
-            .
-          </i>
+          This website was designed and built by me! Check out the code on{" "}
+          <a href="https://github.com/atruttmann/atruttmann.github.io">
+            GitHub
+          </a>
+          .
         </p>
       </div>
     </div>

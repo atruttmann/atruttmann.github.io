@@ -14,7 +14,7 @@ Code
 - [x] Figure out how to password protect certain pages for Intuit work
 - [x] Keyboard shortcuts? At least to navigate slides (arrows) and close modal (esc)
 - [x] Better modal video loading
-- [ ] Check to make sure this follows accessibility guidelines (https://www.a11yproject.com/checklist/)
+- [x] Check to make sure this follows accessibility guidelines (https://www.a11yproject.com/checklist/)
 
 Design/Content
 
@@ -24,9 +24,8 @@ Design/Content
 - [x] Need to move link buttons so they don't jump as slide content changes
 - [x] Consider adding a way to view images larger (similar to Confluence?)
 - [x] Consider making a dark mode version
-- [ ] Determine projects to showcase and make content/images for each (TODO: SporcleBot, Dashboard?)
+- [x] Determine projects to showcase and make content/images for each
 - [ ] Upload updated resume
-- [ ] Consider adding more videos
 - [ ] Write more about being a Design Technologist
 
 After inital publication

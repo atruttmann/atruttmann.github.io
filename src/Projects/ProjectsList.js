@@ -5,6 +5,6 @@ import TransactionsTable from "./TransactionsTable";
 import SporcleBot from "./SporcleBot";
 import Pyro from "./Pyro";
 
-const ProjectsList = [Pyro, Dixma, IEPShell, TransactionsTable];
+const ProjectsList = [Pyro, Dixma, IEPShell, SporcleBot, TransactionsTable];
 
 export default ProjectsList;

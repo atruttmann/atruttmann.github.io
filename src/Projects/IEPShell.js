@@ -5,6 +5,7 @@ const IEPShell = {
   title: "Intuit Expert Portal",
   subTitle: "Proof of concept for design updates",
   imageFolderName: imgFolder,
+  coverImageName: "1",
   passwordRequired: true,
   links: [],
   overview: [
@@ -56,7 +57,7 @@ const IEPShell = {
         <source src={`${imgPrefix}Demo.mp4`} type="video/mp4" />
       </video>
       <p className="body2 caption">
-        <i>This video shows the entire flow of the prototype.</i>
+        This video shows the entire flow of the prototype.
       </p>
 
       <p>
@@ -72,10 +73,8 @@ const IEPShell = {
         alt="Milestone dropdown when header is not in overflow."
       />
       <p className="body2 caption">
-        <i>
-          Opening the milestone dropdown when the header is not in an overflow
-          state.
-        </i>
+        Opening the milestone dropdown when the header is not in an overflow
+        state.
       </p>
 
       <img
@@ -84,7 +83,7 @@ const IEPShell = {
         alt="Milestone dropdown when header is overflowing."
       />
       <p className="body2 caption">
-        <i>Accessing the milestone dropdown in an overflow state.</i>
+        Accessing the milestone dropdown in an overflow state.
       </p>
 
       <p>

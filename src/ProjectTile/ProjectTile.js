@@ -19,7 +19,7 @@ const ProjectTile = ({ project, authenticated, authenticate = () => {} }) => {
         <div
           className="projectImage"
           style={{
-            backgroundImage: `url(${imageSrcPrefix}${project.imageFolderName}/1.png)`,
+            backgroundImage: `url(${imageSrcPrefix}${project.imageFolderName}/${project.coverImageName}.png)`,
           }}
           alt={`Cover for ${project.title}`}
         />

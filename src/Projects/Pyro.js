@@ -5,6 +5,7 @@ const Pyro = {
   title: "Pyro",
   subTitle: "Prototyping tool for Intuit designers",
   imageFolderName: imgFolder,
+  coverImageName: "1",
   passwordRequired: true,
   links: [],
   overview: [
@@ -39,10 +40,8 @@ const Pyro = {
         <source src={`${imgPrefix}Demo.mp4`} type="video/mp4" />
       </video>
       <p className="body2 caption">
-        <i>
-          This is the demo video for the initial release of Pyro. Video editing
-          credits go to my awesome colleagues Heather & Lynda.
-        </i>
+        This is the demo video for the initial release of Pyro. Video editing
+        credits go to my awesome colleagues Heather & Lynda.
       </p>
 
       <p>
