@@ -1,4 +1,3 @@
-import CustomizableDashboard from "./CustomizableDashboard";
 import Dixma from "./Dixma";
 import IEPShell from "./IEPShell";
 import TransactionsTable from "./TransactionsTable";
