@@ -35,11 +35,11 @@ function App() {
       >
         {darkTheme ? <FaSun /> : <FaMoon />}
       </button>
-      <Container fluid className="appInner">
+      <Container className="appInner">
         <Row>
           <Header />
         </Row>
-        <Row xs={1} sm={1} md={2} lg={2} xl={3}>
+        <Row xs={1} sm={1} md={2} lg={2} xl={3} className="projectsRow">
           {ProjectsList.map((project) => (
             <Col className="projectColumn" key={project.title}>
               <Project

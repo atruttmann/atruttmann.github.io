@@ -84,6 +84,9 @@ a {
     }
     max-width: 80rem;
 
+    .projectsRow {
+      justify-content: center;
+    }
     .projectColumn {
       padding: $size-4;
     }
