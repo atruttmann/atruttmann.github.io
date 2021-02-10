@@ -23,9 +23,12 @@ $image-height: 26rem;
     height: 100vh;
     border: none;
     border-radius: 0;
-    background-color: $color-background;
     overflow: auto;
     padding: $size-10 $size-9;
+
+    @include themed() {
+      background-color: t($color-background);
+    }
   }
 }
 
@@ -34,23 +37,7 @@ $image-height: 26rem;
   margin: 0 auto;
 
   .closeButton {
-    position: absolute;
-    top: $size-4;
-    right: $size-4;
-    border: none;
-    outline: none;
-    padding: $size-2;
-
-    &:hover .closeIcon {
-      color: $color-button-hover;
-    }
-
-    .closeIcon {
-      width: auto;
-      height: $size-7;
-      color: $color-button;
-      transition: color $transition-color;
-    }
+    @include icon-button-style;
   }
 
   .projectHeader {
@@ -68,7 +55,9 @@ $image-height: 26rem;
   .overview {
     .overviewTitle {
       margin-bottom: $size-2;
-      color: $color-accent;
+      @include themed() {
+        color: t($color-accent);
+      }
     }
 
     p {
@@ -85,7 +74,7 @@ $image-height: 26rem;
     width: 100%;
     border-radius: $border-radius-large;
     margin: $size-2 0 $size-9 0;
-    box-shadow: $tile-box-shadow;
+    @include tile-box-shadow;
 
     &.withCaption {
       margin-bottom: $size-4;

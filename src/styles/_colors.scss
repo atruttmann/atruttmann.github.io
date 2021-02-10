@@ -1,9 +1,62 @@
-$color-accent: #006f79;
-$color-accent-light: #4fa9b0;
-$color-background: #eeeeee;
-$color-background-light: #fcfcfc;
-$color-text: #333333;
-$color-text-light: #ffffff;
-$color-icon: #808080;
-$color-button: #acacac;
-$color-button-hover: #808080;
+// Define variable names for easy use in other SCSS files
+$color-accent: "color-accent";
+$color-highlight: "color-highlight";
+$color-background: "color-background";
+$color-background-light: "color-background-light";
+$color-text: "color-text";
+$color-text-light: "color-text-light";
+$color-icon: "color-icon";
+$color-button: "color-button";
+$color-button-hover: "color-button-hover";
+$color-tile-shadow: "color-tile-shadow";
+
+$themes: (
+  light: (
+    color-accent: #006f79,
+    color-highlight: #4fa9b0,
+    color-background: #efefef,
+    color-background-light: #f7f7f7,
+    color-text: #333333,
+    color-text-light: #ffffff,
+    color-icon: #808080,
+    color-button: #acacac,
+    color-button-hover: #808080,
+    color-tile-shadow: rgba(0, 0, 0, 0.1),
+  ),
+  dark: (
+    color-accent: #378e98,
+    color-highlight: #00707a,
+    color-background: #191919,
+    color-background-light: #272727,
+    color-text: #cfcfcf,
+    color-text-light: #cfcfcf,
+    color-icon: #707070,
+    color-button: #525252,
+    color-button-hover: #676767,
+    color-tile-shadow: rgba(0, 0, 0, 0.4),
+  ),
+);
+
+// Reference for SCSS dark mode: https://medium.com/@katiemctigue/how-to-create-a-dark-mode-in-sass-609f131a3995
+@mixin themed() {
+  @each $theme, $map in $themes {
+    .theme-#{$theme} & {
+      $theme-map: () !global;
+      @each $key, $submap in $map {
+        $value: map-get(map-get($themes, $theme), "#{$key}");
+        $theme-map: map-merge(
+          $theme-map,
+          (
+            $key: $value,
+          )
+        ) !global;
+      }
+      @content;
+      $theme-map: null !global;
+    }
+  }
+}
+
+@function t($key) {
+  @return map-get($theme-map, $key);
+}

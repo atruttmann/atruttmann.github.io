@@ -2,7 +2,7 @@ const imgFolder = "TransactionsTable";
 const imgPrefix = `${process.env.PUBLIC_URL}images/${imgFolder}/`;
 
 const TransactionsTable = {
-  title: "Transaction Categorizing",
+  title: "Transaction Categorization",
   subTitle: "Prototype testing with customer data",
   imageFolderName: imgFolder,
   passwordRequired: true,

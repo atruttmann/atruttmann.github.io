@@ -52,7 +52,9 @@ const PasswordProtector = ({ authenticate = () => {} }) => {
           }
         >
           <FaExclamationCircle className="passwordWarning" />
-          <p className="body3">Whoops, looks like this password is invalid</p>
+          <p className="body3">
+            <i>Whoops, looks like this password is invalid</i>
+          </p>
         </div>
       </div>
     </div>

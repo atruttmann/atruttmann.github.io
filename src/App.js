@@ -1,7 +1,8 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
+import { FaSun, FaMoon } from "react-icons/fa";
 import Header from "./Header/Header";
 import Project from "./ProjectTile/ProjectTile";
 import ProjectsList from "./Projects/ProjectsList";
@@ -12,9 +13,24 @@ const password = "IntuitWork";
 
 function App() {
   const [authenticated, setAuthenticated] = useState(false);
+  const [darkTheme, setDarkTheme] = useState(false);
+
+  useEffect(() => {
+    // Have to append to body so that modal can get theme styles
+    if (darkTheme) {
+      document.body.classList.add("theme-dark");
+      document.body.classList.remove("theme-light");
+    } else {
+      document.body.classList.add("theme-light");
+      document.body.classList.remove("theme-dark");
+    }
+  }, [darkTheme]);
 
   return (
     <div className="app">
+      <button className="themeToggle" onClick={() => setDarkTheme(!darkTheme)}>
+        {darkTheme ? <FaSun /> : <FaMoon />}
+      </button>
       <Container fluid className="appInner">
         <Row>
           <Header />

@@ -11,17 +11,6 @@ html {
   }
 }
 
-body {
-  margin: 0;
-  background-color: $color-background;
-  color: $color-text;
-  line-height: normal;
-  ::selection {
-    color: white;
-    background: $color-accent-light;
-  }
-}
-
 h1,
 h2,
 h3,
@@ -32,7 +21,9 @@ p {
 
 h1 {
   @include heading-1;
-  color: $color-accent;
+  @include themed() {
+    color: t($color-accent);
+  }
   margin: 0 0 $size-2 0;
 }
 
@@ -59,13 +50,30 @@ p {
 }
 
 a {
-  color: $color-accent;
-  &:hover {
-    color: $color-text;
+  @include themed() {
+    color: t($color-accent);
+  }
+}
+
+.app,
+.modalContainer {
+  transition: $transition-background-color, color $transition-color;
+  @include themed() {
+    background-color: t($color-background);
+    color: t($color-text);
+  }
+  ::selection {
+    @include themed() {
+      color: t($color-text-light);
+      background: t($color-highlight);
+    }
   }
 }
 
 .app {
+  .themeToggle {
+    @include icon-button-style;
+  }
   // Overrides for Bootstrap Container
   .appInner {
     padding: $size-9 $size-8;

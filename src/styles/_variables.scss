@@ -5,21 +5,55 @@
 @import "sizes";
 @import "typography";
 
-$tile-box-shadow: 0 $size-1 $size-2 2px rgba(0, 0, 0, 0.1);
+@mixin tile-box-shadow {
+  @include themed() {
+    box-shadow: 0 $size-1 $size-2 2px t($color-tile-shadow);
+  }
+}
 
 @mixin button-style {
   @include button-text;
   padding: $size-2 $size-4;
   border-radius: $size-7;
-  background-color: $color-button;
-  color: $color-text-light;
   transition: background-color $transition-color;
   height: $size-7; // Fixes text vertical alignment issue
   border: none;
   outline: none;
   text-decoration: none;
 
+  @include themed() {
+    background-color: t($color-button);
+    color: t($color-text-light);
+  }
+
   &:hover {
-    background-color: $color-button-hover;
+    @include themed() {
+      background-color: t($color-button-hover);
+    }
+  }
+}
+
+@mixin icon-button-style {
+  position: fixed;
+  top: $size-4;
+  right: $size-4;
+  border: none;
+  outline: none;
+  padding: $size-2;
+  background-color: transparent;
+
+  &:hover svg {
+    @include themed() {
+      color: t($color-button-hover);
+    }
+  }
+
+  svg {
+    width: auto;
+    height: $size-7;
+    transition: color $transition-color;
+    @include themed() {
+      color: t($color-button);
+    }
   }
 }

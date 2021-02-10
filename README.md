@@ -23,8 +23,8 @@ Design/Content
 - [x] Redo intro content
 - [x] Need to move link buttons so they don't jump as slide content changes
 - [x] Consider adding a way to view images larger (similar to Confluence?)
-- [ ] Consider making a dark mode version
-- [ ] Determine projects to showcase and make content/images for each
+- [x] Consider making a dark mode version
+- [ ] Determine projects to showcase and make content/images for each (TODO: SporcleBot, Dashboard?)
 - [ ] Upload updated resume
 - [ ] Consider adding more videos
 - [ ] Write more about being a Design Technologist
