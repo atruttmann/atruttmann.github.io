@@ -24,7 +24,7 @@ $image-height: 26rem;
     border: none;
     border-radius: 0;
     overflow: auto;
-    padding: $size-10 $size-9;
+    padding: $size-10 $size-6;
 
     @include themed() {
       background-color: t($color-background);
