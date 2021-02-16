@@ -12,10 +12,10 @@ function Header() {
       <h1>Hi, I'm Alayna.</h1>
       <p>
         I'm currently a Design Technologist at Intuit creating prototypes for{" "}
-        <a href="https://quickbooks.intuit.com/">QuickBooks</a> with React.
-        Previously, I worked at at Microsoft and{" "}
-        <a href="https://datachat.ai/">DataChat</a> as a front-end development
-        intern.
+        <a href="https://quickbooks.intuit.com/">QuickBooks</a> with React. I
+        work closely with designers to polish interaction and animation details
+        to deliver pixel-perfect prototypes. I also create internal tools for
+        Intuit designers that accelerate the design and prototyping process.
       </p>
       <p>
         I moved from Wisconsin to the Bay Area in 2018 after graduating from
@@ -30,7 +30,7 @@ function Header() {
         >
           <FaLinkedin />
         </a>
-        <a href="download/Resume-AlaynaTruttmann.pdf" aria-label="Resume">
+        <a href="download/Resume-Alayna-Truttmann.pdf" aria-label="Resume">
           <FaIdCard />
         </a>
         <a href="mailto:amtruttmann@gmail.com" aria-label="Email">
