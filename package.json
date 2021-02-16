@@ -1,5 +1,6 @@
 {
   "name": "alayna-portfolio",
+  "homepage": "https://alaynatruttmann.com",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
