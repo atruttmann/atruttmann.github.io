@@ -13,7 +13,7 @@ $transition-modal-in: transform $animation-duration-2 ease-in;
 $transition-modal-out: transform $animation-duration-2 ease-out;
 $transition-color: $animation-duration-1 ease;
 $transition-background-color: background-color $animation-duration-2 ease;
-$transition-video-load: opacity $animation-duration-2 ease $animation-duration-2;
+$transition-video-load: opacity $animation-duration-2 ease;
 
 @keyframes titleEntrance {
   0% {
