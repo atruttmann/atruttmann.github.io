@@ -15,5 +15,3 @@ Publishes the build folder to the `gh-pages` branch.
 ## TODO
 
 - [ ] Confirm that favicon works on variety of websites (use https://realfavicongenerator.net/ to check)
-- [ ] Check on my phone
-- [ ] Check in various browsers

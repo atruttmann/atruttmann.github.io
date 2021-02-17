@@ -1,19 +1,10 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState } from "react";
 import { FaLock, FaExclamationCircle } from "react-icons/fa";
 import "./PasswordProtector.scss";
 
 const PasswordProtector = ({ authenticate = () => {} }) => {
   const [userInput, setUserInput] = useState("");
   const [showError, setShowError] = useState(false);
-  const passwordInputRef = useRef();
-
-  useEffect(() => {
-    /* Modal takes 0.4s to mount, and behaves weirdly if you don't wait to move the focus
-     Probably something to do with its autofocus property */
-    setTimeout(() => {
-      if (passwordInputRef.current) passwordInputRef.current.focus();
-    }, 400);
-  }, []);
 
   return (
     <div className="passwordContainer">
@@ -34,7 +25,7 @@ const PasswordProtector = ({ authenticate = () => {} }) => {
           }}
         >
           <input
-            ref={passwordInputRef}
+            id="passwordInput"
             value={userInput}
             type="password"
             placeholder="Password"

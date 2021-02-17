@@ -35,12 +35,17 @@
 
 @mixin icon-button-style {
   position: fixed;
-  top: $size-4;
-  right: $size-4;
+  top: $size-6;
+  right: $size-6;
   border: none;
   outline: none;
   padding: $size-2;
-  background-color: transparent;
+  z-index: 1;
+  border-radius: 100%;
+
+  @include themed() {
+    background-color: t($color-background);
+  }
 
   &:hover svg {
     @include themed() {

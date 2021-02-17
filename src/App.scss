@@ -2,6 +2,8 @@
 
 html {
   font-size: 12px;
+  overflow: hidden;
+  height: 100vh;
 
   @media screen and (min-width: $breakpoint-sm) {
     font-size: 14px;
@@ -55,7 +57,12 @@ a {
   }
 }
 
-.app,
+.app {
+  overflow: hidden;
+  height: 100vh;
+}
+
+.appContainer,
 .modalContainer {
   transition: $transition-background-color, color $transition-color;
   @include themed() {
@@ -70,12 +77,15 @@ a {
   }
 }
 
-.app {
+.appContainer {
+  overflow: auto;
+  height: 100%;
+
   .themeToggle {
     @include icon-button-style;
   }
   // Overrides for Bootstrap Container
-  .appInner {
+  .projectsGrid {
     padding: $size-9 $size-8;
     min-height: calc(100vh - 4rem); // account for footer height
 
