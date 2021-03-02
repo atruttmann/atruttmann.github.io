@@ -12,7 +12,7 @@ $font-text: "Merriweather", serif;
 
 @mixin heading-1 {
   @include heading;
-  font-size: 4em;
+  font-size: 4rem;
   text-transform: uppercase;
   letter-spacing: 3px;
 
