@@ -123,9 +123,9 @@ const SporcleBot = {
       />
 
       <p>
-        This bot was created primarily with Javascript and developed over the
+        This bot was created primarily with JavaScript and developed over the
         course of four days. It was really fun for me to learn how to use the
-        Slack API and practice my asynchronous Javascript skills.
+        Slack API and practice my asynchronous JavaScript skills.
       </p>
     </>
   ),
