@@ -1,6 +1,6 @@
 # https://alaynatruttmann.com/
 
-This is my project website, created with React.
+This is my portfolio website, created with React and SCSS.
 
 ## Scripts
 
