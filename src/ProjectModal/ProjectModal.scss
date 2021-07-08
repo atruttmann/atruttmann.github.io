@@ -47,7 +47,8 @@
 
     .overview {
       .overviewTitle {
-        margin-bottom: $size-2;
+        margin-bottom: $size-5;
+        text-transform: uppercase;
         @include themed() {
           color: t($color-accent);
         }
