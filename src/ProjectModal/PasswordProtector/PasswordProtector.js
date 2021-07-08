@@ -25,6 +25,11 @@ const PasswordProtector = ({ authenticate = () => {} }) => {
           }}
         >
           <input
+            type="text"
+            autoComplete="username"
+            style={{ display: "none" }}
+          />
+          <input
             id="passwordInput"
             value={userInput}
             type="password"
@@ -33,6 +38,7 @@ const PasswordProtector = ({ authenticate = () => {} }) => {
             className="passwordInput"
             onChange={(e) => setUserInput(e.target.value)}
             name="password"
+            autoComplete="current-password"
           />
           <input type="submit" value="Log in" className="passwordButton" />
         </form>
