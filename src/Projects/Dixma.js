@@ -1,12 +1,21 @@
+import getImgPrefix from "../util/getImgPrefix";
+
 const imgFolder = "Dixma";
-const imgPrefix = `${process.env.PUBLIC_URL}images/${imgFolder}/`;
+const imgPrefix = getImgPrefix(imgFolder);
 
 const Dixma = {
   title: "Dixma",
   subTitle: "Figma plugin for Dixit card game",
-  imageFolderName: imgFolder,
-  coverImageName: "1",
+  coverImageSrc: `${imgPrefix}/1.png`,
+  coverPosition: "center",
   passwordRequired: false,
+  overview: {
+    problem:
+      "The Design Technology team is in need of a way to connect virtually while working from home. We've found that playing games together is a great way to relax and build team spirit.",
+    goal: "Create a Figma plugin that allows us to play the board game Dixit.",
+    role: "I worked on a team of four Design Technologists. My primary contribution was writing the plugin code that dealt cards to players and moved submitted cards to the main game board.",
+    dates: "August 2020",
+  },
   links: [
     {
       title: "Figma Plugin",
@@ -20,24 +29,6 @@ const Dixma = {
       title: "Code",
       url: "https://github.com/brettlyne/dixma",
     },
-  ],
-  overview: [
-    {
-      title: "Problem",
-      content:
-        "The Design Technology team is in need of a way to connect virtually while working from home. We've found that playing games together is a great way to relax and build team spirit.",
-    },
-    {
-      title: "Goal",
-      content:
-        "Create a Figma plugin that allows us to play the board game Dixit.",
-    },
-    {
-      title: "Role",
-      content:
-        "I worked on a team of four Design Technologists. My primary contribution was writing the plugin code that dealt cards to players and moved submitted cards to the main game board.",
-    },
-    { title: "Dates", content: "August 2020" },
   ],
   content: (
     <>

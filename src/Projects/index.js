@@ -4,8 +4,10 @@ import TransactionsTable from "./TransactionsTable";
 import SporcleBot from "./SporcleBot";
 import Pyro from "./Pyro";
 import Toolkit from "./Toolkit";
+import VideoGameOlympics from "./VideoGameOlympics";
 
 const ProjectsList = [
+  VideoGameOlympics,
   Toolkit,
   Pyro,
   Dixma,

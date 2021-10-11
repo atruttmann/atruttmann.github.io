@@ -1,31 +1,22 @@
+import getImgPrefix from "../util/getImgPrefix";
+
 const imgFolder = "TransactionsTable";
-const imgPrefix = `${process.env.PUBLIC_URL}images/${imgFolder}/`;
+const imgPrefix = getImgPrefix(imgFolder);
 
 const TransactionsTable = {
   title: "Transaction Categorization",
   subTitle: "Prototype testing with customer data",
-  imageFolderName: imgFolder,
-  coverImageName: "1",
+  coverImageSrc: `${imgPrefix}/1.png`,
+  coverPosition: "top left",
   passwordRequired: true,
+  overview: {
+    problem:
+      "This prototype addresses two QuickBooks customer needs. Customers need onboarding to show them how to automate categorizing their transactions. Customers also need to see all their transactions in one table to get insights into the health of their small business.",
+    goal: "Create a React prototype for customer testing that leverages their own transaction data to create a more realistic experience.",
+    role: "I was the sole developer for this project and partnered with a product designer to create this prototype.",
+    dates: "April - June 2020",
+  },
   links: [],
-  overview: [
-    {
-      title: "Problem",
-      content:
-        "This prototype addresses two QuickBooks customer needs. Customers need onboarding to show them how to automate categorizing their transactions. Customers also need to see all their transactions in one table to get insights into the health of their small business.",
-    },
-    {
-      title: "Goal",
-      content:
-        "Create a React prototype for customer testing that leverages their own transaction data to create a more realistic experience.",
-    },
-    {
-      title: "Role",
-      content:
-        "I was the sole developer for this project and partnered with a product designer to create this prototype.",
-    },
-    { title: "Dates", content: "April - June 2020" },
-  ],
   content: (
     <>
       <p>

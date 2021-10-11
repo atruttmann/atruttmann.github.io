@@ -1,31 +1,22 @@
+import getImgPrefix from "../util/getImgPrefix";
+
 const imgFolder = "Pyro";
-const imgPrefix = `${process.env.PUBLIC_URL}images/${imgFolder}/`;
+const imgPrefix = getImgPrefix(imgFolder);
 
 const Pyro = {
   title: "Pyro",
   subTitle: "Prototyping tool for Intuit designers",
-  imageFolderName: imgFolder,
-  coverImageName: "1",
+  coverImageSrc: `${imgPrefix}/1.png`,
+  coverPosition: "center",
   passwordRequired: true,
+  overview: {
+    problem:
+      "Intuit designers need a way to quickly create high-fidelity prototypes with interactive components and real user data.",
+    goal: "Develop an intuitive drag-and-drop interface that leverages Intuit Design System components and supports custom data and logic.",
+    role: "I worked on a small team of five Design Technologists. I wore many hats including developing the product, designing new features, leading user testing sessions, and prioritizing our Jira board.",
+    dates: "February 2020 - Present",
+  },
   links: [],
-  overview: [
-    {
-      title: "Problem",
-      content:
-        "Intuit designers need a way to quickly create high-fidelity prototypes with interactive components and real user data.",
-    },
-    {
-      title: "Goal",
-      content:
-        "Develop an intuitive drag-and-drop interface that leverages Intuit Design System components and supports custom data and logic.",
-    },
-    {
-      title: "Role",
-      content:
-        "I worked on a small team of five Design Technologists. I wore many hats including developing the product, designing new features, leading user testing sessions, and prioritizing our Jira board.",
-    },
-    { title: "Dates", content: "February 2020 - Present" },
-  ],
   content: (
     <>
       <p>

@@ -1,7 +1,5 @@
 import "./ProjectTile.scss";
 
-const imageSrcPrefix = `${process.env.PUBLIC_URL}images/`;
-
 const ProjectTile = ({
   project,
   setSelectedProject = () => {},
@@ -19,7 +17,8 @@ const ProjectTile = ({
       <div
         className="projectImage"
         style={{
-          backgroundImage: `url(${imageSrcPrefix}${project.imageFolderName}/${project.coverImageName}.png)`,
+          backgroundImage: `url(${project.coverImageSrc})`,
+          backgroundPosition: project.coverPosition ?? "center",
         }}
         alt={`Cover for ${project.title}`}
       />

@@ -63,13 +63,13 @@ const ProjectModal = ({
             <>
               <div className="overview">
                 <h2 className="overviewTitle">Overview</h2>
-                {project.overview.map((infoItem) => (
-                  <p key={infoItem.title}>
-                    <b>{`${infoItem.title}: `}</b>
-                    {infoItem.content}
+                {Object.keys(project.overview).map((infoItem) => (
+                  <p key={infoItem}>
+                    <b>{`${infoItem}: `}</b>
+                    {project.overview[infoItem]}
                   </p>
                 ))}
-                {project.links.length >= 1 && (
+                {project.links && project.links.length >= 1 && (
                   <p>
                     <b>Links: </b>
                     {project.links.map((link, index) => (

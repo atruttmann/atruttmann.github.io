@@ -1,31 +1,22 @@
+import getImgPrefix from "../util/getImgPrefix";
+
 const imgFolder = "IEPShell";
-const imgPrefix = `${process.env.PUBLIC_URL}images/${imgFolder}/`;
+const imgPrefix = getImgPrefix(imgFolder);
 
 const IEPShell = {
   title: "Intuit Expert Portal",
   subTitle: "Proof of concept for design updates",
-  imageFolderName: imgFolder,
-  coverImageName: "1",
+  coverImageSrc: `${imgPrefix}/1.png`,
+  coverPosition: "top left",
   passwordRequired: true,
+  overview: {
+    problem:
+      "The portal Intuit customer service agents use needed updates to better align with the Intuit Design System and make usability improvements.",
+    goal: "Create a React prototype with these design updates to be passed off to production engineers.",
+    role: "I was the sole developer for this project and partnered with a product design team to create this protoype.",
+    dates: "November - December 2020",
+  },
   links: [],
-  overview: [
-    {
-      title: "Problem",
-      content:
-        "The portal Intuit customer service agents use needed updates to better align with the Intuit Design System and make usability improvements.",
-    },
-    {
-      title: "Goal",
-      content:
-        "Create a React prototype with these design updates to be passed off to production engineers.",
-    },
-    {
-      title: "Role",
-      content:
-        "I was the sole developer for this project and partnered with a product design team to create this protoype.",
-    },
-    { title: "Dates", content: "November - December 2020" },
-  ],
   content: (
     <>
       <p>

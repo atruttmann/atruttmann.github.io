@@ -1,35 +1,26 @@
+import getImgPrefix from "../util/getImgPrefix";
+
 const imgFolder = "Toolkit";
-const imgPrefix = `${process.env.PUBLIC_URL}images/${imgFolder}/`;
+const imgPrefix = getImgPrefix(imgFolder);
 
 const Toolkit = {
   title: "QB Designer Toolkit",
   subTitle: "Figma plugin for Intuit designers",
-  imageFolderName: imgFolder,
-  coverImageName: "Cover",
+  coverImageSrc: `${imgPrefix}/Cover.png`,
+  coverPosition: "center",
   passwordRequired: true,
+  overview: {
+    problem:
+      "How can we leverage Figma plugins to improve Intuit designers' workflows?",
+    goal: "Create a Figma plugin that empowers designers to easily add motion, content, and theming to their work.",
+    role: "I designed and developed the dark mode converter, and worked with other Design Technologists to release the full plugin.",
+    dates: "February - April 2021",
+  },
   links: [
     {
       title: "QuickBooks Dark Mode Documentation",
       url: "https://designsystem.quickbooks.com/bolt/dark-mode/",
     },
-  ],
-  overview: [
-    {
-      title: "Problem",
-      content:
-        "How can we leverage Figma plugins to improve Intuit designers' workflows?",
-    },
-    {
-      title: "Goal",
-      content:
-        "Create a Figma plugin that empowers designers to easily add motion, content, and theming to their work.",
-    },
-    {
-      title: "Role",
-      content:
-        "I designed and developed the dark mode converter, and worked with other Design Technologists to release the full plugin.",
-    },
-    { title: "Dates", content: "February - April 2021" },
   ],
   content: (
     <>

@@ -5,7 +5,7 @@ import Col from "react-bootstrap/Col";
 import { FaSun, FaMoon } from "react-icons/fa";
 import Header from "./Header/Header";
 import ProjectTile from "./ProjectTile/ProjectTile";
-import ProjectsList from "./Projects/ProjectsList";
+import ProjectsList from "./Projects";
 import ProjectModal from "./ProjectModal/ProjectModal";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.scss";

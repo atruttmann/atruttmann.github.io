@@ -1,31 +1,22 @@
+import getImgPrefix from "../util/getImgPrefix";
+
 const imgFolder = "SporcleBot";
-const imgPrefix = `${process.env.PUBLIC_URL}images/${imgFolder}/`;
+const imgPrefix = getImgPrefix(imgFolder);
 
 const SporcleBot = {
   title: "SporcleBot",
   subTitle: "Building a Slack Bot",
-  imageFolderName: imgFolder,
-  coverImageName: "Cover",
+  coverImageSrc: `${imgPrefix}/Cover.png`,
+  coverPosition: "center",
   passwordRequired: false,
+  overview: {
+    problem:
+      "While we've been working remotely, my team has participated in a Sporcle challenge daily. We wanted to automate scoring the leaderboard and notifying the winner to pick the following day's quiz.",
+    goal: "Develop a Slackbot that can parse our score messages and generate a leaderboard.",
+    role: "I worked with a team of three Design Technologists. My area of focus was sending messages to our image recognition service and parsing messages to create the leaderboard.",
+    dates: "February 2021",
+  },
   links: [],
-  overview: [
-    {
-      title: "Problem",
-      content:
-        "While we've been working remotely, my team has participated in a Sporcle challenge daily. We wanted to automate scoring the leaderboard and notifying the winner to pick the following day's quiz.",
-    },
-    {
-      title: "Goal",
-      content:
-        "Develop a Slackbot that can parse our score messages and generate a leaderboard.",
-    },
-    {
-      title: "Role",
-      content:
-        "I worked with a team of three Design Technologists. My area of focus was sending messages to our image recognition service and parsing messages to create the leaderboard.",
-    },
-    { title: "Dates", content: "February 2021" },
-  ],
   content: (
     <>
       <p>
