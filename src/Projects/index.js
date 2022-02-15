@@ -7,13 +7,13 @@ import Toolkit from "./Toolkit";
 import VideoGameOlympics from "./VideoGameOlympics";
 
 const ProjectsList = [
-  VideoGameOlympics,
   Toolkit,
-  Pyro,
-  Dixma,
   IEPShell,
-  SporcleBot,
+  Pyro,
+  VideoGameOlympics,
+  Dixma,
   TransactionsTable,
+  SporcleBot,
 ];
 
 export default ProjectsList;

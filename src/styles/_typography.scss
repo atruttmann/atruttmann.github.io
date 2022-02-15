@@ -23,13 +23,19 @@ $font-text: "Merriweather", serif;
 
 @mixin heading-2 {
   @include heading;
-  font-size: 1.5rem;
+  font-size: 1.75rem;
 }
 
 @mixin heading-3 {
   @include heading;
   font-weight: 500;
   font-size: 1.5rem;
+}
+
+@mixin heading-4 {
+  font-family: $font-text;
+  font-weight: 700;
+  font-size: 1.25rem;
 }
 
 // Button

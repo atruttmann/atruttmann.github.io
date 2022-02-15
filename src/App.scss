@@ -16,6 +16,7 @@ html {
 h1,
 h2,
 h3,
+h4,
 p {
   padding: 0;
   margin: 0;
@@ -37,9 +38,14 @@ h3 {
   @include heading-3;
 }
 
+h4 {
+  @include heading-4;
+  margin: $size-2 0 $size-3 0;
+}
+
 p {
   @include body-1;
-  margin-bottom: $size-3;
+  margin-bottom: $size-5;
 
   &.body2 {
     @include body-2;

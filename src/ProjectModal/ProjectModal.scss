@@ -48,15 +48,19 @@
       }
     }
 
-    .overview {
-      .overviewTitle {
-        margin-bottom: $size-5;
-        text-transform: uppercase;
-        @include themed() {
-          color: t($color-accent);
-        }
+    .sectionTitle {
+      margin-bottom: $size-5;
+      text-transform: uppercase;
+      @include themed() {
+        color: t($color-accent);
       }
+    }
+    .sectionTitle,
+    h4 {
+      align-self: flex-start;
+    }
 
+    .overview {
       p {
         margin-bottom: $size-5;
         b {

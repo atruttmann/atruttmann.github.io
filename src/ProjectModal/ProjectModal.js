@@ -62,7 +62,7 @@ const ProjectModal = ({
           ) : (
             <>
               <div className="overview">
-                <h2 className="overviewTitle">Overview</h2>
+                <h2 className="sectionTitle">Overview</h2>
                 {Object.keys(project.overview).map((infoItem) => (
                   <p key={infoItem}>
                     <b>{`${infoItem}: `}</b>
