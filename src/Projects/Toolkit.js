@@ -115,7 +115,7 @@ const Toolkit = {
         I needed this information to make data-driven decisions about the future
         of the plugin.
       </p>
-      <h4>Opportunity #3: Add a feature our users asked for</h4>
+      <h4>Opportunity #3: Add a requested feature</h4>
       <p>
         Currently, the most used feature within the plugin is the content
         generator. My team did user research to get feedback on this feature and
@@ -141,6 +141,14 @@ const Toolkit = {
       />
       <p className="body2 caption">
         Selection of redesigned screens before (left) and after (right)
+      </p>
+      <img
+        src={`${imgPrefix}/Cover.png`}
+        alt="Cover art"
+        className="withCaption"
+      />
+      <p className="body2 caption">
+        Redesigned cover art for installation page
       </p>
       <p>
         My next step was to add analytics. I chose to use{" "}
