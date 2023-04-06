@@ -11,11 +11,10 @@ function Header() {
     <header className="header">
       <h1>Hi, I'm Alayna.</h1>
       <p>
-        I'm currently a Senior Design Technologist at Intuit creating prototypes for{" "}
-        <a href="https://quickbooks.intuit.com/">QuickBooks</a> with React. I
-        work closely with designers to polish interaction and animation details
-        to deliver pixel-perfect prototypes. I also create internal tools for
-        Intuit designers that accelerate the design and prototyping process.
+        I'm passionate about using my coding skills and eye for design to create
+        great user experiences. I'm currently a UX Engineer at Roku designing
+        and building internal tools that accelerate designers' workflows. I also
+        prototype TV experiences for user testing.
       </p>
       <p>
         I moved from Wisconsin to the Bay Area in 2018 after graduating from
