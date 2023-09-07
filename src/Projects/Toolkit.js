@@ -16,12 +16,6 @@ const Toolkit = {
     role: "I am the lead for this tool. I maintain the design and code of this plugin and promote it to our users.",
     dates: "February 2021 - present",
   },
-  links: [
-    {
-      title: "QuickBooks Dark Mode Documentation",
-      url: "https://designsystem.quickbooks.com/bolt/dark-mode/",
-    },
-  ],
   content: (
     <>
       <h2 class="sectionTitle">Version 1</h2>

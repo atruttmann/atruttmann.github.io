@@ -72,6 +72,9 @@
     .contentDivider {
       margin: $size-8 0;
       width: 100%;
+      @include themed() {
+        border-color: t($color-text);
+      }
     }
 
     img,

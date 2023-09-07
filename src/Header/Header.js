@@ -12,9 +12,9 @@ function Header() {
       <h1>Hi, I'm Alayna.</h1>
       <p>
         I'm passionate about using my coding skills and eye for design to create
-        great user experiences. I'm currently a UX Engineer at Roku designing
-        and building internal tools that accelerate designers' workflows. I also
-        prototype TV experiences for user testing.
+        great user experiences. I'm currently a Senior UX Engineer at Roku
+        designing and building internal tools that accelerate designers'
+        workflows. I also prototype TV experiences for user testing.
       </p>
       <p>
         I moved from Wisconsin to the Bay Area in 2018 after graduating from

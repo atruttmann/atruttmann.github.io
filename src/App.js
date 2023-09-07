@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
@@ -10,13 +10,31 @@ import ProjectModal from "./ProjectModal/ProjectModal";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.scss";
 
-const password = "IntuitWork";
+const password = "helloworld";
 
 function App() {
   const [authenticated, setAuthenticated] = useState(false);
   const [darkTheme, setDarkTheme] = useState(false);
   const [modalOpen, setModalOpen] = useState(false);
   const [selectedProject, setSelectedProject] = useState(ProjectsList[0]);
+
+  useEffect(() => {
+    // Check for users preferred color scheme
+    if (
+      window.matchMedia &&
+      window.matchMedia("(prefers-color-scheme: dark)").matches
+    ) {
+      setDarkTheme(true);
+    }
+  }, []);
+
+  useEffect(() => {
+    // Change scrollbar style based on theme
+    document.documentElement.style.setProperty(
+      "color-scheme",
+      darkTheme ? "dark" : "light"
+    );
+  }, [darkTheme]);
 
   return (
     <div className={`app ${darkTheme ? "theme-dark" : "theme-light"}`}>
