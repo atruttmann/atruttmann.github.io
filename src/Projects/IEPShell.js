@@ -15,6 +15,7 @@ const IEPShell = {
     goal: "Create a React prototype with these design updates to be passed off to production engineers.",
     role: "I was the sole developer for this project and partnered with a product design team to create this prototype.",
     dates: "November - December 2020",
+    technologies: "React, Styled Components",
   },
   links: [],
   content: (

@@ -15,6 +15,7 @@ const Toolkit = {
     goal: "Create a Figma plugin that empowers designers to easily add motion, content, and theming to their work.",
     role: "I am the lead for this tool. I maintain the design and code of this plugin and promote it to our users.",
     dates: "February 2021 - present",
+    technologies: "Figma Plugin API, Typescript, React",
   },
   content: (
     <>

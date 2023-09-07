@@ -15,6 +15,7 @@ const Dixma = {
     goal: "Create a Figma plugin that allows us to play the board game Dixit.",
     role: "I worked on a team of four Design Technologists. My primary contribution was writing the plugin code that dealt cards to players and moved submitted cards to the main game board.",
     dates: "August 2020",
+    technologies: "Figma Plugin API, Typescript",
   },
   links: [
     {

@@ -15,6 +15,7 @@ const Pyro = {
     goal: "Develop an intuitive drag-and-drop interface that leverages Intuit Design System components and supports custom data and logic.",
     role: "I worked on a small team of five Design Technologists. I wore many hats including developing the product, designing new features, leading user testing sessions, and prioritizing our Jira board.",
     dates: "February 2020 - Present",
+    technologies: "React, Firebase",
   },
   links: [],
   content: (

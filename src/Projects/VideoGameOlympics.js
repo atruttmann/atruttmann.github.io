@@ -15,6 +15,7 @@ const VideoGameOlympics = {
     goal: "Create a website that pulls live data from a Google spreadsheet to display a leaderboard and challenges list.",
     role: "I designed and developed this website as a personal project.",
     dates: "September - October 2021",
+    technologies: "React, Google Spreadsheet API",
   },
   links: [
     {
