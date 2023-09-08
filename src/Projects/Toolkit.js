@@ -13,7 +13,7 @@ const Toolkit = {
     problem:
       "How can we leverage Figma plugins to improve Intuit designers' workflows?",
     goal: "Create a Figma plugin that empowers designers to easily add motion, content, and theming to their work.",
-    role: "I am the lead for this tool. I maintain the design and code of this plugin and promote it to our users.",
+    role: "I was the lead for this tool. I maintained the design and code of this plugin and promoted it to our users.",
     dates: "February 2021 - April 2022",
     technologies: "Figma Plugin API, Typescript, React",
   },
