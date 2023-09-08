@@ -14,7 +14,7 @@ const Pyro = {
       "Intuit designers need a way to quickly create high-fidelity prototypes with interactive components and real user data.",
     goal: "Develop an intuitive drag-and-drop interface that leverages Intuit Design System components and supports custom data and logic.",
     role: "I worked on a small team of five Design Technologists. I wore many hats including developing the product, designing new features, leading user testing sessions, and prioritizing our Jira board.",
-    dates: "February 2020 - Present",
+    dates: "February 2020 - April 2022",
     technologies: "React, Firebase",
   },
   links: [],
@@ -86,10 +86,7 @@ const Pyro = {
 
       <p>
         The majority of the issues from user testing were addressed and Pyro
-        released to Intuit designers in November 2020. Our goal going forward is
-        to continue to drive the adoption of Pyro across the Intuit design
-        community. We will do this by hosting virtual demo events and supporting
-        our users by adding requested features.
+        released to Intuit designers in November 2020.
       </p>
     </>
   ),

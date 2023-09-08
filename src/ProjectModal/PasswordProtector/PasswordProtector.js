@@ -10,10 +10,9 @@ const PasswordProtector = ({ authenticate = () => {} }) => {
     <div className="passwordContainer">
       <FaLock className="passwordIcon" />
       <p className="body2">
-        Sorry, viewing this work requires a password.
-        <br />
-        Please <a href="mailto:amtruttmann@gmail.com">reach out</a> to me to
-        access this project.
+        Sorry, the information in this project is confidential and requires a
+        password. Please email{" "}
+        <span className="email">amtruttmann@gmail.com</span> for access.
       </p>
 
       <div className="formContainer">
@@ -40,7 +39,11 @@ const PasswordProtector = ({ authenticate = () => {} }) => {
             name="password"
             autoComplete="current-password"
           />
-          <input type="submit" value="Log in" className="passwordButton" />
+          <input
+            type="submit"
+            value="Access content"
+            className="passwordButton"
+          />
         </form>
         <div
           className="passwordError"
