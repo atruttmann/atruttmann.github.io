@@ -4,8 +4,8 @@ const imgFolder = "UXE";
 const imgPrefix = getImgPrefix(imgFolder);
 
 const UXE = {
-  title: "Roku UX Engineering",
-  subTitle: "Team website",
+  title: "Roku UXE Team Site",
+  subTitle: "Showcasing tools & prototypes",
   coverImageSrc: `${imgPrefix}/1.png`,
   coverPosition: "center top",
   passwordRequired: false,
@@ -15,7 +15,7 @@ const UXE = {
     goal: "Create a beautiful website that informs other designers about UX Engineering.",
     role: "I am the sole designer and full stack engineer on this project.",
     dates: "September 2022 - present",
-    technologies: "React, AWS Dynamo DB, AWS S3, Jira API",
+    technologies: "React, Node.js, AWS Dynamo DB, AWS S3, Jira API",
   },
   content: (
     <>

@@ -11,16 +11,9 @@ function Header() {
     <header className="header">
       <h1>Hi, I'm Alayna.</h1>
       <p>
-        I'm passionate about using my coding skills and eye for design to create
-        great user experiences. I'm currently a Senior UX Engineer at Roku
-        designing and building internal tools that accelerate designers'
-        workflows. I also prototype TV experiences for user testing.
-      </p>
-      <p>
-        I moved from Wisconsin to the Bay Area in 2018 after graduating from
-        UW-Madison with a bachelor's in Computer Science and a minor in Digital
-        Art. When I'm away from my computer, I love to hike, cook, and
-        embroider.
+        I'm a Senior UX Engineer at Roku creating internal design tools and
+        prototyping TV experiences. I'm passionate about using my engineering
+        skills and eye for design to create great user experiences.
       </p>
       <div className="linkIcons">
         <a
