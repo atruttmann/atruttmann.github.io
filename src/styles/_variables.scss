@@ -1,14 +1,11 @@
 @import "animations";
 @import "borderRadius";
 @import "breakpoints";
-@import "colors";
 @import "sizes";
 @import "typography";
 
 @mixin tile-box-shadow {
-  @include themed() {
-    box-shadow: 0 $size-1 $size-2 2px t($color-tile-shadow);
-  }
+  box-shadow: 0 $size-1 $size-2 2px var(--color-tile-shadow);
 }
 
 @mixin button-style {
@@ -20,16 +17,11 @@
   border: none;
   outline: none;
   text-decoration: none;
-
-  @include themed() {
-    background-color: t($color-button);
-    color: t($color-text-light);
-  }
+  background-color: var(--color-button);
+  color: var(--color-text-light);
 
   &:hover {
-    @include themed() {
-      background-color: t($color-button-hover);
-    }
+    background-color: var(--color-button-hover);
   }
 }
 
@@ -42,23 +34,16 @@
   padding: $size-2;
   z-index: 1;
   border-radius: 100%;
-
-  @include themed() {
-    background-color: t($color-background);
-  }
+  background-color: transparent;
 
   &:hover svg {
-    @include themed() {
-      color: t($color-button-hover);
-    }
+    color: var(--color-icon-button-hover);
   }
 
   svg {
     width: auto;
     height: $size-7;
     transition: color $transition-color;
-    @include themed() {
-      color: t($color-button);
-    }
+    color: var(--color-icon-button);
   }
 }

@@ -39,11 +39,7 @@ const PasswordProtector = ({ authenticate = () => {} }) => {
             name="password"
             autoComplete="current-password"
           />
-          <input
-            type="submit"
-            value="Access content"
-            className="passwordButton"
-          />
+          <input type="submit" value="Access" className="passwordButton" />
         </form>
         <div
           className="passwordError"

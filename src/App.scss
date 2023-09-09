@@ -1,3 +1,4 @@
+@import "./styles/theme";
 @import "./styles/variables";
 
 html {
@@ -24,9 +25,7 @@ p {
 
 h1 {
   @include heading-1;
-  @include themed() {
-    color: t($color-accent);
-  }
+  color: var(--color-accent);
   margin: 0 0 $size-2 0;
 }
 
@@ -57,10 +56,12 @@ p {
   }
 }
 
+b {
+  font-weight: 700;
+}
+
 a {
-  @include themed() {
-    color: t($color-accent);
-  }
+  color: var(--color-accent);
 }
 
 .app {
@@ -71,15 +72,12 @@ a {
 .appContainer,
 .modalContainer {
   transition: $transition-background-color, color $transition-color;
-  @include themed() {
-    background-color: t($color-background);
-    color: t($color-text);
-  }
+  background-color: var(--color-background);
+  color: var(--color-text);
+
   ::selection {
-    @include themed() {
-      color: t($color-text-light);
-      background: t($color-highlight);
-    }
+    color: var(--color-text-light);
+    background: var(--color-highlight);
   }
 }
 

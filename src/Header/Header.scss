@@ -2,7 +2,7 @@
 
 .header {
   text-align: center;
-  max-width: 60rem;
+  max-width: 58rem;
   margin: 0 auto $size-9 auto;
   padding: 0 $size-5;
 
@@ -25,16 +25,12 @@
       height: fit-content;
       transform: translateY(0);
       transition: $transition-hover-up, color $transition-color;
-      @include themed() {
-        color: t($color-icon);
-      }
+      color: var(--color-icon);
 
       &:hover {
         transform: translateY(-$size-1);
         transition: $transition-hover-down, color $transition-color;
-        @include themed() {
-          color: t($color-accent);
-        }
+        color: var(--color-accent);
       }
 
       svg {

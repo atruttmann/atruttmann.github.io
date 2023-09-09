@@ -8,7 +8,7 @@ const Flow = {
   subTitle: "Prototyping tool for web & TV",
   coverImageSrc: `${imgPrefix}/1.png`,
   coverPosition: "center",
-  passwordRequired: false, // TODO
+  passwordRequired: true,
   overview: {
     problem:
       "Roku designers need a way to easily view their prototypes on TVs for user testing.",
@@ -54,7 +54,7 @@ const Flow = {
         alt="Flow home page"
       />
       <p className="body2 caption">
-        View all off your prototypes on the Flow home page
+        View all of your prototypes on the Flow home page
       </p>
 
       <p>

@@ -26,8 +26,6 @@
 
   .projectLabel {
     padding: $size-4;
-    @include themed() {
-      background-color: t($color-background-light);
-    }
+    background-color: var(--color-background-light);
   }
 }

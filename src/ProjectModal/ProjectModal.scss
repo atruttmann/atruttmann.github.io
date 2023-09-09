@@ -51,9 +51,7 @@
     .sectionTitle {
       margin-bottom: $size-5;
       text-transform: uppercase;
-      @include themed() {
-        color: t($color-accent);
-      }
+      color: var(--color-accent);
     }
     .sectionTitle,
     h4 {
@@ -61,6 +59,7 @@
     }
 
     .overview {
+      width: 100%;
       p {
         margin-bottom: $size-5;
         b {
@@ -72,9 +71,7 @@
     .contentDivider {
       margin: $size-8 0;
       width: 100%;
-      @include themed() {
-        border-color: t($color-text);
-      }
+      border-color: var(--color-text);
     }
 
     img,

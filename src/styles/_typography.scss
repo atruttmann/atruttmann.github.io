@@ -1,5 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500;700&family=Merriweather:ital,wght@0,400;0,700;1,400&display=swap");
-@import "breakpoints";
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500;600;700&family=Merriweather:ital,wght@0,300;0,400;0,700;1,300;1,400&display=swap");
 
 $font-title: "Josefin Sans", sans-serif;
 $font-text: "Merriweather", serif;
@@ -7,7 +6,7 @@ $font-text: "Merriweather", serif;
 // Headings
 @mixin heading {
   font-family: $font-title;
-  font-weight: 700;
+  font-weight: var(--font-weight-heading);
 }
 
 @mixin heading-1 {
@@ -24,6 +23,7 @@ $font-text: "Merriweather", serif;
 @mixin heading-2 {
   @include heading;
   font-size: 1.75rem;
+  font-weight: var(--font-weight-heading-small);
 }
 
 @mixin heading-3 {
@@ -48,7 +48,7 @@ $font-text: "Merriweather", serif;
 // Body
 @mixin body {
   font-family: $font-text;
-  font-weight: 400;
+  font-weight: var(--font-weight-body);
 }
 
 @mixin body-1 {

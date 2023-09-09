@@ -19,8 +19,14 @@ function App() {
   const [selectedProject, setSelectedProject] = useState(ProjectsList[0]);
 
   useEffect(() => {
+    const currentTheme = localStorage.getItem("theme") ?? null;
+
+    // Check for saved color theme
+    if (currentTheme) {
+      setDarkTheme(currentTheme === "dark");
+    }
     // Check for users preferred color scheme
-    if (
+    else if (
       window.matchMedia &&
       window.matchMedia("(prefers-color-scheme: dark)").matches
     ) {
@@ -29,11 +35,10 @@ function App() {
   }, []);
 
   useEffect(() => {
-    // Change scrollbar style based on theme
-    document.documentElement.style.setProperty(
-      "color-scheme",
-      darkTheme ? "dark" : "light"
-    );
+    const theme = darkTheme ? "dark" : "light";
+    localStorage.setItem("theme", theme);
+    document.documentElement.style.setProperty("color-scheme", theme);
+    document.documentElement.setAttribute("data-theme", theme);
   }, [darkTheme]);
 
   return (
