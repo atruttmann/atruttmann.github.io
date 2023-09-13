@@ -77,7 +77,8 @@ function App() {
 
         <div className="footer">
           <p className="body2">
-            This website was designed and built by me! Check out the code on{" "}
+            I designed and built this website from scratch! Check out the code
+            on{" "}
             <a href="https://github.com/atruttmann/atruttmann.github.io">
               GitHub
             </a>

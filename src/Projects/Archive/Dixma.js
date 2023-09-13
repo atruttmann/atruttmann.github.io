@@ -1,4 +1,4 @@
-import getImgPrefix from "../util/getImgPrefix";
+import getImgPrefix from "../../util/getImgPrefix";
 
 const imgFolder = "Dixma";
 const imgPrefix = getImgPrefix(imgFolder);
