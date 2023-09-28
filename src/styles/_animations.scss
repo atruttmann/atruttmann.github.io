@@ -9,8 +9,8 @@ $animation-subTitle: $animation-duration-3 subtitleEntrance ease-in;
 
 $transition-hover-up: transform $animation-duration-1 ease-in;
 $transition-hover-down: transform $animation-duration-1 ease-out;
-$transition-modal-in: transform $animation-duration-2 ease-in;
-$transition-modal-out: transform $animation-duration-2 ease-out;
+$transition-modal-in: $animation-duration-2 ease-in;
+$transition-modal-out: $animation-duration-2 ease-out;
 $transition-color: $animation-duration-1 ease;
 $transition-background-color: background-color $animation-duration-2 ease;
 $transition-video-load: opacity $animation-duration-2 ease;

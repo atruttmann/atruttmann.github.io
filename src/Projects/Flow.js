@@ -8,13 +8,13 @@ const Flow = {
   subTitle: "Prototyping tool for web & TV",
   coverImageSrc: `${imgPrefix}/1.png`,
   coverPosition: "center",
-  passwordRequired: true,
+  passwordRequired: false,
   overview: {
     problem:
       "Roku designers need a way to easily view their prototypes on TVs for user testing.",
     goal: "Create an easy to use web platform that exports prototypes to a Roku TV channel.",
-    role: "I am the sole designer and full stack engineer on this project.",
-    dates: "April 2022 - present",
+    role: "I was the sole designer and full stack engineer on this project.",
+    dates: "April 2022 - September 2023",
     technologies: "React, Node.js, AWS Dynamo DB, AWS S3",
   },
   content: (
@@ -112,11 +112,11 @@ const Flow = {
       </video>
 
       <p>
-        As more designers have used the tool I have added new features based on
-        their use cases. These features include fade transitions, long-pressing
-        remote buttons, allowing videos, screen reader support, and more.
-        Eventually, I want to make a Figma plugin that can export images into
-        Flow to accelerate the design process.
+        As more designers have used the tool I added new features based on their
+        use cases. These features include fade transitions, long-pressing remote
+        buttons, allowing videos, screen reader support, and more. Eventually, I
+        wanted to make a Figma plugin that can export images into Flow to
+        accelerate the design process.
       </p>
     </>
   ),

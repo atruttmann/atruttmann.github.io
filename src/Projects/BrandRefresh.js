@@ -8,7 +8,7 @@ const BrandRefresh = {
   subTitle: "Prototype of design updates",
   coverImageSrc: `${imgPrefix}/1.png`,
   coverPosition: "center top",
-  passwordRequired: false, //TODO
+  passwordRequired: true,
   overview: {
     problem:
       "The Roku Visual Design team needed to showcase their vision of a brand refresh initiative to executives.",

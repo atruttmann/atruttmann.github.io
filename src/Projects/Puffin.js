@@ -8,13 +8,13 @@ const Puffin = {
   subTitle: "Figma plugin for Roku designers",
   coverImageSrc: `${imgPrefix}/1.png`,
   coverPosition: "center",
-  passwordRequired: true,
+  passwordRequired: false,
   overview: {
     problem:
       "Bulk generating assets is an arduous task for designers, and handoff to engineering is a manual, non-standardized process.",
     goal: "Take the tedious work out of bulk generating assets. Automate work that is currently done with copy/paste, while letting designers have control over tweaking the details. Make it easy to hand off assets to engineers.",
-    role: "I am the sole designer and developer on this project.",
-    dates: "April 2023 - present",
+    role: "I was the sole designer and developer on this project.",
+    dates: "April - August 2023",
     technologies: "Figma Plugin API, Typescript, React",
   },
   content: (
@@ -118,9 +118,9 @@ const Puffin = {
       </video>
 
       <p>
-        Puffin 1.0 launched in August 2023. Now, I am gathering user feedback to
-        determine changes to make in the next version. I would like to explore
-        stronger image compression techniques such as{" "}
+        Puffin 1.0 launched in August 2023. The next step is to gather user
+        feedback to determine changes to make in the next version. I would like
+        to explore stronger image compression techniques such as{" "}
         <a href="https://en.wikipedia.org/wiki/Quantization_(image_processing)">
           image quantization
         </a>

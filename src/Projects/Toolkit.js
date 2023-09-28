@@ -8,7 +8,7 @@ const Toolkit = {
   subTitle: "Figma plugin for Intuit designers",
   coverImageSrc: `${imgPrefix}/Cover.png`,
   coverPosition: "center",
-  passwordRequired: true,
+  passwordRequired: false,
   overview: {
     problem:
       "How can we leverage Figma plugins to improve Intuit designers' workflows?",

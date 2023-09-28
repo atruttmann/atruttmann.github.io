@@ -8,7 +8,7 @@ const Pyro = {
   subTitle: "Prototyping tool for Intuit designers",
   coverImageSrc: `${imgPrefix}/1.png`,
   coverPosition: "center",
-  passwordRequired: true,
+  passwordRequired: false,
   overview: {
     problem:
       "Intuit designers need a way to quickly create high-fidelity prototypes with interactive components and real user data.",

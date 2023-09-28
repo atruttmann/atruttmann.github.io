@@ -11,18 +11,22 @@
   padding: $size-10 $size-6;
 
   &.enter {
-    transform: translate(0, 100vh);
+    transform: translate(0, 50vh);
+    opacity: 0;
   }
   &.enter-active {
     transform: none;
     transition: $transition-modal-in;
+    opacity: 1;
   }
   &.exit {
     transform: none;
+    opacity: 1;
   }
   &.exit-active {
-    transform: translate(0, 100vh);
+    transform: translate(0, 50vh);
     transition: $transition-modal-out;
+    opacity: 0;
   }
 
   .projectContent {

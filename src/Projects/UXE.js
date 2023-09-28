@@ -13,8 +13,8 @@ const UXE = {
     problem:
       "The Roku UX Engineering team needed a place to share their tools, prototypes, and roadmap.",
     goal: "Create a beautiful website that informs other designers about UX Engineering.",
-    role: "I am the sole designer and full stack engineer on this project.",
-    dates: "September 2022 - present",
+    role: "I was the sole designer and full stack engineer on this project.",
+    dates: "September 2022 - August 2023",
     technologies: "React, Node.js, AWS Dynamo DB, AWS S3, Jira API",
   },
   content: (
@@ -81,11 +81,6 @@ const UXE = {
       </p>
       <img src={`${imgPrefix}7.png`} alt="FAQ section" />
       <img src={`${imgPrefix}8.png`} alt="Prototype quiz" />
-
-      <p>
-        This was a fun design exercise for me! I plan to continue iterating on
-        the content of the website as more functionality is needed.
-      </p>
     </>
   ),
 };

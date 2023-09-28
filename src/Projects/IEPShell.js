@@ -8,7 +8,7 @@ const IEPShell = {
   subTitle: "Proof of concept for design updates",
   coverImageSrc: `${imgPrefix}/1.png`,
   coverPosition: "top left",
-  passwordRequired: true,
+  passwordRequired: false,
   overview: {
     problem:
       "The portal Intuit customer service agents use needed updates to better align with the Intuit Design System and make usability improvements.",
