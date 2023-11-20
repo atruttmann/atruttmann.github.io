@@ -53,7 +53,7 @@ const UXE = {
 
       <p>
         Each prototype can open in a modal. There you can see more project
-        details and interact with prototype in an iframe.me.
+        details and interact with prototype in an iframe.
       </p>
       <img src={`${imgPrefix}4.png`} alt="Prototypes detail view" />
 

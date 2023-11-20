@@ -15,7 +15,7 @@ const Toolkit = {
     goal: "Create a Figma plugin that empowers designers to easily add motion, content, and theming to their work.",
     role: "I was the lead for this tool. I maintained the design and code of this plugin and promoted it to our users.",
     dates: "February 2021 - April 2022",
-    technologies: "Figma Plugin API, Typescript, React",
+    technologies: "Figma Plugin API, TypeScript, React",
   },
   content: (
     <>
@@ -57,7 +57,7 @@ const Toolkit = {
       </p>
       <p>
         Once I had a solid design, I moved on to developing the functionality
-        using <a href="https://www.typescriptlang.org/">Typescript</a> and{" "}
+        using <a href="https://www.typescriptlang.org/">TypeScript</a> and{" "}
         <a href="https://sass-lang.com/">Sass</a>. The plugin analyzes a layer's
         fill and border colors, finding the appropriate contextual color
         pairing, and then changing the layer's colors to the new theme.This

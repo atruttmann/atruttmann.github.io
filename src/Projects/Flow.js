@@ -15,7 +15,7 @@ const Flow = {
     goal: "Create an easy to use web platform that exports prototypes to a Roku TV channel.",
     role: "I was the sole designer and full stack engineer on this project.",
     dates: "April 2022 - September 2023",
-    technologies: "React, Node.js, AWS Dynamo DB, AWS S3",
+    technologies: "React, Node.js, Express, AWS Dynamo DB, AWS S3",
   },
   content: (
     <>

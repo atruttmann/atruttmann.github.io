@@ -15,7 +15,7 @@ const Dixma = {
     goal: "Create a Figma plugin that allows us to play the board game Dixit.",
     role: "I worked on a team of four Design Technologists. My primary contribution was writing the plugin code that dealt cards to players and moved submitted cards to the main game board.",
     dates: "August 2020",
-    technologies: "Figma Plugin API, Typescript",
+    technologies: "Figma Plugin API, TypeScript",
   },
   links: [
     {
@@ -78,8 +78,8 @@ const Dixma = {
       <img src={`${imgPrefix}5.png`} alt="Players voting" />
 
       <p>
-        This plugin was written in Typescript and was primarily developed over
-        two days. I had never used Typescript or created a Figma plugin before
+        This plugin was written in TypeScript and was primarily developed over
+        two days. I had never used TypeScript or created a Figma plugin before
         so it was a rapid learning process! If I were to continue working on
         this, I would consider adding automatic scoring. This was a fun project
         to work on and my team enjoys playing Dixma together online.

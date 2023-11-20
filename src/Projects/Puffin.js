@@ -15,7 +15,7 @@ const Puffin = {
     goal: "Take the tedious work out of bulk generating assets. Automate work that is currently done with copy/paste, while letting designers have control over tweaking the details. Make it easy to hand off assets to engineers.",
     role: "I was the sole designer and developer on this project.",
     dates: "April - August 2023",
-    technologies: "Figma Plugin API, Typescript, React",
+    technologies: "Figma Plugin API, TypeScript, React",
   },
   content: (
     <>
