@@ -78,6 +78,10 @@
       border-color: var(--color-text);
     }
 
+    p {
+      width: 100%;
+    }
+
     img,
     video {
       width: 100%;
@@ -117,6 +121,7 @@
       @include body-2;
       margin-bottom: $size-9;
       font-style: italic;
+      text-align: center;
     }
   }
 }
