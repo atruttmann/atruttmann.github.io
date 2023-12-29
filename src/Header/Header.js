@@ -11,9 +11,9 @@ function Header() {
     <header className="header">
       <h1>Hi, I'm Alayna.</h1>
       <p>
-        I'm a Senior UX Engineer with more than five years of experience in
-        web-based prototyping and creating internal design tools at Roku and
-        Intuit. I'm currently looking for a new role - reach out to
+        I'm a Senior UX Engineer with 5+ of experience in web-based prototyping
+        and creating internal design tools at NBC Universal, Roku, and Intuit.
+        I'm currently looking for a new role - reach out to
         amtruttmann@gmail.com if there's a fit!
       </p>
       <div className="linkIcons">

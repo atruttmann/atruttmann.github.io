@@ -1,14 +1,15 @@
 import IEPShell from "./IEPShell";
 import Pyro from "./Pyro";
 import Toolkit from "./Toolkit";
-import VideoGameOlympics from "./VideoGameOlympics";
 import Flow from "./Flow";
 import Puffin from "./Puffin";
 import Oso from "./Oso";
 import UXE from "./UXE";
 import BrandRefresh from "./BrandRefresh";
+import NBCUX from "./NBCUX";
 
 const ProjectsList = [
+  NBCUX,
   Flow,
   Puffin,
   BrandRefresh,
@@ -17,7 +18,6 @@ const ProjectsList = [
   Toolkit,
   Pyro,
   IEPShell,
-  VideoGameOlympics,
 ];
 
 export default ProjectsList;
