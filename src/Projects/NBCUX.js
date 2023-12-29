@@ -97,8 +97,8 @@ const NBCUX = {
         <a href="https://www.notion.so/">Notion</a> to host documentation on the
         code base and our publication process. I wrote thorough{" "}
         <a href="https://jsdoc.app/">JSDoc</a> comments for all the functions in
-        our codebase. I used <a href="https://jestjs.io/">Jest</a> to write unit
-        tests that automatically ran on pull requests.
+        our codebase. I used <a href="https://jestjs.io/">Jest</a> to write 45
+        unit tests that automatically ran on pull requests.
       </p>
 
       <p>
