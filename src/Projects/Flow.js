@@ -48,12 +48,8 @@ const Flow = {
         </ol>
       </p>
 
-      <img
-        className="withCaption"
-        src={`${imgPrefix}3.png`}
-        alt="Flow home page"
-      />
-      <p className="body2 caption">
+      <img src={`${imgPrefix}3.png`} alt="Flow home page" />
+      <p className="caption">
         View all of your prototypes on the Flow home page
       </p>
 
@@ -64,23 +60,15 @@ const Flow = {
         <a href="https://reactflow.dev/">React Flow</a> library as the editor
         for my interactive diagrams.
       </p>
-      <img
-        className="withCaption"
-        src={`${imgPrefix}4.png`}
-        alt="Flow editor"
-      />
-      <p className="body2 caption">Editing a prototype</p>
+      <img src={`${imgPrefix}4.png`} alt="Flow editor" />
+      <p className="caption">Editing a prototype</p>
 
       <p>
         I built a web preview so users can try out the prototype on the web and
         fix issues before viewing on the TV.
       </p>
-      <img
-        className="withCaption"
-        src={`${imgPrefix}5.png`}
-        alt="Prototype preview"
-      />
-      <p className="body2 caption">Previewing a prototype</p>
+      <img src={`${imgPrefix}5.png`} alt="Prototype preview" />
+      <p className="caption">Previewing a prototype</p>
 
       <p>
         The next phase of my development work was creating the Roku channel. I
@@ -88,12 +76,8 @@ const Flow = {
         channels. It is similar to the externally available{" "}
         <a href="https://developer.roku.com/develop">Roku SDK</a>.
       </p>
-      <img
-        className="withCaption"
-        src={`${imgPrefix}6.png`}
-        alt="Roku channel home view"
-      />
-      <p className="body2 caption">
+      <img src={`${imgPrefix}6.png`} alt="Roku channel home view" />
+      <p className="caption">
         Entering a prototype code on the installed channel
       </p>
 
@@ -102,12 +86,7 @@ const Flow = {
         introduce users to Flow.
       </p>
 
-      <video
-        className="withCaption"
-        controls
-        preload="none"
-        poster={`${imgPrefix}1.png`}
-      >
+      <video controls preload="none" poster={`${imgPrefix}1.png`}>
         <source src={`${imgPrefix}Demo.mp4`} type="video/mp4" />
       </video>
 

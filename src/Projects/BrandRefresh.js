@@ -27,14 +27,8 @@ const BrandRefresh = {
         every screen of the platform.
       </p>
 
-      <img
-        className="withCaption"
-        src={`${imgPrefix}1.png`}
-        alt="Roku home screen"
-      />
-      <p className="body2 caption">
-        Roku home screen with brand refresh updates
-      </p>
+      <img src={`${imgPrefix}1.png`} alt="Roku home screen" />
+      <p className="caption">Roku home screen with brand refresh updates</p>
 
       <p>
         This was a complicated undertaking given the breadth of changes and a
@@ -50,12 +44,8 @@ const BrandRefresh = {
         designers to change the theme.
       </p>
 
-      <img
-        className="withCaption"
-        src={`${imgPrefix}2.png`}
-        alt="Prototype configuration"
-      />
-      <p className="body2 caption">Prototype configuration screen</p>
+      <img src={`${imgPrefix}2.png`} alt="Prototype configuration" />
+      <p className="caption">Prototype configuration screen</p>
 
       <p>
         Many screens within the prototype needed to be fully functional. Some of
@@ -63,28 +53,14 @@ const BrandRefresh = {
         sports page, and The Roku Channel (Roku's streaming service).
       </p>
 
-      <img
-        className="withCaption"
-        src={`${imgPrefix}3.png`}
-        alt="What to Watch page"
-      />
-      <p className="body2 caption">"What to Watch" content suggestions</p>
+      <img src={`${imgPrefix}3.png`} alt="What to Watch page" />
+      <p className="caption">"What to Watch" content suggestions</p>
 
-      <img
-        className="withCaption"
-        src={`${imgPrefix}4.png`}
-        alt="Sports page"
-      />
-      <p className="body2 caption">NFL Sports page</p>
+      <img src={`${imgPrefix}4.png`} alt="Sports page" />
+      <p className="caption">NFL Sports page</p>
 
-      <img
-        className="withCaption"
-        src={`${imgPrefix}5.png`}
-        alt="The Roku Channel"
-      />
-      <p className="body2 caption">
-        The Roku Channel (Roku's streaming service)
-      </p>
+      <img src={`${imgPrefix}5.png`} alt="The Roku Channel" />
+      <p className="caption">The Roku Channel (Roku's streaming service)</p>
 
       <p>
         This project concluded with a presentation to Roku's VP of Design. I

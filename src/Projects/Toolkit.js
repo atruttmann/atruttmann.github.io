@@ -47,12 +47,8 @@ const Toolkit = {
         that would display the fill and border colors for a selected layer and
         show their light and dark mode pairings.
       </p>
-      <img
-        src={`${imgPrefix}2.png`}
-        className="withCaption"
-        alt="Plugin interface"
-      />
-      <p className="body2 caption">
+      <img src={`${imgPrefix}2.png`} alt="Plugin interface" />
+      <p className="caption">
         Inspecting a dark mode design to see the color pairings.
       </p>
       <p>
@@ -64,10 +60,10 @@ const Toolkit = {
         automatic process is completed in a matter of seconds, which saves
         designers hours of work in manually changing colors.
       </p>
-      <video className="withCaption" controls preload="none">
+      <video controls preload="none">
         <source src={`${imgPrefix}Demo.mp4`} type="video/mp4" />
       </video>
-      <p className="body2 caption">
+      <p className="caption">
         This quick demo of Dark Mode that appeared within a QB Designer Toolkit
         instructional video I created.
       </p>
@@ -129,22 +125,12 @@ const Toolkit = {
         include a flyout menu. Moving page navigation into the flyout menu gave
         each feature room for its own navigational elements.
       </p>
-      <img
-        src={`${imgPrefix}/Redesign.png`}
-        alt="Redesign before and after"
-        className="withCaption"
-      />
-      <p className="body2 caption">
+      <img src={`${imgPrefix}/Redesign.png`} alt="Redesign before and after" />
+      <p className="caption">
         Selection of redesigned screens before (left) and after (right)
       </p>
-      <img
-        src={`${imgPrefix}/Cover.png`}
-        alt="Cover art"
-        className="withCaption"
-      />
-      <p className="body2 caption">
-        Redesigned cover art for installation page
-      </p>
+      <img src={`${imgPrefix}/Cover.png`} alt="Cover art" />
+      <p className="caption">Redesigned cover art for installation page</p>
       <p>
         My next step was to add analytics. I chose to use{" "}
         <a href="https://mixpanel.com/">Mixpanel</a> because of its powerful
@@ -159,9 +145,8 @@ const Toolkit = {
       <img
         src={`${imgPrefix}/Mixpanel.png`}
         alt="Mixpanel Analytics Dashboard"
-        className="withCaption"
       />
-      <p className="body2 caption">
+      <p className="caption">
         <a href="https://mixpanel.com/public/7veU4Lv7JycMp3Ene9z4hu">
           Mixpanel Analytics dashboard
         </a>{" "}
@@ -176,12 +161,8 @@ const Toolkit = {
         will reduce the work a designer has to do filling out a table from
         minutes to seconds.
       </p>
-      <img
-        src={`${imgPrefix}/Number.png`}
-        alt="Random number generator"
-        className="withCaption"
-      />
-      <p className="body2 caption">
+      <img src={`${imgPrefix}/Number.png`} alt="Random number generator" />
+      <p className="caption">
         The UI allows users to customize the format of numbers, currencies, and
         dates
       </p>

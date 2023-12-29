@@ -20,30 +20,63 @@ const NBCUX = {
   },
   content: (
     <>
-      <p>Design evolved over time. Used Material UI.</p>
-      <img
-        src={`${imgPrefix}/Evolution.png`}
-        alt="Design iterations"
-        className="withCaption"
-      />
-      <p className="body2 caption">Design iterations over time.</p>
+      <p>
+        NBC Universal uses more than 100 internal enterprise tools. Their design
+        team has fewer than 10 designers to support these tools, leaving a
+        design gap. Product managers try to fill this gap but find Figma hard to
+        use for design work. Additionally, they are often limited to using only
+        FigJam due to licensing costs. My team developed a Figma plugin to allow
+        non-designers to self-serve simple layouts.
+      </p>
 
-      <p>Describe documentation</p>
-      <img
-        src={`${imgPrefix}/Documentation.png`}
-        alt="Documentation"
-        className="withCaption"
-      />
-      <p className="body2 caption">
-        A documentation frame is positioned next to newly created templates.
+      <p>
+        We focused on generating a commonly used page template with a data table
+        as the MVP for this tool. Users fill out a form to generate the table
+        that specifies the components they want to use in the layout. They can
+        customize how many columns the table has, and what the data type of each
+        column should be. They can also add components such as tabs, a search
+        bar, breadcrumb navigation, and more.
+      </p>
+
+      <img src={`${imgPrefix}/2.png`} alt="Creating a table" />
+      <p className="caption">Creating a table</p>
+
+      <p>
+        When a template is created, the plugin adds documentation next to it. It
+        provides a short explanation of how to use the plugin and how to get
+        help. The documentation itself is a published Figma component the plugin
+        imports. This way, designers can update the documentation without
+        developer support.
+      </p>
+
+      <img src={`${imgPrefix}/3.png`} alt="Documentation" />
+
+      <p>
+        Users can update template layouts as needed. The update process uses the
+        current selection to populate the form and data in the UI.
+      </p>
+
+      <img src={`${imgPrefix}/4.png`} alt="Updating a table" />
+      <p className="caption">Updating a table</p>
+
+      <video controls preload="none" poster={`${imgPrefix}1.png`}>
+        <source src={`${imgPrefix}Demo.mp4`} type="video/mp4" />
+      </video>
+
+      <p>
+        As the plugin gains more users, it's helpful to have analytics to tell
+        us more about how they use the tool. We want to know who the users are,
+        if they're using Figma or FigJam, what they are creating and how often.
+        It's also important to know if they run into errors. I chose{" "}
+        <a href="https://mixpanel.com/">Mixpanel</a> to handle our analytics
+        because it's easy to use and integrates well with Figma plugins.
       </p>
 
       <img
         src={`${imgPrefix}/Mixpanel.png`}
         alt="Mixpanel Analytics Dashboard"
-        className="withCaption"
       />
-      <p className="body2 caption">
+      <p className="caption">
         <a href="https://mixpanel.com/public/6fPuCsME2BR7Ra7NECbdgx">
           Mixpanel Analytics dashboard
         </a>{" "}

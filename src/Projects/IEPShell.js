@@ -45,10 +45,10 @@ const IEPShell = {
         information. Navigation elements also had to behave responsively on
         smaller screens.
       </p>
-      <video className="withCaption" controls muted preload="none">
+      <video controls muted preload="none">
         <source src={`${imgPrefix}Demo.mp4`} type="video/mp4" />
       </video>
-      <p className="body2 caption">
+      <p className="caption">
         This video shows the entire flow of the prototype.
       </p>
 
@@ -60,21 +60,19 @@ const IEPShell = {
         menu.
       </p>
       <img
-        className="withCaption"
         src={`${imgPrefix}2.png`}
         alt="Milestone dropdown when header is not in overflow."
       />
-      <p className="body2 caption">
+      <p className="caption">
         Opening the milestone dropdown when the header is not in an overflow
         state.
       </p>
 
       <img
-        className="withCaption"
         src={`${imgPrefix}3.png`}
         alt="Milestone dropdown when header is overflowing."
       />
-      <p className="body2 caption">
+      <p className="caption">
         Accessing the milestone dropdown in an overflow state.
       </p>
 

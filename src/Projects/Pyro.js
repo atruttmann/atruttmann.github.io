@@ -28,10 +28,10 @@ const Pyro = {
         editor and creating features that cater to QuickBooks design needs.
       </p>
 
-      <video className="withCaption" controls preload="none">
+      <video controls preload="none">
         <source src={`${imgPrefix}Demo.mp4`} type="video/mp4" />
       </video>
-      <p className="body2 caption">
+      <p className="caption">
         This is the demo video for the initial release of Pyro. Video editing
         credits go to my awesome colleagues Heather & Lynda.
       </p>

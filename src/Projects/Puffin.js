@@ -29,12 +29,8 @@ const Puffin = {
         engineers.
       </p>
 
-      <img
-        src={`${imgPrefix}2.png`}
-        alt="Example tiles"
-        className="withCaption"
-      />
-      <p className="body2 caption">Example of tiles Roku designers generate</p>
+      <img src={`${imgPrefix}2.png`} alt="Example tiles" />
+      <p className="caption">Example of tiles Roku designers generate</p>
 
       <p>
         My first thought when hearing about these issues was that a Figma plugin
@@ -65,8 +61,8 @@ const Puffin = {
         process.
       </p>
 
-      <img src={`${imgPrefix}3.png`} alt="User flow" className="withCaption" />
-      <p className="body2 caption">Planning the tile generation flow</p>
+      <img src={`${imgPrefix}3.png`} alt="User flow" />
+      <p className="caption">Planning the tile generation flow</p>
 
       <p>
         The next step was to design the export experience. My design
@@ -83,12 +79,8 @@ const Puffin = {
         set of aspect ratios.
       </p>
 
-      <img
-        src={`${imgPrefix}4.png`}
-        alt="Puffin screens"
-        className="withCaption"
-      />
-      <p className="body2 caption">Finalized designs</p>
+      <img src={`${imgPrefix}4.png`} alt="Puffin screens" />
+      <p className="caption">Finalized designs</p>
 
       <p>
         My previous experience building Figma plugins accelerated the

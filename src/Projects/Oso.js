@@ -19,12 +19,8 @@ const Oso = {
   },
   content: (
     <>
-      <img
-        src={`${imgPrefix}2.png`}
-        alt="Backlit remotes"
-        className="withCaption"
-      />
-      <p className="body2 caption">Backlit remote prototypes</p>
+      <img src={`${imgPrefix}2.png`} alt="Backlit remotes" />
+      <p className="caption">Backlit remote prototypes</p>
 
       <p>
         The next generation of Roku remotes will be backlit, meaning that when a
@@ -69,12 +65,8 @@ const Oso = {
         red for Netflix..
       </p>
 
-      <img
-        src={`${imgPrefix}3.png`}
-        alt="Web interface"
-        className="withCaption"
-      />
-      <p className="body2 caption">Settings used to control the remote</p>
+      <img src={`${imgPrefix}3.png`} alt="Web interface" />
+      <p className="caption">Settings used to control the remote</p>
 
       <p>
         In addition to the main control dashboard I gave designers the ability
@@ -84,12 +76,8 @@ const Oso = {
         once with the click of a button.
       </p>
 
-      <img
-        src={`${imgPrefix}4.png`}
-        alt="Preset creation"
-        className="withCaption"
-      />
-      <p className="body2 caption">Creating a preset configuration</p>
+      <img src={`${imgPrefix}4.png`} alt="Preset creation" />
+      <p className="caption">Creating a preset configuration</p>
 
       <p>
         User testing sessions showed that the reaction to backlit remotes was

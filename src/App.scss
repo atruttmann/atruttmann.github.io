@@ -62,6 +62,9 @@ b {
 
 a {
   color: var(--color-accent);
+  &:hover {
+    color: var(--color-accent);
+  }
 }
 
 .app {

@@ -33,12 +33,11 @@ const SporcleBot = {
       </p>
 
       <img
-        className="withCaption"
         style={{ maxWidth: "20rem" }}
         src={`${imgPrefix}1.png`}
         alt="Current challenge flow with scores posted."
       />
-      <p className="body2 caption">
+      <p className="caption">
         The current challenge flow with scores posted as screenshots.
       </p>
 

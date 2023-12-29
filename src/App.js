@@ -48,6 +48,7 @@ function App() {
           className="themeToggle"
           onClick={() => setDarkTheme(!darkTheme)}
           aria-label="Change theme"
+          title="Change theme"
         >
           {darkTheme ? <FaSun /> : <FaMoon />}
         </button>
