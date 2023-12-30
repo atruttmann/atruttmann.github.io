@@ -103,15 +103,6 @@ const NBCUX = {
 
       <p>
         A pain point of creating Figma plugins is that the publishing process is
-        manual and you have to upload code in the Figma editor. I used{" "}
-        <a href="https://github.com/parrot-global/figcd">figcd</a>, a command
-        line Figma plugin publishing tool, with GitHub Actions to automatically
-        deploy plugin releases. Using figcd took a multi-step process to one
-        click of a button.
-      </p>
-
-      <p>
-        A pain point of creating Figma plugins is that the publishing process is
         manual and you have to upload code in the Figma editor. To work around
         this I used <a href="https://github.com/parrot-global/figcd">figcd</a>,
         a command-line Figma plugin publishing tool. I combined it with GitHub
