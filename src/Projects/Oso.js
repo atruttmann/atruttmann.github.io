@@ -13,9 +13,11 @@ const Oso = {
     problem:
       "Roku designers needed to control the LED backlight color and behaviors of an experimental TV remote for user testing.",
     goal: "Develop a web interface that allows designers to control TV remote settings during experimentation and user testing.",
+    outcome:
+      "Moderators used my interface during user testing sessions to control the remote and gathered useful feedback about the design.",
     role: "I was the sole designer and software developer on this project. I partnered with a hardware engineer to send signals between the web interface and the remote.",
-    dates: "September - October 2022",
     technologies: "React, Web Serial API, Arduino",
+    dates: "September - October 2022",
   },
   content: (
     <>

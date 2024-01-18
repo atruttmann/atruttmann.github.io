@@ -13,9 +13,10 @@ const BrandRefresh = {
     problem:
       "The Roku Visual Design team needed to showcase their vision of a brand refresh initiative to executives.",
     goal: "Prototype design updates across the entire Roku OS.",
+    outcome: "I presented the prototype to Roku's VP of Design.",
     role: "I was the lead engineer on this project and worked with another UX Engineer.",
-    dates: "July - August 2023",
     technologies: "Vue.js",
+    dates: "July - August 2023",
   },
   content: (
     <>

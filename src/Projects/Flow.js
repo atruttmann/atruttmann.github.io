@@ -13,9 +13,11 @@ const Flow = {
     problem:
       "Roku designers need a way to easily view their prototypes on TVs for user testing.",
     goal: "Create an easy to use web platform that exports prototypes to a Roku TV channel.",
+    outcome:
+      "The fist version of Flow was released in August 2022. I continued to maintain the tool and release feature updates.",
     role: "I was the sole designer and full stack engineer on this project.",
-    dates: "April 2022 - September 2023",
     technologies: "React, Node.js, Express, AWS Dynamo DB, AWS S3",
+    dates: "April 2022 - September 2023",
   },
   content: (
     <>

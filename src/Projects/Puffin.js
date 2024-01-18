@@ -13,9 +13,10 @@ const Puffin = {
     problem:
       "Bulk generating assets is an arduous task for designers, and handoff to engineering is a manual, non-standardized process.",
     goal: "Take the tedious work out of bulk generating assets. Automate work that is currently done with copy/paste, while letting designers have control over tweaking the details. Make it easy to hand off assets to engineers.",
+    outcome: "I released the first version of the plugin in August 2023.",
     role: "I was the sole designer and developer on this project.",
-    dates: "April - August 2023",
     technologies: "Figma Plugin API, TypeScript, React",
+    dates: "April - August 2023",
   },
   content: (
     <>

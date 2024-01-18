@@ -13,9 +13,11 @@ const Pyro = {
     problem:
       "Intuit designers need a way to quickly create high-fidelity prototypes with interactive components and real user data.",
     goal: "Develop an intuitive drag-and-drop interface that leverages Intuit Design System components and supports custom data and logic.",
-    role: "I worked on a small team of five Design Technologists. I wore many hats including developing the product, designing new features, leading user testing sessions, and prioritizing our Jira board.",
-    dates: "February 2020 - April 2022",
+    outcome:
+      "Pyro 1.0 was released in November 2020. I continued to maintain the tool and release feature updates.",
+    role: "I worked on a team of five Design Technologists. I wore many hats including developing the product, designing new features, leading user testing sessions, and prioritizing our Jira board.",
     technologies: "React, Firebase",
+    dates: "February 2020 - April 2022",
   },
   links: [],
   content: (

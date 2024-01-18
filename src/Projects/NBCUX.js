@@ -13,10 +13,12 @@ const NBCUX = {
     problem:
       "NBC Universal has many internal enterprise tools and not enough designers to support them. Product managers need to create their own layouts in Figma with minimal support from the design team.",
     goal: "Make Figma easy to use for non-designers by creating a plugin that generates layouts using design system components.",
+    outcome:
+      "The first version of the plugin was released to users in January 2024.",
     role: "I was the lead engineer on this project and worked with another UX Engineer and two designers. This was a short-term contract role.",
-    dates: "October - December 2023",
     technologies:
       "Figma Plugin API, TypeScript, React, Material UI, GitHub Actions, Jest",
+    dates: "October - December 2023",
   },
   content: (
     <>

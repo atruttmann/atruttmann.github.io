@@ -13,9 +13,11 @@ const UXE = {
     problem:
       "The Roku UX Engineering team needed a place to share their tools, prototypes, and roadmap.",
     goal: "Create a beautiful website that informs other designers about UX Engineering.",
+    outcome:
+      "The Roku design community was able to learn more about our team's work and how to connect with us.",
     role: "I was the sole designer and full stack engineer on this project.",
-    dates: "September 2022 - August 2023",
     technologies: "React, Node.js, AWS Dynamo DB, AWS S3, Jira API",
+    dates: "September 2022 - August 2023",
   },
   content: (
     <>
