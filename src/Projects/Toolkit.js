@@ -14,7 +14,7 @@ const Toolkit = {
       "How can we leverage Figma plugins to improve Intuit designers' workflows?",
     goal: "Create a Figma plugin that empowers designers to easily add motion, content, and theming to their work.",
     outcome:
-      "The first version of the plugin was released in April 2021. I continued to maintain the plugin and release feature updates.",
+      "The first version of the plugin was released in April 2021, and over time gained more than 238 users. I continued to maintain the plugin and release feature updates.",
     role: "I was the lead for this tool. I maintained the design and code of this plugin and promoted it to our users.",
     technologies: "Figma Plugin API, TypeScript, React",
     dates: "February 2021 - April 2022",
