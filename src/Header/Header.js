@@ -3,18 +3,17 @@ import {
   FaIdCard,
   FaGithubSquare,
   FaEnvelope,
-} from "react-icons/fa";
-import "./Header.scss";
+} from 'react-icons/fa';
+import './Header.scss';
 
 function Header() {
   return (
     <header className="header">
       <h1>Hi, I'm Alayna</h1>
       <p>
-        I'm a Senior UX Engineer with more than five years of experience in
-        web-based prototyping and creating internal design tools at NBC
-        Universal, Roku, and Intuit. I'm currently looking for a new role -
-        reach out to amtruttmann@gmail.com if there's a fit!
+        I'm a Senior Design Engineer with several years of experience in
+        web-based prototyping and creating design tools at NBC, Roku, and
+        Intuit.
       </p>
       <div className="linkIcons">
         <a
