@@ -3,15 +3,15 @@ import {
   FaIdCard,
   FaGithubSquare,
   FaEnvelope,
-} from "react-icons/fa";
-import "./Header.scss";
+} from 'react-icons/fa';
+import './Header.scss';
 
 const Header = () => (
   <header className="header">
     <h1>Hi, I'm Alayna</h1>
     <p>
-      I'm a Senior Design Engineer with several years of experience in
-      prototyping and creating design tools at Peacock, Roku, and Intuit.
+      I'm a Senior Design Engineer with experience in prototyping and creating
+      design tools at Peacock, Roku, and Intuit.
     </p>
     <div className="linkIcons">
       <a
