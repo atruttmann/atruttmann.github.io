@@ -2,7 +2,6 @@ import type { ProjectData } from "../../types";
 import Image1 from "./1.png";
 import Image2 from "./2.png";
 import Image3 from "./3.png";
-import Image4 from "./4.png";
 
 const Oso: ProjectData = {
   title: "Remote backlight interface",
@@ -22,7 +21,7 @@ const Oso: ProjectData = {
   },
   content: (
     <>
-      <img src={Image2} alt="Backlit remotes" />
+      <img src={Image1} alt="Backlit remotes" />
       <p className="caption">Backlit remote prototypes</p>
 
       <p>
@@ -68,7 +67,7 @@ const Oso: ProjectData = {
         red for Netflix..
       </p>
 
-      <img src={Image3} alt="Web interface" />
+      <img src={Image2} alt="Web interface" />
       <p className="caption">Settings used to control the remote</p>
 
       <p>
@@ -79,7 +78,7 @@ const Oso: ProjectData = {
         once with the click of a button.
       </p>
 
-      <img src={Image4} alt="Preset creation" />
+      <img src={Image3} alt="Preset creation" />
       <p className="caption">Creating a preset configuration</p>
 
       <p>
