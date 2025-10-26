@@ -1,6 +1,3 @@
-@import "./styles/theme";
-@import "./styles/variables";
-
 html {
   font-size: 12px;
   overflow: hidden;
@@ -12,6 +9,10 @@ html {
   @media screen and (min-width: $breakpoint-lg) {
     font-size: 16px;
   }
+}
+
+body {
+  @include body-1;
 }
 
 h1,
@@ -74,7 +75,9 @@ a {
 
 .appContainer,
 .modalContainer {
-  transition: $transition-background-color, color $transition-color;
+  transition:
+    $transition-background-color,
+    color $transition-color;
   background-color: var(--color-background);
   color: var(--color-text);
 

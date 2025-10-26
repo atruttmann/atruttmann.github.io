@@ -1,8 +1,6 @@
-@import "animations";
-@import "borderRadius";
-@import "breakpoints";
-@import "sizes";
-@import "typography";
+@use "animations" as *;
+@use "sizes" as *;
+@use "typography" as *;
 
 @mixin tile-box-shadow {
   box-shadow: 0 $size-1 $size-2 2px var(--color-tile-shadow);
