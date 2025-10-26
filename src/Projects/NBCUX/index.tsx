@@ -78,13 +78,24 @@ const NBCUX: ProjectData = {
         us how they use the tool. We want to know who the users are, if they're
         using Figma or FigJam, what they are creating and how often. It's also
         important to know if they run into errors. I chose{" "}
-        <a href="https://mixpanel.com/">Mixpanel</a> to handle our analytics
-        because it's easy to use and integrates well with Figma plugins.
+        <a
+          href="https://mixpanel.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Mixpanel
+        </a>{" "}
+        to handle our analytics because it's easy to use and integrates well
+        with Figma plugins.
       </p>
 
       <img src={Mixpanel} alt="Mixpanel Analytics Dashboard" />
       <p className="caption">
-        <a href="https://mixpanel.com/public/6fPuCsME2BR7Ra7NECbdgx">
+        <a
+          href="https://mixpanel.com/public/6fPuCsME2BR7Ra7NECbdgx"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           Mixpanel Analytics dashboard
         </a>{" "}
         with preliminary data.
@@ -96,18 +107,37 @@ const NBCUX: ProjectData = {
         developers. Due to my short-term contract, I wouldn't be there to
         onboard them in the future. I focused on creating great documentation,
         commenting code, and writing unit tests. I chose{" "}
-        <a href="https://www.notion.so/">Notion</a> to host documentation on the
-        code base and our publication process. I wrote thorough{" "}
-        <a href="https://jsdoc.app/">JSDoc</a> comments for all the functions in
-        our codebase. I used <a href="https://jestjs.io/">Jest</a> to write 45
-        unit tests that automatically ran on pull requests.
+        <a
+          href="https://www.notion.so/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Notion
+        </a>{" "}
+        to host documentation on the code base and our publication process. I
+        wrote thorough{" "}
+        <a href="https://jsdoc.app/" target="_blank" rel="noopener noreferrer">
+          JSDoc
+        </a>{" "}
+        comments for all the functions in our codebase. I used{" "}
+        <a href="https://jestjs.io/" target="_blank" rel="noopener noreferrer">
+          Jest
+        </a>{" "}
+        to write 45 unit tests that automatically ran on pull requests.
       </p>
 
       <p>
         A pain point of creating Figma plugins is that the publishing process is
         manual and you have to upload code in the Figma editor. To work around
-        this I used <a href="https://github.com/parrot-global/figcd">figcd</a>,
-        a command-line Figma plugin publishing tool. I combined it with GitHub
+        this I used{" "}
+        <a
+          href="https://github.com/parrot-global/figcd"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          figcd
+        </a>
+        , a command-line Figma plugin publishing tool. I combined it with GitHub
         Actions to deploy releases, which took a multi-step process to one click
         of a button.
       </p>

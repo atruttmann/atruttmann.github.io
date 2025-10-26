@@ -3,8 +3,8 @@ import {
   FaIdCard,
   FaGithubSquare,
   FaEnvelope,
-} from 'react-icons/fa';
-import './Header.scss';
+} from "react-icons/fa";
+import "./Header.scss";
 
 const Header = () => (
   <header className="header">
@@ -16,12 +16,20 @@ const Header = () => (
     <div className="linkIcons">
       <a
         href="https://www.linkedin.com/in/atruttmann/"
+        target="_blank"
+        rel="noopener noreferrer"
         aria-label="LinkedIn"
         title="LinkedIn"
       >
         <FaLinkedin />
       </a>
-      <a href="Resume-Alayna-Truttmann.pdf" aria-label="Resume" title="Resume">
+      <a
+        href="Resume-Alayna-Truttmann.pdf"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Resume"
+        title="Resume"
+      >
         <FaIdCard />
       </a>
       <a href="mailto:amtruttmann@gmail.com" aria-label="Email" title="Email">
@@ -29,6 +37,8 @@ const Header = () => (
       </a>
       <a
         href="https://github.com/atruttmann"
+        target="_blank"
+        rel="noopener noreferrer"
         aria-label="GitHub"
         title="GitHub"
       >

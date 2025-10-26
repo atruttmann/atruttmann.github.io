@@ -44,7 +44,11 @@ const Puffin: ProjectData = {
 
       <p>
         When starting my design process I chose to use{" "}
-        <a href="https://www.figma.com/community/file/928108847914589057">
+        <a
+          href="https://www.figma.com/community/file/928108847914589057"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           UI2, Figma's Design System
         </a>
         . I learned from previous experience building plugins that they felt
@@ -88,19 +92,38 @@ const Puffin: ProjectData = {
       <p>
         My previous experience building Figma plugins accelerated the
         development process. I used a handy{" "}
-        <a href="https://github.com/nirsky/figma-plugin-react-template">
+        <a
+          href="https://github.com/nirsky/figma-plugin-react-template"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           React Figma plugin template
         </a>{" "}
         to start the project. I leveraged{" "}
-        <a href="https://github.com/alexandrtovmach/react-figma-plugin-ds">
+        <a
+          href="https://github.com/alexandrtovmach/react-figma-plugin-ds"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           react-figma-plugin-ds
         </a>{" "}
         for design system components.{" "}
-        <a href="https://github.com/Donaldcwl/browser-image-compression">
+        <a
+          href="https://github.com/Donaldcwl/browser-image-compression"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           browser-image-compression
         </a>{" "}
-        and <a href="https://github.com/Stuk/jszip">jszip</a> helped me export
-        assets.
+        and{" "}
+        <a
+          href="https://github.com/Stuk/jszip"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          jszip
+        </a>{" "}
+        helped me export assets.
       </p>
 
       <p>
@@ -116,7 +139,11 @@ const Puffin: ProjectData = {
         Puffin 1.0 launched in August 2023. The next step is to gather user
         feedback to determine changes to make in the next version. I would like
         to explore stronger image compression techniques such as{" "}
-        <a href="https://en.wikipedia.org/wiki/Quantization_(image_processing)">
+        <a
+          href="https://en.wikipedia.org/wiki/Quantization_(image_processing)"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           image quantization
         </a>
         .

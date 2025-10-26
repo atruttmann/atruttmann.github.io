@@ -52,7 +52,11 @@ function App() {
           <p className="body2">
             I designed and built this website from scratch! Check out the code
             on{" "}
-            <a href="https://github.com/atruttmann/atruttmann.github.io">
+            <a
+              href="https://github.com/atruttmann/atruttmann.github.io"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               GitHub
             </a>
             .

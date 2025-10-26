@@ -65,8 +65,14 @@ const Flow: ProjectData = {
         I started developing the website first. I used React to build the UI and
         a Node.js to send data to Dynamo DB and store images in a S3 bucket. I
         leveraged the open source{" "}
-        <a href="https://reactflow.dev/">React Flow</a> library as the editor
-        for my interactive diagrams.
+        <a
+          href="https://reactflow.dev/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          React Flow
+        </a>{" "}
+        library as the editor for my interactive diagrams.
       </p>
       <img src={Image4} alt="Flow editor" />
       <p className="caption">Editing a prototype</p>
@@ -82,7 +88,14 @@ const Flow: ProjectData = {
         The next phase of my development work was creating the Roku channel. I
         used an internal technology that functions like to React but works on TV
         channels. It is similar to the externally available{" "}
-        <a href="https://developer.roku.com/develop">Roku SDK</a>.
+        <a
+          href="https://developer.roku.com/develop"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Roku SDK
+        </a>
+        .
       </p>
       <img src={Image6} alt="Roku channel home view" />
       <p className="caption">

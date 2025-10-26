@@ -88,7 +88,13 @@ const ProjectModal = ({
                     <b>Links: </b>
                     {project.links?.map((link, index) => (
                       <span key={link.title}>
-                        <a href={link.url}>{link.title}</a>
+                        <a
+                          href={link.url}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          {link.title}
+                        </a>
                         {index < (project.links?.length ?? 0) - 1 && " | "}
                       </span>
                     ))}

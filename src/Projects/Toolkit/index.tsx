@@ -28,9 +28,19 @@ const Toolkit: ProjectData = {
       <h2 className="sectionTitle">Version 1</h2>
       <p>
         During the fall of 2020, Intuit designers made the switch to using{" "}
-        <a href="https://www.figma.com/">Figma</a> as their primary design tool.
-        Figma supports adding{" "}
-        <a href="https://www.figma.com/community/plugins?tab=plugins">
+        <a
+          href="https://www.figma.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Figma
+        </a>{" "}
+        as their primary design tool. Figma supports adding{" "}
+        <a
+          href="https://www.figma.com/community/plugins?tab=plugins"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           plugins
         </a>
         , which are apps you can install to add functionality and improve your
@@ -59,12 +69,27 @@ const Toolkit: ProjectData = {
       </p>
       <p>
         Once I had a solid design, I moved on to developing the functionality
-        using <a href="https://www.typescriptlang.org/">TypeScript</a> and{" "}
-        <a href="https://sass-lang.com/">Sass</a>. The plugin analyzes a layer's
-        fill and border colors, finding the appropriate contextual color
-        pairing, and then changing the layer's colors to the new theme.This
-        automatic process is completed in a matter of seconds, which saves
-        designers hours of work in manually changing colors.
+        using{" "}
+        <a
+          href="https://www.typescriptlang.org/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          TypeScript
+        </a>{" "}
+        and{" "}
+        <a
+          href="https://sass-lang.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Sass
+        </a>
+        . The plugin analyzes a layer's fill and border colors, finding the
+        appropriate contextual color pairing, and then changing the layer's
+        colors to the new theme.This automatic process is completed in a matter
+        of seconds, which saves designers hours of work in manually changing
+        colors.
       </p>
       <video controls preload="none">
         <source src={DemoVideo} type="video/mp4" />
@@ -122,7 +147,11 @@ const Toolkit: ProjectData = {
       <p>
         I started by redesigning the plugin to create a common visual language.
         I chose to use{" "}
-        <a href="https://www.figma.com/community/file/928108847914589057">
+        <a
+          href="https://www.figma.com/community/file/928108847914589057"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           UI2, Figma's Design System
         </a>{" "}
         as the basis for my design. Using Figma's components and styles helps
@@ -139,18 +168,29 @@ const Toolkit: ProjectData = {
       <p className="caption">Redesigned cover art for installation page</p>
       <p>
         My next step was to add analytics. I chose to use{" "}
-        <a href="https://mixpanel.com/">Mixpanel</a> because of its powerful
-        capabilities and compatibility with Figma plugins. Now, when a user
-        clicks a button I know their name, the file they are using, and their
-        overall activity. I can track monthly active users, view a list of Figma
-        files the plugin is being used in, and see which buttons are clicked the
-        most. This will help me know which features of the plugin are most
-        valuable and should be invested in. I now know who the top users of the
-        plugin are and can ask them for feedback.
+        <a
+          href="https://mixpanel.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Mixpanel
+        </a>{" "}
+        because of its powerful capabilities and compatibility with Figma
+        plugins. Now, when a user clicks a button I know their name, the file
+        they are using, and their overall activity. I can track monthly active
+        users, view a list of Figma files the plugin is being used in, and see
+        which buttons are clicked the most. This will help me know which
+        features of the plugin are most valuable and should be invested in. I
+        now know who the top users of the plugin are and can ask them for
+        feedback.
       </p>
       <img src={Mixpanel} alt="Mixpanel Analytics Dashboard" />
       <p className="caption">
-        <a href="https://mixpanel.com/public/7veU4Lv7JycMp3Ene9z4hu">
+        <a
+          href="https://mixpanel.com/public/7veU4Lv7JycMp3Ene9z4hu"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           Mixpanel Analytics dashboard
         </a>{" "}
         with three weeks of data

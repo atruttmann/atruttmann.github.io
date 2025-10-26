@@ -44,10 +44,20 @@ const Oso: ProjectData = {
 
       <p>
         A hardware engineer on my team had built several remotes with an{" "}
-        <a href="https://www.arduino.cc/">Arduino</a> that could change the
-        remote's settings. It was possible to have a website communicate with
-        the remote's Arduino using the{" "}
-        <a href="https://developer.mozilla.org/en-US/docs/Web/API/Web_Serial_API">
+        <a
+          href="https://www.arduino.cc/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Arduino
+        </a>{" "}
+        that could change the remote's settings. It was possible to have a
+        website communicate with the remote's Arduino using the{" "}
+        <a
+          href="https://developer.mozilla.org/en-US/docs/Web/API/Web_Serial_API"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           Web Serial API
         </a>
         . The challenge was that I had never used the Web Serial API and I had
@@ -59,7 +69,11 @@ const Oso: ProjectData = {
         system components to build the interface faster. There were several
         custom components I needed to build. I created a color picker that could
         handle both regular RGB colors as well as{" "}
-        <a href="https://giggster.com/guide/color-temperature-chart/">
+        <a
+          href="https://giggster.com/guide/color-temperature-chart/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           color temperatures
         </a>
         . Most of the remote button lights would be a shade of warm white.
