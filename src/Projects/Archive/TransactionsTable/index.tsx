@@ -11,7 +11,7 @@ const TransactionsTable: ProjectData = {
   subTitle: "Prototype testing with customer data",
   coverImageSrc: Image1,
   coverPosition: "top left",
-  passwordRequired: true,
+  passwordRequired: false,
   overview: {
     problem:
       "This prototype addresses two QuickBooks customer needs. Customers need onboarding to show them how to automate categorizing their transactions. Customers also need to see all their transactions in one table to get insights into the health of their small business.",

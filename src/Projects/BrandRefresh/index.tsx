@@ -10,7 +10,7 @@ const BrandRefresh: ProjectData = {
   subTitle: "Prototype of design updates",
   coverImageSrc: Image1,
   coverPosition: "center top",
-  passwordRequired: true,
+  passwordRequired: false,
   overview: {
     problem:
       "The Roku Visual Design team needed to showcase their vision of a brand refresh initiative to executives.",

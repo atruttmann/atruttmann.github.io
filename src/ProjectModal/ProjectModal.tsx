@@ -54,7 +54,7 @@ const ProjectModal = ({
       onEntered={modalAnimationFinish}
       nodeRef={nodeRef}
     >
-      <div className="modalContainer">
+      <div className="modalContainer" ref={nodeRef}>
         <div className="projectContent">
           <button
             className="closeButton"
@@ -75,7 +75,7 @@ const ProjectModal = ({
                 <h2 className="sectionTitle">Overview</h2>
                 {(
                   Object.keys(
-                    project.overview,
+                    project.overview
                   ) as (keyof typeof project.overview)[]
                 ).map((infoItem) => (
                   <p key={infoItem}>

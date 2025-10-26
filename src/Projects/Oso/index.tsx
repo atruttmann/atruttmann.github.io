@@ -9,7 +9,7 @@ const Oso: ProjectData = {
   subTitle: "Controlling TV remote hardware",
   coverImageSrc: Image1,
   coverPosition: "center top",
-  passwordRequired: true,
+  passwordRequired: false,
   overview: {
     problem:
       "Roku designers needed to control the LED backlight color and behaviors of an experimental TV remote for user testing.",
