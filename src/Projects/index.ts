@@ -8,9 +8,11 @@ import UXE from "./Roku_UXE";
 import NBCUX from "./NBCUX";
 import MobilePlayer from "./Peacock_MobilePlayer";
 import VisMerchEditor from "./Peacock_VisMerchEditor";
+import RealityAI from "./Peacock_RealityAI";
 
 const ProjectsList: ProjectData[] = [
   MobilePlayer,
+  RealityAI,
   VisMerchEditor,
   NBCUX,
   Flow,

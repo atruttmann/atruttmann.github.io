@@ -1,4 +1,5 @@
 import type { ProjectData } from "@types";
+import Link from "Link/Link";
 import Image1 from "./1.png";
 import Image2 from "./2.png";
 import Image3 from "./3.png";
@@ -49,9 +50,9 @@ const VideoGameOlympics: ProjectData = {
       <img src={Image1} alt="Leaderboard" />
       <p>
         I built this project using React and SCSS. I used{" "}
-        <a href="https://github.com/theoephraim/node-google-spreadsheet">
+        <Link href="https://github.com/theoephraim/node-google-spreadsheet">
           google-spreadsheet
-        </a>
+        </Link>
         , a Google Sheets API wrapper for JavaScript, to pull the data from the
         spreadsheet of scores. Since this data needed to update as the
         spreadsheet was edited, I refreshed the data every five seconds.

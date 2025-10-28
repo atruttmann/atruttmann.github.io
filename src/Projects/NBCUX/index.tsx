@@ -1,4 +1,5 @@
 import type { ProjectData } from "@types";
+import Link from "Link/Link";
 import Image1 from "./1.png";
 import Image2 from "./2.png";
 import Image3 from "./3.png";
@@ -115,15 +116,10 @@ const NBCUX: ProjectData = {
           Notion
         </a>{" "}
         to host documentation on the code base and our publication process. I
-        wrote thorough{" "}
-        <a href="https://jsdoc.app/" target="_blank" rel="noopener noreferrer">
-          JSDoc
-        </a>{" "}
-        comments for all the functions in our codebase. I used{" "}
-        <a href="https://jestjs.io/" target="_blank" rel="noopener noreferrer">
-          Jest
-        </a>{" "}
-        to write 45 unit tests that automatically ran on pull requests.
+        wrote thorough <Link href="https://jsdoc.app/">JSDoc</Link> comments for
+        all the functions in our codebase. I used{" "}
+        <Link href="https://jestjs.io/">Jest</Link> to write 45 unit tests that
+        automatically ran on pull requests.
       </p>
 
       <p>

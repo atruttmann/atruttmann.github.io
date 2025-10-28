@@ -2,6 +2,7 @@ import { useEffect, useRef } from "react";
 import { CSSTransition } from "react-transition-group";
 import { FaTimesCircle } from "react-icons/fa";
 import type { ProjectData } from "@types";
+import Link from "Link/Link";
 import PasswordProtector from "../PasswordProtector/PasswordProtector";
 import "./ProjectModal.scss";
 
@@ -88,13 +89,7 @@ const ProjectModal = ({
                     <b>Links: </b>
                     {project.links?.map((link, index) => (
                       <span key={link.title}>
-                        <a
-                          href={link.url}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                        >
-                          {link.title}
-                        </a>
+                        <Link href={link.url}>{link.title}</Link>
                         {index < (project.links?.length ?? 0) - 1 && " | "}
                       </span>
                     ))}

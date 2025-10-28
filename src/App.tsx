@@ -8,6 +8,7 @@ import Header from "./Header/Header";
 import ProjectTile from "./ProjectTile/ProjectTile";
 import ProjectsList from "./Projects";
 import ProjectModal from "./ProjectModal/ProjectModal";
+import Link from "./Link/Link";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.scss";
 
@@ -52,13 +53,9 @@ function App() {
           <p className="body2">
             I designed and built this website from scratch! Check out the code
             on{" "}
-            <a
-              href="https://github.com/atruttmann/atruttmann.github.io"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
+            <Link href="https://github.com/atruttmann/atruttmann.github.io">
               GitHub
-            </a>
+            </Link>
             .
           </p>
         </div>

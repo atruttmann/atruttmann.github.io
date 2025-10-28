@@ -1,4 +1,5 @@
 import type { ProjectData } from "@types";
+import Link from "Link/Link";
 import Image1 from "./1.png";
 import Image2 from "./2.png";
 import Image3 from "./3.png";
@@ -39,9 +40,13 @@ const Dixma: ProjectData = {
         My team at Intuit does hackathons every quarter. For the August 2020
         hackathon, I suggested we recreate a board game that we could play
         together online. We chose the card game{" "}
-        <a href="https://boardgamegeek.com/boardgame/39856/dixit">Dixit</a> and
-        decided to make it a{" "}
-        <a href="https://www.figma.com/plugin-docs/intro/">Figma plugin</a>{" "}
+        <Link href="https://boardgamegeek.com/boardgame/39856/dixit">
+          Dixit
+        </Link>{" "}
+        and decided to make it a{" "}
+        <Link href="https://www.figma.com/plugin-docs/intro/">
+          Figma plugin
+        </Link>{" "}
         since Figma allows for collaborative interaction. The name "Dixma" came
         from the combination of Dixit + Figma.
       </p>

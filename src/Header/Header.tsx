@@ -4,6 +4,7 @@ import {
   FaGithubSquare,
   FaEnvelope,
 } from "react-icons/fa";
+import Link from "Link/Link";
 import "./Header.scss";
 
 const Header = () => (
@@ -32,18 +33,12 @@ const Header = () => (
       >
         <FaIdCard />
       </a>
-      <a href="mailto:amtruttmann@gmail.com" aria-label="Email" title="Email">
+      <Link href="mailto:amtruttmann@gmail.com" label="Email">
         <FaEnvelope />
-      </a>
-      <a
-        href="https://github.com/atruttmann"
-        target="_blank"
-        rel="noopener noreferrer"
-        aria-label="GitHub"
-        title="GitHub"
-      >
+      </Link>
+      <Link href="https://github.com/atruttmann" label="GitHub">
         <FaGithubSquare />
-      </a>
+      </Link>
     </div>
   </header>
 );

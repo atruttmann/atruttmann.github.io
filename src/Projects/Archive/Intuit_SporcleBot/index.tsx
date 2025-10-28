@@ -1,4 +1,5 @@
 import type { ProjectData } from "@types";
+import Link from "Link/Link";
 import Cover from "./Cover.png";
 import Image1 from "./1.png";
 import Image2 from "./2.png";
@@ -24,14 +25,15 @@ const SporcleBot: ProjectData = {
       <p>
         My team at Intuit does hackathons every quarter. For this hackathon, I
         suggested that we work on a Slackbot that would generate a leaderboard
-        based on <a href="https://www.sporcle.com/">Sporcle</a> quiz scores.
-        We've been doing daily Sporcle challenges since work from home started.
-        The rules are simple - take the quiz, post your score as a screenshot,
-        and the person with the highest score gets to pick the next day's quiz.
-        One small issue we've run into is if the winner forgets to post the next
-        quiz, sometimes we'll go days or weeks without playing. I wanted to have
-        a bot post a leaderboard message as a gentle nudge to remind the winner
-        to post a quiz, as well as show all participants how they ranked.
+        based on <Link href="https://www.sporcle.com/">Sporcle</Link> quiz
+        scores. We've been doing daily Sporcle challenges since work from home
+        started. The rules are simple - take the quiz, post your score as a
+        screenshot, and the person with the highest score gets to pick the next
+        day's quiz. One small issue we've run into is if the winner forgets to
+        post the next quiz, sometimes we'll go days or weeks without playing. I
+        wanted to have a bot post a leaderboard message as a gentle nudge to
+        remind the winner to post a quiz, as well as show all participants how
+        they ranked.
       </p>
 
       <img
@@ -44,24 +46,28 @@ const SporcleBot: ProjectData = {
       </p>
 
       <p>
-        After getting set up with <a href="https://api.slack.com/">Slack API</a>
-        , we realized we needed a server to communicate with Slack. One of my
-        teammates set up a{" "}
-        <a href="https://www.digitalocean.com/">Digital Ocean</a> droplet where
-        we could host our code.
+        After getting set up with{" "}
+        <Link href="https://api.slack.com/">Slack API</Link>, we realized we
+        needed a server to communicate with Slack. One of my teammates set up a{" "}
+        <Link href="https://www.digitalocean.com/">Digital Ocean</Link> droplet
+        where we could host our code.
       </p>
       <p>
         Our code was split up into three sections.
         <br />
-        1. <a href="https://api.slack.com/messaging/webhooks">Webhooks</a> which
-        subscribed to events happening in our Sporcle channel. We used this for
-        for welcoming users to the channel and sending score images to be
-        parsed.
+        1. <Link href="https://api.slack.com/messaging/webhooks">
+          Webhooks
+        </Link>{" "}
+        which subscribed to events happening in our Sporcle channel. We used
+        this for for welcoming users to the channel and sending score images to
+        be parsed.
         <br />
         2. Optical Character Recognition (OCR) which parsed the score
         screenshots and return text. We used{" "}
-        <a href="https://tesseract.projectnaptha.com/">Tessaract.js</a> for
-        this.
+        <Link href="https://tesseract.projectnaptha.com/">
+          Tessaract.js
+        </Link>{" "}
+        for this.
         <br />
         3. Scheduled events, which would post the leaderboard and remind the
         channel if no one had posted a challenge.
