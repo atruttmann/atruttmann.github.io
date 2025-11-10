@@ -3,12 +3,12 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import { FaSun, FaMoon } from "react-icons/fa";
-import useTheme from "./useTheme";
-import Header from "./Header/Header";
-import ProjectTile from "./ProjectTile/ProjectTile";
-import ProjectsList from "./Projects";
-import ProjectModal from "./ProjectModal/ProjectModal";
-import Link from "./Link/Link";
+import Header from "./components/Header/Header";
+import ProjectTile from "./components/ProjectTile/ProjectTile";
+import ProjectModal from "./components/ProjectModal/ProjectModal";
+import Link from "./components/Link/Link";
+import ProjectsList from "./projects";
+import useTheme from "./utils/useTheme";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.scss";
 

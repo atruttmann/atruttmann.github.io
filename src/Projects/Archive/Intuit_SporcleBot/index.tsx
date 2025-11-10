@@ -1,5 +1,5 @@
 import type { ProjectData } from "@types";
-import Link from "Link/Link";
+import Link from "@components/Link/Link";
 import Cover from "./Cover.png";
 import Image1 from "./1.png";
 import Image2 from "./2.png";

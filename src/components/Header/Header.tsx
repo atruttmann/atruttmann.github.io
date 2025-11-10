@@ -4,7 +4,7 @@ import {
   FaGithubSquare,
   FaEnvelope,
 } from "react-icons/fa";
-import Link from "Link/Link";
+import Link from "@components/Link/Link";
 import "./Header.scss";
 
 const Header = () => (
