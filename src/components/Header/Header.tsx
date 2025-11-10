@@ -33,7 +33,7 @@ const Header = () => (
       >
         <FaIdCard />
       </a>
-      <Link href="mailto:amtruttmann@gmail.com" label="Email">
+      <Link href="mailto:amtruttmann@gmail.com" label="amtruttmann@gmail.com">
         <FaEnvelope />
       </Link>
       <Link href="https://github.com/atruttmann" label="GitHub">

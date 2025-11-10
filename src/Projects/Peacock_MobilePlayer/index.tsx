@@ -1,9 +1,21 @@
 import type { ProjectData } from "@types";
+import Image from "@components/Image/Image";
 import Link from "@components/Link/Link";
 import Video from "@components/Video/Video";
 import Cover from "./Cover.png";
 import DemoVideo from "./Demo.mp4";
+import ReframingVideo from "./Reframing.mp4";
 import Landscape from "./Landscape.png";
+import Portrait from "./Portrait.png";
+import Vertical from "./Vertical.png";
+import Menu from "./Menu.png";
+import Info from "./Info.png";
+
+/**
+ * TODO
+ * how prototyping with design allowed for tweaks
+ * findings of user testing (did not like vertical)
+ */
 
 const MobilePlayer: ProjectData = {
   title: "Mobile Player Redesign",
@@ -38,6 +50,39 @@ const MobilePlayer: ProjectData = {
       <Video
         src={DemoVideo}
         caption="Full prototype demo showing landscape, portrait, and portrait fullscreen."
+      />
+
+      <Image src={Landscape} caption="Landscape view" />
+      <Image src={Portrait} mobile caption="Portrait view" />
+      <Image src={Vertical} mobile caption="Portrait fullscreen view" />
+
+      <p>
+        This prototype included many functionalities including: subtitles and
+        audio menus, details about the playing video, "More Like This"
+        recommendations, a season picker,and brightness controls.
+      </p>
+
+      <Image src={Menu} caption="Subtitles and audio menu" />
+      <Image src={Info} mobile caption="Video details" />
+
+      <p>
+        One of the most interesting challenges of this project was figuring out
+        how to crop video from landscape to portrait while maintaining focus on
+        the subject of the video. To achieve this, I integrated the{" "}
+        <Link href="https://developer.apple.com/documentation/vision/generateattentionbasedsaliencyimagerequest">
+          Apple Vision Framework
+        </Link>{" "}
+        into the prototype to analyze the streamed video frames in real time and
+        automatically identify areas of interest within the video frame. I used
+        these coordinates to pan the video to the relevant area. I experimented
+        with different timings and smoothing techniques to ensure that the
+        panning felt gentle and not jarring.
+      </p>
+
+      <Video
+        src={ReframingVideo}
+        mobile
+        caption="The red rectangle shows areas of interest within a video"
       />
 
       <p>

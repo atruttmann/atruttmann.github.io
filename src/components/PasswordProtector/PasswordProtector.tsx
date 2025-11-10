@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { FaLock, FaExclamationCircle } from "react-icons/fa";
+import Link from "@components/Link/Link";
 import "./PasswordProtector.scss";
 
 interface PasswordProtectorProps {
@@ -16,7 +17,8 @@ const PasswordProtector = ({ authenticate }: PasswordProtectorProps) => {
       <p className="body2">
         Sorry, the information in this project is confidential and requires a
         password. Please email{" "}
-        <span className="email">amtruttmann@gmail.com</span> for access.
+        <Link href="mailto:amtruttmann@gmail.com">amtruttmann@gmail.com</Link>{" "}
+        for access.
       </p>
 
       <div className="formContainer">
