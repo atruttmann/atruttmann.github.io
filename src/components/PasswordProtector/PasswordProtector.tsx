@@ -2,11 +2,11 @@ import { useState } from "react";
 import { FaLock, FaExclamationCircle } from "react-icons/fa";
 import "./PasswordProtector.scss";
 
-const PasswordProtector = ({
-  authenticate,
-}: {
+interface PasswordProtectorProps {
   authenticate: (input: string) => boolean;
-}) => {
+}
+
+const PasswordProtector = ({ authenticate }: PasswordProtectorProps) => {
   const [userInput, setUserInput] = useState("");
   const [showError, setShowError] = useState(false);
 

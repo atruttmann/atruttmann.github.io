@@ -1,4 +1,6 @@
 import type { ProjectData } from "@types";
+import Image from "@/components/Image/Image";
+import Video from "@/components/Video/Video";
 import Image1 from "./1.png";
 import Image2 from "./2.png";
 import Image3 from "./3.png";
@@ -32,8 +34,7 @@ const Puffin: ProjectData = {
         engineers.
       </p>
 
-      <img src={Image2} alt="Example tiles" />
-      <p className="caption">Example of tiles Roku designers generate</p>
+      <Image src={Image2} caption="Example of tiles Roku designers generate" />
 
       <p>
         My first thought when hearing about these issues was that a Figma plugin
@@ -68,8 +69,7 @@ const Puffin: ProjectData = {
         process.
       </p>
 
-      <img src={Image3} alt="User flow" />
-      <p className="caption">Planning the tile generation flow</p>
+      <Image src={Image3} caption="Planning the tile generation flow" />
 
       <p>
         The next step was to design the export experience. My design
@@ -86,8 +86,7 @@ const Puffin: ProjectData = {
         set of aspect ratios.
       </p>
 
-      <img src={Image4} alt="Puffin screens" />
-      <p className="caption">Finalized designs</p>
+      <Image src={Image4} caption="Finalized designs" />
 
       <p>
         My previous experience building Figma plugins accelerated the
@@ -131,9 +130,7 @@ const Puffin: ProjectData = {
         I created a quick overview video to show what the plugin could do.
       </p>
 
-      <video controls preload="none" poster={Image1}>
-        <source src={DemoVideo} type="video/mp4" />
-      </video>
+      <Video src={DemoVideo} poster={Image1} />
 
       <p>
         Puffin 1.0 launched in August 2023. The next step is to gather user

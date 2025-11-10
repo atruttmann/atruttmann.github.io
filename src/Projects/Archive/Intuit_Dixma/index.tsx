@@ -1,4 +1,5 @@
 import type { ProjectData } from "@types";
+import Image from "@/components/Image/Image";
 import Link from "@components/Link/Link";
 import Image1 from "./1.png";
 import Image2 from "./2.png";
@@ -50,14 +51,14 @@ const Dixma: ProjectData = {
         since Figma allows for collaborative interaction. The name "Dixma" came
         from the combination of Dixit + Figma.
       </p>
-      <img src={Image1} alt="Dixma cover art" />
+      <Image src={Image1} alt="Dixma cover art" />
 
       <p>
         The game starts with players choosing a color to add their name to the
         list of players. One or more players can run the Dixma plugin within
         Figma to start the game and control the gameplay.
       </p>
-      <img src={Image2} alt="Players adding names to list" />
+      <Image src={Image2} alt="Players adding names to list" />
 
       <p>
         When the first round starts, each player gets a page created within the
@@ -66,7 +67,7 @@ const Dixma: ProjectData = {
         to the main game board. Players are on the honor system to not look at
         other player's pages.
       </p>
-      <img src={Image3} alt="Player's hand" />
+      <Image src={Image3} alt="Player's hand" />
 
       <p>
         Each round, one player is the storyteller and gives a short clue to
@@ -74,7 +75,7 @@ const Dixma: ProjectData = {
         think best matches the clue. Once everyone has submitted, the player
         controlling the plugin reveals the cards in the "Card Play Area".
       </p>
-      <img src={Image4} alt="Cards moved to 'Card Play Area'" />
+      <Image src={Image4} alt="Cards moved to 'Card Play Area'" />
 
       <p>
         Next, players look at the cards played and vote for the card they think
@@ -82,7 +83,7 @@ const Dixma: ProjectData = {
         their tokens on the game board. The next round begins and rounds
         continue until someone reaches 30 points.
       </p>
-      <img src={Image5} alt="Players voting" />
+      <Image src={Image5} alt="Players voting" />
 
       <p>
         This plugin was written in TypeScript and was primarily developed over

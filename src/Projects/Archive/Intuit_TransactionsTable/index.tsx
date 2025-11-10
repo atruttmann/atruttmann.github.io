@@ -1,10 +1,12 @@
 import type { ProjectData } from "@types";
+import Image from "@/components/Image/Image";
 import Image1 from "./1.png";
 import Image2 from "./2.png";
 import Image3 from "./3.png";
 import Image4 from "./4.png";
 import Image5 from "./5.png";
 import DemoVideo from "./Demo.mp4";
+import Video from "@/components/Video/Video";
 
 const TransactionsTable: ProjectData = {
   title: "Transaction Categorization",
@@ -29,12 +31,12 @@ const TransactionsTable: ProjectData = {
         prototype was built with React within my team's existing prototype
         framework.
       </p>
-      <video controls muted preload="none">
-        <source src={DemoVideo} type="video/mp4" />
-      </video>
-      <p className="caption">
-        This video shows the entire flow of the testing.
-      </p>
+
+      <Video
+        src={DemoVideo}
+        muted
+        caption="This video shows the entire flow of the testing."
+      />
 
       <p>
         The research team created this customer problem statement for the
@@ -51,19 +53,19 @@ const TransactionsTable: ProjectData = {
         prototype was not connected to a machine learning model, but would be if
         built in product.
       </p>
-      <img src={Image1} alt="Categorizing a transaction" />
+      <Image src={Image1} alt="Categorizing a transaction" />
 
       <p>
         Once users had categorized a few transactions, they could continue the
         training and review more suggested categories. They could revisit this
         experience at any time.
       </p>
-      <img src={Image2} alt="Categorizing more transactions" />
+      <Image src={Image2} alt="Categorizing more transactions" />
 
       <p>
         Next, users could edit a list to indicate their vendors and customers.
       </p>
-      <img src={Image3} alt="Editing customers and vendors" />
+      <Image src={Image3} alt="Editing customers and vendors" />
 
       <p>
         The second part of the session focused on testing the usability of a
@@ -74,7 +76,7 @@ const TransactionsTable: ProjectData = {
         immediate value from QuickBooks by using it as a source of truth for
         their finances.
       </p>
-      <img src={Image4} alt="Transactions table" />
+      <Image src={Image4} alt="Transactions table" />
 
       <p>
         From a development perspective, the transactions table was the most
@@ -90,7 +92,7 @@ const TransactionsTable: ProjectData = {
         backend for this prototype, so any changes a user made were stored in
         their browser.
       </p>
-      <img src={Image5} alt="Searching the transactions table" />
+      <Image src={Image5} alt="Searching the transactions table" />
 
       <p>
         Testing this prototype helped the design team I partnered with gain a

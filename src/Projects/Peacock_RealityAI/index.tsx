@@ -1,4 +1,5 @@
 import type { ProjectData } from "@types";
+import Video from "@/components/Video/Video";
 import Cover from "./Cover.png";
 import Image1 from "./1.png";
 import DemoVideo from "./Demo.mp4";
@@ -19,14 +20,7 @@ const RealityAI: ProjectData = {
   },
   content: (
     <>
-      <video
-        controls
-        preload="none"
-        poster={Image1}
-        style={{ maxHeight: "75vh", width: "fit-content" }}
-      >
-        <source src={DemoVideo} type="video/mp4" />
-      </video>
+      <Video src={DemoVideo} poster={Image1} />
     </>
   ),
 };

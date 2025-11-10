@@ -1,5 +1,7 @@
 import type { ProjectData } from "@types";
+import Image from "@/components/Image/Image";
 import Link from "@components/Link/Link";
+import Video from "@/components/Video/Video";
 import Image1 from "./1.png";
 import Image2 from "./2.png";
 import Image3 from "./3.png";
@@ -44,8 +46,7 @@ const NBCUX: ProjectData = {
         bar, breadcrumb navigation, and more.
       </p>
 
-      <img src={Image2} alt="Creating a table" />
-      <p className="caption">Creating a table</p>
+      <Image src={Image2} caption="Creating a table" />
 
       <p>
         When a template is created, the plugin adds documentation next to it. It
@@ -55,24 +56,21 @@ const NBCUX: ProjectData = {
         developer support.
       </p>
 
-      <img src={Image3} alt="Documentation" />
+      <Image src={Image3} caption="Documentation" />
 
       <p>
         Users can update template layouts as needed. The update process uses the
         current selection to populate the form data in the UI.
       </p>
 
-      <img src={Image4} alt="Updating a table" />
-      <p className="caption">Updating a table</p>
+      <Image src={Image4} caption="Updating a table" />
 
       <p>
         I created a short demo video of the plugin to share our MVP with new
         users.
       </p>
 
-      <video controls preload="none" poster={Image1}>
-        <source src={DemoVideo} type="video/mp4" />
-      </video>
+      <Video src={DemoVideo} poster={Image1} />
 
       <p>
         As the plugin gains more users, it's helpful to have analytics to tell
@@ -90,7 +88,7 @@ const NBCUX: ProjectData = {
         with Figma plugins.
       </p>
 
-      <img src={Mixpanel} alt="Mixpanel Analytics Dashboard" />
+      <Image src={Mixpanel} caption="Mixpanel Analytics Dashboard" />
       <p className="caption">
         <a
           href="https://mixpanel.com/public/6fPuCsME2BR7Ra7NECbdgx"

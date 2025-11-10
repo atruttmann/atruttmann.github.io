@@ -6,19 +6,21 @@ import Link from "@components/Link/Link";
 import PasswordProtector from "../PasswordProtector/PasswordProtector";
 import "./ProjectModal.scss";
 
+interface ProjectModalProps {
+  project: ProjectData;
+  open: boolean;
+  closeModal: () => void;
+  authenticated: boolean;
+  authenticate: (input: string) => boolean;
+}
+
 const ProjectModal = ({
   project,
   open,
   closeModal,
   authenticated,
   authenticate,
-}: {
-  project: ProjectData;
-  open: boolean;
-  closeModal: () => void;
-  authenticated: boolean;
-  authenticate: (input: string) => boolean;
-}) => {
+}: ProjectModalProps) => {
   const nodeRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {

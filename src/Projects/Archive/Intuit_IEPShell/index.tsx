@@ -1,4 +1,6 @@
 import type { ProjectData } from "@types";
+import Image from "@/components/Image/Image";
+import Video from "@/components/Video/Video";
 import Image1 from "./1.png";
 import Image2 from "./2.png";
 import Image3 from "./3.png";
@@ -39,7 +41,7 @@ const IEPShell: ProjectData = {
         phase of prototyping so a responsive column layout was used as a
         placeholder.
       </p>
-      <img src={Image1} alt="The Intuit Export Portal Shell" />
+      <Image src={Image1} alt="The Intuit Export Portal Shell" />
 
       <p>
         The functionality required for this prototype was to be able to click
@@ -48,12 +50,12 @@ const IEPShell: ProjectData = {
         information. Navigation elements also had to behave responsively on
         smaller screens.
       </p>
-      <video controls muted preload="none">
-        <source src={DemoVideo} type="video/mp4" />
-      </video>
-      <p className="caption">
-        This video shows the entire flow of the prototype.
-      </p>
+
+      <Video
+        src={DemoVideo}
+        muted
+        caption="This video shows the entire flow of the prototype."
+      />
 
       <p>
         The most challenging development aspect of this project was the
@@ -62,26 +64,22 @@ const IEPShell: ProjectData = {
         screens. These navigation items needed to collapse into an overflow
         menu.
       </p>
-      <img
+      <Image
         src={Image2}
-        alt="Milestone dropdown when header is not in overflow."
+        caption="Opening the milestone dropdown when the header is not in an overflow state."
       />
-      <p className="caption">
-        Opening the milestone dropdown when the header is not in an overflow
-        state.
-      </p>
 
-      <img src={Image3} alt="Milestone dropdown when header is overflowing." />
-      <p className="caption">
-        Accessing the milestone dropdown in an overflow state.
-      </p>
+      <Image
+        src={Image3}
+        caption="Accessing the milestone dropdown in an overflow state."
+      />
 
       <p>
         Another responsive aspect of this screen was the overflow behavior for
         tabs. Tabs needed an arrow to show that there were more tabs hidden.
         When clicked, this arrow needed to scroll the tabs by a set pixel value.
       </p>
-      <img src={Image4} alt="Tabs in an overflow state" />
+      <Image src={Image4} alt="Tabs in an overflow state" />
 
       <p>
         After this prototype had been finalized with the design team, I handed

@@ -1,15 +1,17 @@
 import type { ProjectData } from "@types";
 import "./ProjectTile.scss";
 
+interface ProjectTileProps {
+  project: ProjectData;
+  setSelectedProject: (project: ProjectData) => void;
+  setModalOpen: (open: boolean) => void;
+}
+
 const ProjectTile = ({
   project,
   setSelectedProject,
   setModalOpen,
-}: {
-  project: ProjectData;
-  setSelectedProject: (project: ProjectData) => void;
-  setModalOpen: (open: boolean) => void;
-}) => {
+}: ProjectTileProps) => {
   return (
     <div
       className="projectTile"

@@ -1,14 +1,11 @@
-const Link = ({
-  href,
-  children,
-  className,
-  label,
-}: {
+interface LinkProps {
   href: string;
   children: React.ReactNode;
   className?: string;
   label?: string;
-}) => (
+}
+
+const Link = ({ href, children, className, label }: LinkProps) => (
   <a
     href={href}
     target="_blank"

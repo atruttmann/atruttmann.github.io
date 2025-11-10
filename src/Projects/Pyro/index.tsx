@@ -1,4 +1,6 @@
 import type { ProjectData } from "@types";
+import Image from "@/components/Image/Image";
+import Video from "@/components/Video/Video";
 import Image1 from "./1.png";
 import Image2 from "./2.png";
 import Image3 from "./3.png";
@@ -32,13 +34,10 @@ const Pyro: ProjectData = {
         editor and creating features that cater to QuickBooks design needs.
       </p>
 
-      <video controls preload="none">
-        <source src={DemoVideo} type="video/mp4" />
-      </video>
-      <p className="caption">
-        This is the demo video for the initial release of Pyro. Video editing
-        credits go to my awesome colleagues Heather & Lynda.
-      </p>
+      <Video
+        src={DemoVideo}
+        caption="This is the demo video for the initial release of Pyro."
+      />
 
       <p>
         Pyro leverages{" "}
@@ -64,7 +63,7 @@ const Pyro: ProjectData = {
         components built for Pyro or they are imported from Intuit's design
         system.
       </p>
-      <img src={Image2} alt="Pyro editor" />
+      <Image src={Image2} caption="Pyro editor" />
       <p>
         In addition to changing the style of components, you can also set an "on
         click" action for the component or conditionally show or hide it. This
@@ -72,7 +71,7 @@ const Pyro: ProjectData = {
         flows. This feature is particularly important for TurboTax designers who
         often need to create flows with a series of questions.
       </p>
-      <img src={Image3} alt="Close up of component editing" />
+      <Image src={Image3} caption="Close up of component editing" />
       <p>
         Many QuickBooks designers need to incorporate real user data into
         customer testing sessions to help the customer feel like the prototype
@@ -82,7 +81,7 @@ const Pyro: ProjectData = {
         component to Pyro that allows designers to upload user data as a CSV,
         saving us all time!
       </p>
-      <img src={Image4} alt="Table component" />
+      <Image src={Image4} caption="Table component" />
       <p>
         Once Pyro was close to being ready for release, a teammate and I
         conducted ten user testing sessions with Intuit designers. We wanted to
@@ -101,7 +100,7 @@ const Pyro: ProjectData = {
         <br />
         3. Adding a new page to the prototype was not intuitive.
       </p>
-      <img src={Image5} alt="Testing results" />
+      <Image src={Image5} caption="Testing results" />
 
       <p>
         The majority of the issues from user testing were addressed and Pyro

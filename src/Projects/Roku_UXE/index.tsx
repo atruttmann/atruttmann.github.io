@@ -1,4 +1,5 @@
 import type { ProjectData } from "@types";
+import Image from "@components/Image/Image";
 import Image1 from "./1.png";
 import Image2 from "./2.jpg";
 import Image3 from "./3.png";
@@ -41,14 +42,14 @@ const UXE: ProjectData = {
         the website to be attractive to designers and show off our UX
         Engineering front-end skills.
       </p>
-      <img src={Image2} alt="Roku billboard ad" />
+      <Image src={Image2} alt="Roku billboard ad" />
 
       <p>
         The first section of the site shows a list of our internal tools. Each
         tool has an accompanying video or image with links to its site. The tab
         arrangement on the left allows you to browse the details for each tool.
       </p>
-      <img src={Image1} alt="Internal tools" />
+      <Image src={Image1} alt="Internal tools" />
 
       <p>
         The next section shows the prototypes the team has worked on. The list
@@ -56,20 +57,20 @@ const UXE: ProjectData = {
         can search for prototypes, which is helpful because there are more than
         60 prototypes to view.
       </p>
-      <img src={Image3} alt="Viewing prototypes" />
+      <Image src={Image3} alt="Viewing prototypes" />
 
       <p>
         Each prototype can open in a modal. There you can see more project
         details and interact with prototype in an iframe.
       </p>
-      <img src={Image4} alt="Prototypes detail view" />
+      <Image src={Image4} alt="Prototypes detail view" />
 
       <p>
         I also added a hidden form where UX Engineers could add more prototypes
         to the list. The data is saved to AWS Dynamo DB and images are uploaded
         to AWS S3.
       </p>
-      <img src={Image5} alt="Add prototype" />
+      <Image src={Image5} alt="Add prototype" />
 
       <p>
         The roadmap section displayed a calendar view of the projects the team
@@ -83,15 +84,15 @@ const UXE: ProjectData = {
         </a>
         , so roadmap updates are automatic.
       </p>
-      <img src={Image6} alt="Project roadmap" />
+      <Image src={Image6} alt="Project roadmap" />
 
       <p>
         The FAQ section lets other designers know how best to work with our
         team. It includes two quizzes to assess whether a coded prototype is
         necessary and approximately how long a prototype will take to develop.
       </p>
-      <img src={Image7} alt="FAQ section" />
-      <img src={Image8} alt="Prototype quiz" />
+      <Image src={Image7} alt="FAQ section" />
+      <Image src={Image8} alt="Prototype quiz" />
     </>
   ),
 };

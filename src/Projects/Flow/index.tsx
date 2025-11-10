@@ -1,4 +1,6 @@
 import type { ProjectData } from "@types";
+import Image from "@/components/Image/Image";
+import Video from "@/components/Video/Video";
 import Image1 from "./1.png";
 import Image2 from "./2.png";
 import Image3 from "./3.png";
@@ -40,7 +42,7 @@ const Flow: ProjectData = {
         viewing a prototype on a Roku channel.
       </p>
 
-      <img src={Image2} alt="User experience diagram" />
+      <Image src={Image2} alt="User experience diagram" />
 
       <div>
         <p>
@@ -56,10 +58,10 @@ const Flow: ProjectData = {
         </ol>
       </div>
 
-      <img src={Image3} alt="Flow home page" />
-      <p className="caption">
-        View all of your prototypes on the Flow home page
-      </p>
+      <Image
+        src={Image3}
+        caption="View all of your prototypes on the Flow home page"
+      />
 
       <p>
         I started developing the website first. I used React to build the UI and
@@ -74,15 +76,13 @@ const Flow: ProjectData = {
         </a>{" "}
         library as the editor for my interactive diagrams.
       </p>
-      <img src={Image4} alt="Flow editor" />
-      <p className="caption">Editing a prototype</p>
+      <Image src={Image4} caption="Editing a prototype" />
 
       <p>
         I built a web preview so users can try out the prototype on the web and
         fix issues before viewing on the TV.
       </p>
-      <img src={Image5} alt="Prototype preview" />
-      <p className="caption">Previewing a prototype</p>
+      <Image src={Image5} caption="Previewing a prototype" />
 
       <p>
         The next phase of my development work was creating the Roku channel. I
@@ -97,19 +97,17 @@ const Flow: ProjectData = {
         </a>
         .
       </p>
-      <img src={Image6} alt="Roku channel home view" />
-      <p className="caption">
-        Entering a prototype code on the installed channel
-      </p>
+      <Image
+        src={Image6}
+        caption="Entering a prototype code on the installed channel"
+      />
 
       <p>
         Flow 1.0 was released in August 2022. I created a demo video to
         introduce users to Flow.
       </p>
 
-      <video controls preload="none" poster={Image1}>
-        <source src={DemoVideo} type="video/mp4" />
-      </video>
+      <Video src={DemoVideo} poster={Image1} />
 
       <p>
         As more designers have used the tool I added new features based on their

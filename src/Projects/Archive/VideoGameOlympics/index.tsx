@@ -1,4 +1,5 @@
 import type { ProjectData } from "@types";
+import Image from "@/components/Image/Image";
 import Link from "@components/Link/Link";
 import Image1 from "./1.png";
 import Image2 from "./2.png";
@@ -47,7 +48,7 @@ const VideoGameOlympics: ProjectData = {
         evoke a retro video game feel. I added emojis to the leaderboard to
         denote the top players.
       </p>
-      <img src={Image1} alt="Leaderboard" />
+      <Image src={Image1} alt="Leaderboard" />
       <p>
         I built this project using React and SCSS. I used{" "}
         <Link href="https://github.com/theoephraim/node-google-spreadsheet">
@@ -63,7 +64,7 @@ const VideoGameOlympics: ProjectData = {
         grabs. A maximum of three players could score for each challenge, so
         challenges that were no longer available were grayed out.
       </p>
-      <img src={Image2} alt="Challenges" />
+      <Image src={Image2} alt="Challenges" />
       <p>
         This website was built with a responsive design. I expected most players
         to view the site on their laptops, but they had the option of viewing it
@@ -71,15 +72,15 @@ const VideoGameOlympics: ProjectData = {
         content in the tables can be accessed by scrolling horizontally.
       </p>
       <div className="twoImg">
-        <img src={Image3} alt="Viewed on phone" />
-        <img src={Image4} alt="Viewed on tablet" />
+        <Image src={Image3} alt="Viewed on phone" />
+        <Image src={Image4} alt="Viewed on tablet" />
       </div>
       <p>
         At the end of the tournament, the countdown was replaced with a message
         declaring the winner. The event went well and the players enjoyed using
         the website.
       </p>
-      <img src={Image5} alt="Winner" />
+      <Image src={Image5} alt="Winner" />
       <p>
         This was a fun project, and a great way to learn to use Google Sheets as
         a backend. If I were to continue working on this, I would get more user

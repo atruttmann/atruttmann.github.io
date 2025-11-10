@@ -1,4 +1,5 @@
-import type { ProjectData } from "../../types";
+import type { ProjectData } from "@types";
+import Image from "@/components/Image/Image";
 import Image1 from "./1.png";
 import Image2 from "./2.png";
 import Image3 from "./3.png";
@@ -21,8 +22,7 @@ const Oso: ProjectData = {
   },
   content: (
     <>
-      <img src={Image1} alt="Backlit remotes" />
-      <p className="caption">Backlit remote prototypes</p>
+      <Image src={Image1} caption="Backlit remote prototypes" />
 
       <p>
         The next generation of Roku remotes will be backlit, meaning that when a
@@ -81,8 +81,7 @@ const Oso: ProjectData = {
         red for Netflix..
       </p>
 
-      <img src={Image2} alt="Web interface" />
-      <p className="caption">Settings used to control the remote</p>
+      <Image src={Image2} caption="Settings used to control the remote" />
 
       <p>
         In addition to the main control dashboard I gave designers the ability
@@ -92,8 +91,7 @@ const Oso: ProjectData = {
         once with the click of a button.
       </p>
 
-      <img src={Image3} alt="Preset creation" />
-      <p className="caption">Creating a preset configuration</p>
+      <Image src={Image3} caption="Creating a preset configuration" />
 
       <p>
         User testing sessions showed that the reaction to backlit remotes was

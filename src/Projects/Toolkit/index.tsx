@@ -1,4 +1,6 @@
 import type { ProjectData } from "@types";
+import Image from "@/components/Image/Image";
+import Video from "@/components/Video/Video";
 import Image1 from "./1.gif";
 import Image2 from "./2.png";
 import Cover from "./Cover.png";
@@ -56,17 +58,17 @@ const Toolkit: ProjectData = {
         strain. As this feature becomes more used, we need to make sure that
         designs will work for both light and dark modes.
       </p>
-      <img src={Image1} alt="Dark mode demo" />
+      <Image src={Image1} alt="Dark mode demo" />
       <p>
         I created a simple UI that would allow users to toggle both layers and
         pages between light and dark mode. I also included a color inspector
         that would display the fill and border colors for a selected layer and
         show their light and dark mode pairings.
       </p>
-      <img src={Image2} alt="Plugin interface" />
-      <p className="caption">
-        Inspecting a dark mode design to see the color pairings.
-      </p>
+      <Image
+        src={Image2}
+        caption="Inspecting a dark mode design to see the color pairings."
+      />
       <p>
         Once I had a solid design, I moved on to developing the functionality
         using{" "}
@@ -91,13 +93,13 @@ const Toolkit: ProjectData = {
         of seconds, which saves designers hours of work in manually changing
         colors.
       </p>
-      <video controls preload="none">
-        <source src={DemoVideo} type="video/mp4" />
-      </video>
-      <p className="caption">
-        This quick demo of Dark Mode that appeared within a QB Designer Toolkit
-        instructional video I created.
-      </p>
+
+      <Video
+        src={DemoVideo}
+        caption="This quick demo of Dark Mode that appeared within a QB Designer Toolkit
+        instructional video I created."
+      />
+
       <p>
         Design Technologists on my team also created two other plugins that
         focus on motion and content. We combined all three plugins to make it
@@ -160,12 +162,11 @@ const Toolkit: ProjectData = {
         include a flyout menu. Moving page navigation into the flyout menu gave
         each feature room for its own navigational elements.
       </p>
-      <img src={Redesign} alt="Redesign before and after" />
-      <p className="caption">
-        Selection of redesigned screens before (left) and after (right)
-      </p>
-      <img src={Cover} alt="Cover art" />
-      <p className="caption">Redesigned cover art for installation page</p>
+      <Image
+        src={Redesign}
+        caption="Selection of redesigned screens before (left) and after (right)"
+      />
+      <Image src={Cover} caption="Redesigned cover art for installation page" />
       <p>
         My next step was to add analytics. I chose to use{" "}
         <a
@@ -184,7 +185,7 @@ const Toolkit: ProjectData = {
         now know who the top users of the plugin are and can ask them for
         feedback.
       </p>
-      <img src={Mixpanel} alt="Mixpanel Analytics Dashboard" />
+      <Image src={Mixpanel} alt="Mixpanel Analytics Dashboard" />
       <p className="caption">
         <a
           href="https://mixpanel.com/public/7veU4Lv7JycMp3Ene9z4hu"
@@ -204,11 +205,10 @@ const Toolkit: ProjectData = {
         will reduce the work a designer has to do filling out a table from
         minutes to seconds.
       </p>
-      <img src={Number} alt="Random number generator" />
-      <p className="caption">
-        The UI allows users to customize the format of numbers, currencies, and
-        dates
-      </p>
+      <Image
+        src={Number}
+        caption="The UI allows users to customize the format of numbers, currencies, and dates"
+      />
       <p>
         Version 2 was released in January 2022, and the plugin continues to be
         widely used amongst Intuit designers.

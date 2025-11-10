@@ -1,4 +1,5 @@
 import type { ProjectData } from "@types";
+import Image from "@/components/Image/Image";
 import Link from "@components/Link/Link";
 import Cover from "./Cover.png";
 import Image1 from "./1.png";
@@ -36,15 +37,11 @@ const SporcleBot: ProjectData = {
         they ranked.
       </p>
 
-      <img
-        style={{ maxWidth: "20rem" }}
+      <Image
         src={Image1}
-        alt="Current challenge flow with scores posted."
+        maxWidth="20rem"
+        caption="The current challenge flow with scores posted as screenshots."
       />
-      <p className="caption">
-        The current challenge flow with scores posted as screenshots.
-      </p>
-
       <p>
         After getting set up with{" "}
         <Link href="https://api.slack.com/">Slack API</Link>, we realized we
@@ -77,11 +74,7 @@ const SporcleBot: ProjectData = {
         When users join the Sporcle channel, SporcleBot posts a message that is
         only visible to the user that tells them the rules.
       </p>
-      <img
-        src={Image2}
-        style={{ maxWidth: "40rem" }}
-        alt="The Sporcle welcome message"
-      />
+      <Image src={Image2} maxWidth="40rem" alt="The Sporcle welcome message" />
 
       <p>
         When a Sporcle challenge is posted, the bot posts a reply message
@@ -90,9 +83,9 @@ const SporcleBot: ProjectData = {
         score and time. The message is edited to include scores with the format:
         "Alayna Truttmann scored 73/73 with 00:19 remaining".
       </p>
-      <img
-        style={{ maxWidth: "20rem" }}
+      <Image
         src={Image3}
+        maxWidth="20rem"
         alt="The bot keeps track of scores during the challenge"
       />
 
@@ -102,9 +95,9 @@ const SporcleBot: ProjectData = {
         failed. The error is posted in a message that is only visible to the
         user.
       </p>
-      <img
-        style={{ maxWidth: "20rem" }}
+      <Image
         src={Image4}
+        maxWidth="20rem"
         alt="Showing an error message if the score couldn't be processed"
       />
 
@@ -115,7 +108,7 @@ const SporcleBot: ProjectData = {
         (unless they are the original poster). If the winner doesn't post a
         challenge by 12:00pm, the bot sends a reminder to the channel.
       </p>
-      <img src={Image5} alt="The leaderboard and reminder messages" />
+      <Image src={Image5} alt="The leaderboard and reminder messages" />
 
       <p>
         This bot was created primarily with JavaScript and developed over the

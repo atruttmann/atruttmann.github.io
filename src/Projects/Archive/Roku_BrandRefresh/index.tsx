@@ -1,4 +1,5 @@
 import type { ProjectData } from "@types";
+import Image from "@/components/Image/Image";
 import Image1 from "./1.png";
 import Image2 from "./2.png";
 import Image3 from "./3.png";
@@ -30,8 +31,11 @@ const BrandRefresh: ProjectData = {
         every screen of the platform.
       </p>
 
-      <img src={Image1} alt="Roku home screen" />
-      <p className="caption">Roku home screen with brand refresh updates</p>
+      <Image
+        src={Image1}
+        alt="Roku home screen"
+        caption="Roku home screen with brand refresh updates"
+      />
 
       <p>
         This was a complicated undertaking given the breadth of changes and a
@@ -47,8 +51,7 @@ const BrandRefresh: ProjectData = {
         designers to change the theme.
       </p>
 
-      <img src={Image2} alt="Prototype configuration" />
-      <p className="caption">Prototype configuration screen</p>
+      <Image src={Image2} caption="Prototype configuration screen" />
 
       <p>
         Many screens within the prototype needed to be fully functional. Some of
@@ -56,14 +59,12 @@ const BrandRefresh: ProjectData = {
         sports page, and The Roku Channel (Roku's streaming service).
       </p>
 
-      <img src={Image3} alt="What to Watch page" />
-      <p className="caption">"What to Watch" content suggestions</p>
-
-      <img src={Image4} alt="Sports page" />
-      <p className="caption">NFL Sports page</p>
-
-      <img src={Image5} alt="The Roku Channel" />
-      <p className="caption">The Roku Channel (Roku's streaming service)</p>
+      <Image src={Image3} caption='"What to Watch" content suggestions' />
+      <Image src={Image4} alt="Sports page" caption="NFL Sports page" />
+      <Image
+        src={Image5}
+        caption="The Roku Channel (Roku's streaming service)"
+      />
 
       <p>
         This project concluded with a presentation to Roku's VP of Design. I
