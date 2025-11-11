@@ -8,18 +8,18 @@ interface ImageProps {
 
 const Image = ({ src, mobile = false, maxWidth, alt, caption }: ImageProps) => {
   return (
-    <>
+    <div>
       <img
         src={src}
         alt={alt || caption || ""}
         style={{
           width: mobile ? "fit-content" : undefined,
           maxWidth,
-          maxHeight: mobile ? "90vh" : undefined,
+          maxHeight: mobile ? "75vh" : undefined,
         }}
       />
       {caption && <p className="caption">{caption}</p>}
-    </>
+    </div>
   );
 };
 

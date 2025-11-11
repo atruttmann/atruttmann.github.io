@@ -15,7 +15,7 @@ const Video = ({
   poster,
   caption,
 }: VideoProps) => (
-  <>
+  <div>
     <video
       controls
       muted={muted}
@@ -23,13 +23,13 @@ const Video = ({
       style={{
         width: mobile ? "fit-content" : undefined,
         maxWidth,
-        maxHeight: mobile ? "90vh" : undefined,
+        maxHeight: mobile ? "75vh" : undefined,
       }}
     >
       <source src={src} type="video/mp4" />
     </video>
     {caption && <p className="caption">{caption}</p>}
-  </>
+  </div>
 );
 
 export default Video;

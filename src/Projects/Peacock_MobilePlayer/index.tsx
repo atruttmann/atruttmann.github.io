@@ -11,12 +11,6 @@ import Vertical from "./Vertical.png";
 import Menu from "./Menu.png";
 import Info from "./Info.png";
 
-/**
- * TODO
- * how prototyping with design allowed for tweaks
- * findings of user testing (did not like vertical)
- */
-
 const MobilePlayer: ProjectData = {
   title: "Mobile Player Redesign",
   subTitle: "iOS prototype for Peacock video player",
@@ -30,7 +24,7 @@ const MobilePlayer: ProjectData = {
     outcome:
       "This prototype was used in 31 user testing sessions to gather feedback on the new design.",
     role: "I was the lead developer on this project working with one junior engineer.",
-    technologies: "SwiftUI, iOS, Apple Vision Framework",
+    technologies: "iOS, SwiftUI, Apple Vision Framework",
     dates: "January - April 2025",
   },
   content: (
@@ -52,18 +46,47 @@ const MobilePlayer: ProjectData = {
         caption="Full prototype demo showing landscape, portrait, and portrait fullscreen."
       />
 
+      <p>
+        Prototyping while designs were still being finalized allowed designers
+        to quickly iterate and refine designs more effectively since they could
+        test a realistic experience on device. For example, it was clear that
+        the size of some icons was too small to be easily tappable on device.
+      </p>
+
+      <p>
+        The refreshed landscape design makes it easier for users to find more
+        content to watch and allows for greater control of video preferences
+        such as video quality and brightness.
+      </p>
+
       <Image src={Landscape} caption="Landscape view" />
+
+      <p>
+        The new portrait experience offers users an easier way to hold their
+        phone while watching videos on the go.
+      </p>
+
       <Image src={Portrait} mobile caption="Portrait view" />
+
+      <p>
+        The portrait fullscreen view provides an immersive viewing experience by
+        utilizing the entire screen. This mode is still in exploration stages
+        but we were able to get valuable insights by showing it in user testing
+        sessions.
+      </p>
+
       <Image src={Vertical} mobile caption="Portrait fullscreen view" />
 
       <p>
         This prototype included many functionalities including: subtitles and
         audio menus, details about the playing video, "More Like This"
-        recommendations, a season picker,and brightness controls.
+        recommendations, a season picker, and brightness controls.
       </p>
 
-      <Image src={Menu} caption="Subtitles and audio menu" />
-      <Image src={Info} mobile caption="Video details" />
+      <div className="twoImg">
+        <Image src={Menu} mobile caption="Subtitles and audio menu" />
+        <Image src={Info} mobile caption="Metadata overflow" />
+      </div>
 
       <p>
         One of the most interesting challenges of this project was figuring out
@@ -88,7 +111,9 @@ const MobilePlayer: ProjectData = {
       <p>
         The prototype allowed the team to gather valuable feedback from 31 user
         testing sessions, which informed further refinements to the mobile video
-        player design.
+        player design. It was also key in communicating the new design vision to
+        executive stakeholders and acted as a source of truth for design specs
+        to engineers.
       </p>
     </>
   ),
