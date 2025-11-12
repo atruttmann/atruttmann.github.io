@@ -1,3 +1,5 @@
+import "./Video.scss";
+
 interface VideoProps {
   src: string;
   mobile?: boolean;
@@ -15,7 +17,7 @@ const Video = ({
   poster,
   caption,
 }: VideoProps) => (
-  <div>
+  <div className="videoContainer">
     <video
       controls
       muted={muted}

@@ -1,7 +1,4 @@
 import { useState } from "react";
-import Container from "react-bootstrap/Container";
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
 import { FaSun, FaMoon } from "react-icons/fa";
 import Header from "./components/Header/Header";
 import ProjectTile from "./components/ProjectTile/ProjectTile";
@@ -9,7 +6,6 @@ import ProjectModal from "./components/ProjectModal/ProjectModal";
 import Link from "./components/Link/Link";
 import ProjectsList from "./projects";
 import useTheme from "./utils/useTheme";
-import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.scss";
 
 const password = "helloworld";
@@ -32,22 +28,18 @@ function App() {
           {darkTheme ? <FaSun /> : <FaMoon />}
         </button>
 
-        <Container className="projectsGrid">
-          <Row>
-            <Header />
-          </Row>
-          <Row xs={1} sm={1} md={2} lg={2} xl={3} className="projectsRow">
-            {ProjectsList.map((project) => (
-              <Col className="projectColumn" key={project.title}>
-                <ProjectTile
-                  project={project}
-                  setSelectedProject={setSelectedProject}
-                  setModalOpen={() => setModalOpen(true)}
-                />
-              </Col>
-            ))}
-          </Row>
-        </Container>
+        <Header />
+
+        <div className="projectsGrid">
+          {ProjectsList.map((project) => (
+            <ProjectTile
+              key={project.title}
+              project={project}
+              setSelectedProject={setSelectedProject}
+              setModalOpen={() => setModalOpen(true)}
+            />
+          ))}
+        </div>
 
         <div className="footer">
           <p className="body2">

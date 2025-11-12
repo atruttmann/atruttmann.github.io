@@ -63,19 +63,16 @@ const MobilePlayer: ProjectData = {
 
       <p>
         The new portrait experience offers users an easier way to hold their
-        phone while watching videos on the go.
+        phone while watching videos on the go. The portrait fullscreen view
+        provides an immersive viewing experience by utilizing the entire screen.
+        This mode is still in exploration stages but we were able to get
+        valuable insights by showing it in user testing sessions.
       </p>
 
-      <Image src={Portrait} mobile caption="Portrait view" />
-
-      <p>
-        The portrait fullscreen view provides an immersive viewing experience by
-        utilizing the entire screen. This mode is still in exploration stages
-        but we were able to get valuable insights by showing it in user testing
-        sessions.
-      </p>
-
-      <Image src={Vertical} mobile caption="Portrait fullscreen view" />
+      <div className="twoImg">
+        <Image src={Portrait} mobile caption="Portrait view" />
+        <Image src={Vertical} mobile caption="Portrait fullscreen view" />
+      </div>
 
       <p>
         This prototype included many functionalities including: subtitles and
