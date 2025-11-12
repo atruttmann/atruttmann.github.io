@@ -1,4 +1,5 @@
 .projectTile {
+  width: 100%;
   height: 20rem;
   max-width: 40rem;
   margin: auto;
@@ -8,16 +9,12 @@
   border-radius: $border-radius-default;
   overflow: hidden;
   transform: translateY(0);
-  transition:
-    $transition-hover-up,
-    box-shadow $animation-duration-1;
+  transition: $transition-hover-up, box-shadow $animation-duration-1;
   @include tile-box-shadow;
 
   &:hover {
     transform: translateY(-$size-2);
-    transition:
-      $transition-hover-down,
-      box-shadow $animation-duration-1;
+    transition: $transition-hover-down, box-shadow $animation-duration-1;
   }
 
   .projectImage {

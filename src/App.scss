@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 html {
   font-size: 12px;
   overflow: hidden;
@@ -12,7 +16,7 @@ html {
 }
 
 body {
-  @include body-1;
+  margin: 0;
 }
 
 h1,
@@ -68,6 +72,10 @@ a {
   }
 }
 
+button {
+  cursor: pointer;
+}
+
 .app {
   overflow: hidden;
   height: 100vh;
@@ -75,9 +83,7 @@ a {
 
 .appContainer,
 .modalContainer {
-  transition:
-    $transition-background-color,
-    color $transition-color;
+  transition: $transition-background-color, color $transition-color;
   background-color: var(--color-background);
   color: var(--color-text);
 
@@ -90,25 +96,37 @@ a {
 .appContainer {
   overflow: auto;
   height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: $size-9;
+  padding: $size-9 $size-8;
+
+  @media (min-width: $breakpoint-md) {
+    gap: $size-10;
+    padding: $size-10 $size-9;
+  }
 
   .themeToggle {
     @include icon-button-style;
   }
-  // Overrides for Bootstrap Container
+
   .projectsGrid {
-    padding: $size-9 $size-8;
-    min-height: calc(100vh - 4rem); // account for footer height
-
-    @media screen and (min-width: $breakpoint-md) {
-      padding: $size-10 $size-9;
-    }
     max-width: 90rem;
+    display: grid;
+    gap: $size-7;
+    grid-template-columns: repeat(1, 1fr);
 
-    .projectsRow {
-      justify-content: center;
+    @media (min-width: $breakpoint-md) {
+      grid-template-columns: repeat(2, 1fr);
     }
-    .projectColumn {
-      padding: $size-4;
+
+    @media (min-width: $breakpoint-lg) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media (min-width: $breakpoint-xl) {
+      grid-template-columns: repeat(3, 1fr);
     }
   }
 
