@@ -1,15 +1,7 @@
 {
-  "compilerOptions": {
-    "baseUrl": ".",
-    "paths": {
-      "@/*": ["src/*"],
-      "@components/*": ["src/components/*"],
-      "@types": ["src/types/index.ts"]
-    },
-    "jsx": "react-jsx",
-    "moduleResolution": "bundler",
-    "target": "ESNext",
-    "module": "ESNext"
-  },
-  "include": ["src"]
+  "files": [],
+  "references": [
+    { "path": "./tsconfig.app.json" },
+    { "path": "./tsconfig.node.json" }
+  ]
 }
