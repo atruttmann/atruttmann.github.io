@@ -11,13 +11,13 @@ import Mixpanel from "./Mixpanel.png";
 
 const NBCUX: ProjectData = {
   title: "NBCUX Self-Service",
-  subTitle: "Figma plugin for NBC Universal",
+  subTitle: "Figma plugin for NBCUniversal",
   coverImageSrc: Image1,
   coverPosition: "top",
   passwordRequired: false,
   overview: {
     problem:
-      "NBC Universal has many internal enterprise tools and not enough designers to support them. Product managers need to create their own layouts in Figma with minimal support from the design team.",
+      "NBCUniversal has many internal enterprise tools and not enough designers to support them. Product managers need to create their own layouts in Figma with minimal support from the design team.",
     goal: "Make Figma easy to use for non-designers by creating a plugin that generates layouts using design system components.",
     outcome:
       "The first version of the plugin was released to users in January 2024.",
@@ -29,7 +29,7 @@ const NBCUX: ProjectData = {
   content: (
     <>
       <p>
-        NBC Universal uses more than 100 internal enterprise tools. Their design
+        NBCUniversal uses more than 100 internal enterprise tools. Their design
         team has fewer than 10 designers to support these tools, leaving a
         design gap. Product managers try to fill this gap but find Figma hard to
         use for design work. Additionally, they are often limited to using only

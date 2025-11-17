@@ -7,13 +7,11 @@ import Oso from "./Roku_Oso";
 import UXE from "./Roku_UXE";
 import NBCUX from "./NBCUX";
 import MobilePlayer from "./Peacock_MobilePlayer";
-import VisMerchEditor from "./Peacock_VisMerchEditor";
-import RealityAI from "./Peacock_RealityAI";
+import MobileInnovation from "./Peacock_MobileInnovation";
 
 const ProjectsList: ProjectData[] = [
   MobilePlayer,
-  RealityAI,
-  VisMerchEditor,
+  MobileInnovation,
   NBCUX,
   Flow,
   Oso,

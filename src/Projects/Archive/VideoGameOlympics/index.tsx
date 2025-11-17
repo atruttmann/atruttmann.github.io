@@ -71,7 +71,7 @@ const VideoGameOlympics: ProjectData = {
         on their phone (or any device) if they preferred. Any overflowing
         content in the tables can be accessed by scrolling horizontally.
       </p>
-      <div className="twoImg">
+      <div className="multiImg">
         <Image src={Image3} alt="Viewed on phone" />
         <Image src={Image4} alt="Viewed on tablet" />
       </div>

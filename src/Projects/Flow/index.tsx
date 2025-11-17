@@ -11,7 +11,7 @@ import DemoVideo from "./Demo.mp4";
 
 const Flow: ProjectData = {
   title: "Flow",
-  subTitle: "Prototyping tool for web & TV",
+  subTitle: "Prototyping tool for Roku designers",
   coverImageSrc: Image1,
   coverPosition: "center",
   passwordRequired: false,

@@ -112,6 +112,7 @@ button {
   }
 
   .projectsGrid {
+    width: 100%;
     max-width: 90rem;
     display: grid;
     gap: $size-7;

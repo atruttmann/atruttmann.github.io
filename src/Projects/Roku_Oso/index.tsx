@@ -6,7 +6,7 @@ import Image3 from "./3.png";
 
 const Oso: ProjectData = {
   title: "Remote backlight interface",
-  subTitle: "Controlling TV remote hardware",
+  subTitle: "Controlling Roku remote hardware",
   coverImageSrc: Image1,
   coverPosition: "center top",
   passwordRequired: false,
