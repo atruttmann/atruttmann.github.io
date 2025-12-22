@@ -30,8 +30,8 @@ const VisMerchEditor: ProjectData = {
   content: (
     <>
       <p>
-        This plugin contains multiple features for creating sports assets,
-        including Team Matchup and Shadow Creator. This work was a partnership
+        This plugin includes multiple features for creating sports assets,
+        including Team Matchup and Shadow Creator. The work was a collaboration
         between my Design Engineering team and the Visual Merchandising team at
         Peacock.
       </p>
@@ -39,31 +39,29 @@ const VisMerchEditor: ProjectData = {
       <h2>Team Matchup</h2>
 
       <p>
-        In the spring of 2024 when I first joined Peacock, the design team was
-        preparing for the Summer Olympics 2024. They anticipated a need to
-        generate thousands of tile art images to illustrate all the country
-        matchups for the various sports events. This would be a time consuming
-        and manual process for the editorial team that curates these tiles.
-        However, they recognized the power that a Figma plugin could have in
-        automating this work. I was tasked with building out this plugin
-        functionality.
+        In spring 2024, when I first joined Peacock, the design team was
+        preparing for the 2024 Summer Olympics. They anticipated a need to
+        generate thousands of tile art images to represent country matchups
+        across various sporting events. This would have been a time-consuming,
+        manual process for the editorial team responsible for curating these
+        tiles. We recognized the potential of a Figma plugin to automate this
+        work, and I was tasked with building this functionality.
       </p>
 
       <Image src={Matchup} />
 
       <p>
-        The plugin automates the work of importing the template component,
-        swapping out the country flags and sports icon, updating the background
-        color, giving the layer a standardized name, and adding default export
-        settings. It generates every possible country matchup, including
-        variations for which position the country flag is in. For some sports
-        with a lot of participating countries there may be up to 3000 assets
-        generated at once.
+        The plugin automates importing the template component, swapping country
+        flags and sport icons, updating background colors, applying standardized
+        layer names, and adding default export settings. It generates every
+        possible country matchup, including variations for flag positioning. For
+        sports with many participating countries, the plugin can generate up to
+        3,000 assets in a single run.
       </p>
 
       <Image
         src={Paris2024}
-        caption="Example of tiles this plugin created in product during the Paris 2024 Olympics"
+        caption="Example of tiles this plugin created in product for the Paris 2024 Olympics"
       />
 
       <p>
@@ -77,10 +75,10 @@ const VisMerchEditor: ProjectData = {
       </p>
 
       <p>
-        After the Olympics work was complete, I leveraged this functionality for
-        other sports matchups such as NBA, NFL, NHL, Premier League, and more.
-        Designers could manage a file with these logos and the plugin would
-        automatically pull these updates to create the matchup templates.
+        After the Olympics, I extended this functionality to support other
+        sports, including the NBA, NFL, NHL, Premier League, and more. Designers
+        could manage a file containing team logos, and the plugin would
+        automatically pull updates to generate matchup templates.
       </p>
 
       <Video
@@ -90,7 +88,8 @@ const VisMerchEditor: ProjectData = {
 
       <p>
         I added <Link href="https://mixpanel.com/">Mixpanel analytics</Link> to
-        track our plugin users, what they were generating, and any errors.
+        track plugin usage, including what users generated and any errors
+        encountered.
       </p>
 
       <Image
@@ -101,48 +100,41 @@ const VisMerchEditor: ProjectData = {
       <h2>Shadow Creator</h2>
 
       <p>
-        Building on the success of the Team Matchup feature, the Visual
-        Merchandising team and I partnered again to make the Shadow Creator. The
-        goal of this feature was to automate placing shadows behind clipped
-        human figures in composite sports assets. The benefit of automating this
-        work meant that the finished assets would more closely align with the
-        design guidelines and that the editorial team would have more time to
-        focus on other tasks.
+        Building on the success of the Team Matchup feature, I partnered again
+        with the Visual Merchandising team to create Shadow Creator. The goal
+        was to automate placing shadows behind clipped human figures in
+        composite sports assets. Automating this process ensured closer
+        adherence to design guidelines and freed up editorial time for
+        higher-value work.
       </p>
 
       <Image src={Shadows} />
 
       <p>
-        I suggested that instead of building a brand new plugin, we could extend
-        the existing Team Matchup plugin to include this functionality as a
-        separate page. It would benefit the end users by having fewer plugins to
-        manage, and make it faster for developers to add new functionality. This
-        strategy ended up being very successful and allowed my team to add a
-        third feature to the plugin later on.
+        Rather than building a new plugin, I proposed extending the existing
+        Team Matchup plugin with this functionality as a separate page. This
+        approach reduced plugin management for users and made it faster for
+        developers to add new features. The strategy proved successful and later
+        enabled my team to add a third feature to the plugin.
       </p>
 
       <p>
-        To use this feature, the user starts by uploading 1-3 images of athletes
-        with transparent backgrounds. The plugin processes these images to add
-        shadows behind them, and masks and groups layers so shadows are clipped
-        to their subjects. The plugin positions and scales the images by
-        default, but it is expected that the user may need to make tweaks to
-        perfect the composition.
+        To use Shadow Creator, users upload one to three athlete images with
+        transparent backgrounds. The plugin adds shadows behind each subject,
+        masks and groups layers so shadows remain clipped, and applies default
+        positioning and scaling. Users can make manual adjustments to fine-tune
+        the composition.
       </p>
 
       <p>
-        Once the user has made the necessary changes, they need to run the
-        plugin again to update the shadows. When generating shadows we save data
-        about the images to each layer, so the plugin is able to find and reuse
-        this data when regenerating shadows.
+        After edits are complete, users rerun the plugin to regenerate shadows.
+        The plugin stores metadata on each image layer, allowing it to reuse
+        this data when updating shadows.
       </p>
 
       <Video src={ShadowDemo} caption="Demo of the Shadow Creator in action" />
 
-      <p>
-        I added Mixpanel analytics to track the usage of this page in the
-        plugin.
-      </p>
+      <p>I added Mixpanel analytics to track usage of this feature.</p>
 
       <Image
         src={TotalShadows}

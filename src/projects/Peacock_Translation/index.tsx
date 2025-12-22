@@ -26,22 +26,23 @@ const InstantTranslation: ProjectData = {
   content: (
     <>
       <p>
-        A content strategist at Peacock came to me with a problem: how do we
+        A content strategist at Peacock came to me with a problem: how could we
         make it easy for designers to test their designs in multiple languages?
-        Peacock already had a system in place for official translations using
-        Smartling, but at the time there was no easy way to perform translations
-        within Figma.
+        Peacock already had an established system for official translations
+        using Smartling, but at the time there was no simple way to perform
+        translations directly within Figma.
       </p>
 
       <p>
-        I started by research different translation service options. I primarily
-        focused on Google Translate and{" "}
+        I began by researching different translation service options, focusing
+        primarily on Google Translate and{" "}
         <Link href="https://azure.microsoft.com/en-us/products/ai-foundry/tools/translator">
           Azure Translator
         </Link>{" "}
-        due to their accuracy, features, and low cost. Based on our anticipated
-        usage Azure Translator fit Peacock's needs best. I set up a translation
-        resource in Azure that I could call from my plugin using their REST API.
+        due to their accuracy, feature sets, and low cost. Based on our
+        anticipated usage, Azure Translator best fit Peacock's needs. I set up a
+        translation resource in Azure that the plugin could call via their REST
+        API.
       </p>
 
       <Video
@@ -51,17 +52,17 @@ const InstantTranslation: ProjectData = {
 
       <p>
         Users can select a single text layer or a top-level group or frame to
-        translate all the text within it. The plugin offers translations of the
-        25 languages Peacock is available in. In addition, users have the option
-        of choosing the longest (typically German or Hungarian) or shortest
-        (typically Czech) translation available to help with stress testing
-        designs. Users can choose to revert back to the original text if they
-        need to.
+        translate all text within it. The plugin supports translations for the
+        25 languages Peacock is available in. Additionally, users can choose the
+        longest (typically German or Hungarian) or shortest (typically Czech)
+        translation to help stress-test designs. Users can also revert back to
+        the original text if needed.
       </p>
 
       <p>
         I added <Link href="https://mixpanel.com/">Mixpanel analytics</Link> to
-        track our plugin users, what they were translating, and any errors.
+        track plugin usage, including what users were translating and any errors
+        encountered.
       </p>
 
       <Image
@@ -71,10 +72,10 @@ const InstantTranslation: ProjectData = {
       <Image src={TopLanguages} caption="Top languages used in 2025" />
 
       <p>
-        A few months after I released this plugin, Figma announced AI
+        A few months after the plugin launched, Figma announced AI-powered
         translations built directly into the product. However, NBC currently
-        does not have access to the Figma's AI features so this plugin is still
-        very useful to our design team.
+        does not have access to Figma's AI features, so this plugin remains
+        highly valuable to the design team.
       </p>
     </>
   ),
