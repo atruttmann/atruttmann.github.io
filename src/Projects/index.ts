@@ -13,8 +13,8 @@ import VisMerchEditor from "./Peacock_VisMerchEditor";
 import InstantTranslation from "./Peacock_Translation";
 
 const ProjectsList: ProjectData[] = [
-  MobilePlayer,
   MobileInnovation,
+  MobilePlayer,
   YourBravoverse,
   VisMerchEditor,
   InstantTranslation,

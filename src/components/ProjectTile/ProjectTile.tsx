@@ -1,3 +1,4 @@
+import { FaLock } from "react-icons/fa";
 import type { ProjectData } from "@types";
 import "./ProjectTile.scss";
 
@@ -12,6 +13,8 @@ const ProjectTile = ({
   setSelectedProject,
   setModalOpen,
 }: ProjectTileProps) => {
+  const locked = project.passwordRequired;
+
   return (
     <div
       className="projectTile"
@@ -26,11 +29,15 @@ const ProjectTile = ({
         style={{
           backgroundImage: `url(${project.coverImageSrc})`,
           backgroundPosition: project.coverPosition ?? "center",
+          filter: locked ? "blur(10px)" : "none",
         }}
       />
       <div className="projectLabel">
-        <h2>{project.title}</h2>
-        <p className="body2">{project.subTitle}</p>
+        <div>
+          <h2>{project.title}</h2>
+          <p className="body2">{project.subTitle}</p>
+        </div>
+        {locked && <FaLock />}
       </div>
     </div>
   );
