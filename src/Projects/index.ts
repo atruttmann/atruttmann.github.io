@@ -9,11 +9,13 @@ import NBCUX from "./NBCUX";
 import MobilePlayer from "./Peacock_MobilePlayer";
 import MobileInnovation from "./Peacock_MobileInnovation";
 import VisMerchEditor from "./Peacock_VisMerchEditor";
+import InstantTranslation from "./Peacock_Translation";
 
 const ProjectsList: ProjectData[] = [
   MobilePlayer,
   MobileInnovation,
   VisMerchEditor,
+  InstantTranslation,
   NBCUX,
   Flow,
   Oso,

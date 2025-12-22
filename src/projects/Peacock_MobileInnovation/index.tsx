@@ -15,7 +15,7 @@ const MobileInnovation: ProjectData = {
   subTitle: "iOS prototype for Peacock",
   coverImageSrc: Cover,
   coverPosition: "center",
-  passwordRequired: true,
+  passwordRequired: false,
   overview: {
     problem:
       "How can Peacock make the leap from being just another streaming app to being an entertainment platform?",
