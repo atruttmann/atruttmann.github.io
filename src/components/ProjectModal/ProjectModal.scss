@@ -76,6 +76,11 @@
       border-color: var(--color-text);
     }
 
+    h2 {
+      margin: $size-4 0 $size-6 0;
+      align-self: flex-start;
+    }
+
     p {
       width: 100%;
     }

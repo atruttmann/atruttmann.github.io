@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { FaSun, FaMoon } from "react-icons/fa";
 import Header from "./components/Header/Header";
 import ProjectTile from "./components/ProjectTile/ProjectTile";
@@ -15,6 +15,12 @@ function App() {
   const [darkTheme, setDarkTheme] = useTheme();
   const [modalOpen, setModalOpen] = useState(false);
   const [selectedProject, setSelectedProject] = useState(ProjectsList[0]);
+
+  useEffect(() => {
+    if (window.location.hostname === "localhost") {
+      setAuthenticated(true);
+    }
+  }, []);
 
   return (
     <div className={`app ${darkTheme ? "theme-dark" : "theme-light"}`}>
