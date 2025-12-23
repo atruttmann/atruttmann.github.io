@@ -1,6 +1,7 @@
 import type { ProjectData } from "@types";
 import Image from "@/components/Image/Image";
 import Video from "@/components/Video/Video";
+import Link from "@/components/Link/Link";
 import Image1 from "./1.png";
 import Image2 from "./2.png";
 import Image3 from "./3.png";
@@ -40,28 +41,14 @@ const Pyro: ProjectData = {
       />
 
       <p>
-        Pyro leverages{" "}
-        <a
-          href="https://craft.js.org/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Craft.js
-        </a>{" "}
-        with React to create drag and drop functionality in the editor. The
-        prototype data syncs to a{" "}
-        <a
-          href="https://firebase.google.com/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Firebase
-        </a>{" "}
-        backend. Users can grab components from the left-side panel and drag
-        them into the editor. When a component is selected, you can edit its
-        properties in the right-side panel. These components are either custom
-        components built for Pyro or they are imported from Intuit's design
-        system.
+        Pyro leverages <Link href="https://craft.js.org/">Craft.js</Link> with
+        React to create drag and drop functionality in the editor. The prototype
+        data syncs to a{" "}
+        <Link href="https://firebase.google.com/">Firebase</Link> backend. Users
+        can grab components from the left-side panel and drag them into the
+        editor. When a component is selected, you can edit its properties in the
+        right-side panel. These components are either custom components built
+        for Pyro or they are imported from Intuit's design system.
       </p>
       <Image src={Image2} caption="Pyro editor" />
       <p>

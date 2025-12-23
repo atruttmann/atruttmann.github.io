@@ -1,6 +1,7 @@
 import type { ProjectData } from "@types";
 import Image from "@/components/Image/Image";
 import Video from "@/components/Video/Video";
+import Link from "@/components/Link/Link";
 import Image1 from "./1.png";
 import Image2 from "./2.png";
 import Image3 from "./3.png";
@@ -45,13 +46,9 @@ const Puffin: ProjectData = {
 
       <p>
         When starting my design process I chose to use{" "}
-        <a
-          href="https://www.figma.com/community/file/928108847914589057"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+        <Link href="https://www.figma.com/community/file/928108847914589057">
           UI2, Figma's Design System
-        </a>
+        </Link>
         . I learned from previous experience building plugins that they felt
         more integrated with Figma when they used the same design system. I
         chose to swap Figma's traditional blue accent with an electric purple to
@@ -91,38 +88,19 @@ const Puffin: ProjectData = {
       <p>
         My previous experience building Figma plugins accelerated the
         development process. I used a handy{" "}
-        <a
-          href="https://github.com/nirsky/figma-plugin-react-template"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+        <Link href="https://github.com/nirsky/figma-plugin-react-template">
           React Figma plugin template
-        </a>{" "}
+        </Link>{" "}
         to start the project. I leveraged{" "}
-        <a
-          href="https://github.com/alexandrtovmach/react-figma-plugin-ds"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+        <Link href="https://github.com/alexandrtovmach/react-figma-plugin-ds">
           react-figma-plugin-ds
-        </a>{" "}
+        </Link>{" "}
         for design system components.{" "}
-        <a
-          href="https://github.com/Donaldcwl/browser-image-compression"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+        <Link href="https://github.com/Donaldcwl/browser-image-compression">
           browser-image-compression
-        </a>{" "}
-        and{" "}
-        <a
-          href="https://github.com/Stuk/jszip"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          jszip
-        </a>{" "}
-        helped me export assets.
+        </Link>{" "}
+        and <Link href="https://github.com/Stuk/jszip">jszip</Link> helped me
+        export assets.
       </p>
 
       <p>
@@ -136,13 +114,9 @@ const Puffin: ProjectData = {
         Puffin 1.0 launched in August 2023. The next step is to gather user
         feedback to determine changes to make in the next version. I would like
         to explore stronger image compression techniques such as{" "}
-        <a
-          href="https://en.wikipedia.org/wiki/Quantization_(image_processing)"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+        <Link href="https://en.wikipedia.org/wiki/Quantization_(image_processing)">
           image quantization
-        </a>
+        </Link>
         .
       </p>
     </>

@@ -36,18 +36,21 @@ function App() {
 
         <Header />
 
-        <div className="projectsGrid">
-          {ProjectsList.map((project) => (
-            <ProjectTile
-              key={project.title}
-              project={project}
-              setSelectedProject={setSelectedProject}
-              setModalOpen={() => setModalOpen(true)}
-            />
-          ))}
-        </div>
+        <main role="main">
+          <div className="projectsGrid">
+            {ProjectsList.map((project) => (
+              <ProjectTile
+                key={project.title}
+                project={project}
+                setSelectedProject={setSelectedProject}
+                setModalOpen={() => setModalOpen(true)}
+                authenticated={authenticated}
+              />
+            ))}
+          </div>
+        </main>
 
-        <div className="footer">
+        <footer className="footer">
           <p className="body2">
             I designed and built this website from scratch! Check out the code
             on{" "}
@@ -56,7 +59,7 @@ function App() {
             </Link>
             .
           </p>
-        </div>
+        </footer>
       </div>
 
       <ProjectModal

@@ -1,5 +1,6 @@
 import type { ProjectData } from "@types";
 import Image from "@components/Image/Image";
+import Link from "@/components/Link/Link";
 import Image1 from "./1.png";
 import Image2 from "./2.jpg";
 import Image3 from "./3.png";
@@ -75,13 +76,9 @@ const UXE: ProjectData = {
       <p>
         The roadmap section displayed a calendar view of the projects the team
         is working on. This view syncs with Jira using the{" "}
-        <a
-          href="https://developer.atlassian.com/server/jira/platform/rest-apis/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+        <Link href="https://developer.atlassian.com/server/jira/platform/rest-apis/">
           Jira API
-        </a>
+        </Link>
         , so roadmap updates are automatic.
       </p>
       <Image src={Image6} alt="Project roadmap" />

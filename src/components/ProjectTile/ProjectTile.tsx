@@ -6,14 +6,16 @@ interface ProjectTileProps {
   project: ProjectData;
   setSelectedProject: (project: ProjectData) => void;
   setModalOpen: (open: boolean) => void;
+  authenticated: boolean;
 }
 
 const ProjectTile = ({
   project,
   setSelectedProject,
   setModalOpen,
+  authenticated,
 }: ProjectTileProps) => {
-  const locked = project.passwordRequired;
+  const locked = !authenticated && project.passwordRequired;
 
   return (
     <div

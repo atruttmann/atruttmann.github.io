@@ -1,6 +1,7 @@
 import type { ProjectData } from "@types";
 import Image from "@/components/Image/Image";
 import Video from "@/components/Video/Video";
+import Link from "@/components/Link/Link";
 import Image1 from "./1.png";
 import Image2 from "./2.png";
 import Image3 from "./3.png";
@@ -67,14 +68,8 @@ const Flow: ProjectData = {
         I started developing the website first. I used React to build the UI and
         a Node.js to send data to Dynamo DB and store images in a S3 bucket. I
         leveraged the open source{" "}
-        <a
-          href="https://reactflow.dev/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          React Flow
-        </a>{" "}
-        library as the editor for my interactive diagrams.
+        <Link href="https://reactflow.dev/">React Flow</Link> library as the
+        editor for my interactive diagrams.
       </p>
       <Image src={Image4} caption="Editing a prototype" />
 
@@ -88,14 +83,7 @@ const Flow: ProjectData = {
         The next phase of my development work was creating the Roku channel. I
         used an internal technology that functions like to React but works on TV
         channels. It is similar to the externally available{" "}
-        <a
-          href="https://developer.roku.com/develop"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Roku SDK
-        </a>
-        .
+        <Link href="https://developer.roku.com/develop">Roku SDK</Link>.
       </p>
       <Image
         src={Image6}

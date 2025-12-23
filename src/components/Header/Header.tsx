@@ -16,24 +16,12 @@ const Header = () => (
       Intuit.
     </p>
     <div className="linkIcons">
-      <a
-        href="https://www.linkedin.com/in/atruttmann/"
-        target="_blank"
-        rel="noopener noreferrer"
-        aria-label="LinkedIn"
-        title="LinkedIn"
-      >
+      <Link href="https://www.linkedin.com/in/atruttmann/" label="LinkedIn">
         <FaLinkedin />
-      </a>
-      <a
-        href="Resume-Alayna-Truttmann.pdf"
-        target="_blank"
-        rel="noopener noreferrer"
-        aria-label="Resume"
-        title="Resume"
-      >
+      </Link>
+      <Link href="Resume-Alayna-Truttmann.pdf" label="Resume">
         <FaIdCard />
-      </a>
+      </Link>
       <Link href="mailto:amtruttmann@gmail.com" label="amtruttmann@gmail.com">
         <FaEnvelope />
       </Link>
