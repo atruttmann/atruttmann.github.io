@@ -67,7 +67,7 @@ const YourBravoverse: ProjectData = {
       <Image
         src={Preload}
         caption="Video preloading strategy"
-        maxWidth="40vw"
+        maxWidth="40rem"
       />
 
       <p>

@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { FaSun, FaMoon } from "react-icons/fa";
+import mixpanel from "mixpanel-browser";
 import Header from "./components/Header/Header";
 import ProjectTile from "./components/ProjectTile/ProjectTile";
 import ProjectModal from "./components/ProjectModal/ProjectModal";
@@ -17,8 +18,19 @@ function App() {
   const [selectedProject, setSelectedProject] = useState(ProjectsList[0]);
 
   useEffect(() => {
+    // Disable password protection in development mode
     if (window.location.hostname === "localhost") {
       setAuthenticated(true);
+    }
+    // Only track Mixpanel events in production mode
+    else {
+      mixpanel.init("2627d12039b6c5ca52dbb15c8934ff4f", {
+        autocapture: true,
+        track_pageview: true,
+        record_sessions_percent: 100,
+        record_heatmap_data: true,
+        ignore_dnt: true,
+      });
     }
   }, []);
 
@@ -36,18 +48,16 @@ function App() {
 
         <Header />
 
-        <main role="main">
-          <div className="projectsGrid">
-            {ProjectsList.map((project) => (
-              <ProjectTile
-                key={project.title}
-                project={project}
-                setSelectedProject={setSelectedProject}
-                setModalOpen={() => setModalOpen(true)}
-                authenticated={authenticated}
-              />
-            ))}
-          </div>
+        <main role="main" className="projectsGrid">
+          {ProjectsList.map((project) => (
+            <ProjectTile
+              key={project.title}
+              project={project}
+              setSelectedProject={setSelectedProject}
+              setModalOpen={() => setModalOpen(true)}
+              authenticated={authenticated}
+            />
+          ))}
         </main>
 
         <footer className="footer">
