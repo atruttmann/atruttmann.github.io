@@ -12,8 +12,8 @@ const Header = () => (
     <h1>Hi, I'm Alayna</h1>
     <p>
       I'm a Senior Design Engineer with a passion for prototyping and creating
-      design tools. I'm currently at Peacock and previously worked at Roku &
-      Intuit.
+      design tools. I'm currently at Netflix and previously worked at Peacock,
+      Roku, and Intuit.
     </p>
     <div className="linkIcons">
       <Link href="https://www.linkedin.com/in/atruttmann/" label="LinkedIn">
